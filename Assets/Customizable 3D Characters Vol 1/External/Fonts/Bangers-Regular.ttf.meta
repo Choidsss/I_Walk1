@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 5e3af712ca237ff4e93e1db14cf15ac6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Bangers
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 253976
+  packageName: Customizable 3D Characters Vol 1
+  packageVersion: 1.0
+  assetPath: Assets/Customizable 3D Characters Vol 1/External/Fonts/Bangers-Regular.ttf
+  uploadId: 591148
