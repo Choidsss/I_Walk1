@@ -307,6 +307,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 6146150265891318899, guid: 4ba1e693e449da045b3f9b8430fc65e2, type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7854215311743840937, guid: 4ba1e693e449da045b3f9b8430fc65e2, type: 3}
       propertyPath: m_Constraints
       value: 112
