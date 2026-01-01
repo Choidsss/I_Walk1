@@ -7,7 +7,7 @@ namespace I_Walk
         Animator _anim;
         Rigidbody _rigid;
 
-        [SerializeField] GameObject _TPSCam;
+        [SerializeField] GameObject _mainCam;
         [SerializeField] float _moveSpeed = 5f;     // 실제 이동 속도
         [SerializeField] float _rotateSpeed = 10f; // 회전 속도
 
@@ -22,6 +22,11 @@ namespace I_Walk
         {
             _anim = GetComponent<Animator>();
             _rigid = GetComponent<Rigidbody>();
+
+            if (_mainCam == null)
+            {
+                _mainCam = Camera.main.gameObject;
+            }
         }
 
         void Update()
@@ -32,39 +37,58 @@ namespace I_Walk
 
         void SetDirection()
         {
-            //왼쪽 쉬프트 눌렀는지 안눌렀는지 체크
-            if (Input.GetKey(KeyCode.LeftShift)) _LShift = true;
-            else _LShift = false;
+            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                _LShift = !_LShift; // 쉬프트 토글
+            }
 
-            _horizontal = Input.GetAxis("Horizontal");
-            _vertical = Input.GetAxis("Vertical");
+            _horizontal = Input.GetAxisRaw("Horizontal");
+            _vertical = Input.GetAxisRaw("Vertical");
 
-            Transform cameraTransform = _TPSCam.transform;
+            //메인카메라 기준 방향 잡아주기
+            if (_mainCam != null)
+            {
+                Transform camTrans = _mainCam.transform;
+                Vector3 camForward = camTrans.forward;
+                Vector3 camRight = camTrans.right;
 
+                camForward.y = 0;
+                camRight.y = 0;
 
+                _move = (camForward.normalized * _vertical + camRight.normalized * _horizontal).normalized;
+            }
+            else
+            {
+                _move = new Vector3(_horizontal, 0, _vertical).normalized;
+            }
 
-            _move = new Vector3(_horizontal, 0, _vertical);
-            _lookDirection = _move.normalized;
+            _lookDirection = _move;
 
             if (_lookDirection.magnitude > 0.1f)
             {
-                // 그 방향을 바라보도록
                 Quaternion targetRotation = Quaternion.LookRotation(_lookDirection);
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, _rotateSpeed * Time.deltaTime);
             }
         }
 
-        //Left Shift를 눌러야만 뛰는 속도를 넘어가도록
         void CharacterMove()
         {
-            float moveMagnitude = _move.magnitude;
+            float inputMagnitude = new Vector2(_horizontal, _vertical).magnitude;
+            float finalAnimSpeed = 0f;
 
-            _anim.SetFloat("Speed", moveMagnitude * _moveSpeed);
+            //쉬프트가 눌린걸 판단해서 속도의 임계치 제어 => 안눌리면 BT에서 걷는모션이 나오고, 눌리면 뛰는모션
+            if (inputMagnitude > 0.1f)
+            {
+                float currentSpeedLimit = _LShift ? 5f : 2.5f;
+                finalAnimSpeed = Mathf.Clamp(inputMagnitude * _moveSpeed, 0, currentSpeedLimit);
+            }
+
+            _anim.SetFloat("Speed", finalAnimSpeed, 0.1f,  Time.deltaTime);
         }
 
         //private void OnAnimatorMove()
         //{
-            
+
         //}
     }
 }
