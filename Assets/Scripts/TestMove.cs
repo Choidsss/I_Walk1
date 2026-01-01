@@ -7,11 +7,13 @@ namespace I_Walk
         Animator _anim;
         Rigidbody _rigid;
 
+        [SerializeField] GameObject _TPSCam;
         [SerializeField] float _moveSpeed = 5f;     // 실제 이동 속도
         [SerializeField] float _rotateSpeed = 10f; // 회전 속도
 
         float _horizontal;
         float _vertical;
+        bool _LShift = false;
 
         Vector3 _move;
         Vector3 _lookDirection = new Vector3(0,0,0);
@@ -30,8 +32,16 @@ namespace I_Walk
 
         void SetDirection()
         {
+            //왼쪽 쉬프트 눌렀는지 안눌렀는지 체크
+            if (Input.GetKey(KeyCode.LeftShift)) _LShift = true;
+            else _LShift = false;
+
             _horizontal = Input.GetAxis("Horizontal");
             _vertical = Input.GetAxis("Vertical");
+
+            Transform cameraTransform = _TPSCam.transform;
+
+
 
             _move = new Vector3(_horizontal, 0, _vertical);
             _lookDirection = _move.normalized;
@@ -44,16 +54,17 @@ namespace I_Walk
             }
         }
 
+        //Left Shift를 눌러야만 뛰는 속도를 넘어가도록
         void CharacterMove()
         {
-            // 입력의 크기를 계산 (0 ~ 1 사이)
             float moveMagnitude = _move.magnitude;
 
-            // Animator에 미리 선언된 'Speed' 파라미터에 값을 전달합니다.
-            // (파라미터 이름이 다르다면 "Speed" 대신 해당 이름을 넣으세요)
             _anim.SetFloat("Speed", moveMagnitude * _moveSpeed);
-
-            Debug.Log(moveMagnitude * _moveSpeed);
         }
+
+        //private void OnAnimatorMove()
+        //{
+            
+        //}
     }
 }
