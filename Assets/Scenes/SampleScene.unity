@@ -694,10 +694,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1576785186}
     m_Modifications:
     - target: {fileID: 75863169330730516, guid: 4ba1e693e449da045b3f9b8430fc65e2, type: 3}
-      propertyPath: _TPSCam
-      value: 
-      objectReference: {fileID: 1500476919}
-    - target: {fileID: 75863169330730516, guid: 4ba1e693e449da045b3f9b8430fc65e2, type: 3}
       propertyPath: _mainCam
       value: 
       objectReference: {fileID: 330585543}
@@ -745,33 +741,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character_Male_Preset_04
       objectReference: {fileID: 0}
-    - target: {fileID: 2587750964057941532, guid: 4ba1e693e449da045b3f9b8430fc65e2, type: 3}
-      propertyPath: m_Height
-      value: 1.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2587750964057941532, guid: 4ba1e693e449da045b3f9b8430fc65e2, type: 3}
-      propertyPath: m_Radius
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2587750964057941532, guid: 4ba1e693e449da045b3f9b8430fc65e2, type: 3}
-      propertyPath: m_Center.y
-      value: 0.9
-      objectReference: {fileID: 0}
     - target: {fileID: 6146150265891318899, guid: 4ba1e693e449da045b3f9b8430fc65e2, type: 3}
       propertyPath: m_UpdateMode
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7854215311743840937, guid: 4ba1e693e449da045b3f9b8430fc65e2, type: 3}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 7854215311743840937, guid: 4ba1e693e449da045b3f9b8430fc65e2, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7854215311743840937, guid: 4ba1e693e449da045b3f9b8430fc65e2, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

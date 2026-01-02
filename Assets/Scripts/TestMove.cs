@@ -8,8 +8,8 @@ namespace I_Walk
         Rigidbody _rigid;
 
         [SerializeField] GameObject _mainCam;
-        [SerializeField] float _moveSpeed = 5f;     // ½ÇÁ¦ ÀÌµ¿ ¼Óµµ
-        [SerializeField] float _rotateSpeed = 10f; // È¸Àü ¼Óµµ
+        [SerializeField] float _moveSpeed = 5f;     
+        [SerializeField] float _rotateSpeed = 10f; 
 
         float _horizontal;
         float _vertical;
@@ -31,7 +31,11 @@ namespace I_Walk
 
         void Update()
         {
-            SetDirection();
+            SetDirection();           
+        }
+
+        private void FixedUpdate()
+        {
             CharacterMove();
         }
 
@@ -39,13 +43,13 @@ namespace I_Walk
         {
             if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.Mouse1))
             {
-                _LShift = !_LShift; // ½¬ÇÁÆ® Åä±Û
+                _LShift = !_LShift; // ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½
             }
 
             _horizontal = Input.GetAxisRaw("Horizontal");
             _vertical = Input.GetAxisRaw("Vertical");
 
-            //¸ÞÀÎÄ«¸Þ¶ó ±âÁØ ¹æÇâ Àâ¾ÆÁÖ±â
+            //ï¿½ï¿½ï¿½ï¿½Ä«ï¿½Þ¶ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ö±ï¿½
             if (_mainCam != null)
             {
                 Transform camTrans = _mainCam.transform;
@@ -67,7 +71,10 @@ namespace I_Walk
             if (_lookDirection.magnitude > 0.1f)
             {
                 Quaternion targetRotation = Quaternion.LookRotation(_lookDirection);
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, _rotateSpeed * Time.deltaTime);
+
+                float lerpPct = 1f - Mathf.Exp(-_rotateSpeed * Time.deltaTime);
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, lerpPct);
+                // _rigid.MoveRotation(targetRotation);
             }
         }
 
@@ -76,34 +83,24 @@ namespace I_Walk
             float inputMagnitude = new Vector2(_horizontal, _vertical).magnitude;
             float finalAnimSpeed = 0f;
 
-            //½¬ÇÁÆ®°¡ ´­¸°°É ÆÇ´ÜÇØ¼­ ¼ÓµµÀÇ ÀÓ°èÄ¡ Á¦¾î => ¾È´­¸®¸é BT¿¡¼­ °È´Â¸ð¼ÇÀÌ ³ª¿À°í, ´­¸®¸é ¶Ù´Â¸ð¼Ç
             if (inputMagnitude > 0.1f)
             {
-                float currentSpeedLimit = _LShift ? 5f : 2.5f;
-                finalAnimSpeed = Mathf.Clamp(inputMagnitude * _moveSpeed, 0, currentSpeedLimit);
+                // 1. ëª©í‘œ ì†ë„ ê²°ì •
+                float targetSpeed = _LShift ? 5f : 2.5f;
+                finalAnimSpeed = inputMagnitude * targetSpeed;
+
+                Vector3 moveVel = _move * finalAnimSpeed;
+
+                moveVel.y = _rigid.linearVelocity.y;
+
+                _rigid.linearVelocity = moveVel;
             }
-
-            _anim.SetFloat("Speed", finalAnimSpeed, 0.1f,  Time.deltaTime);
-        }
-
-
-
-        private void OnAnimatorMove()
-        {
-            if (_anim.applyRootMotion)
+            else
             {
-                if (_anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
-                {
-                    return;
-                }
-
-                Vector3 deltaPos = _anim.deltaPosition;
-
-                if (deltaPos.magnitude >= 0.0001f)
-                {
-                    _rigid.MovePosition(_rigid.position + deltaPos);
-                }
+                _rigid.linearVelocity = new Vector3(0, _rigid.linearVelocity.y, 0);
             }
+
+            _anim.SetFloat("Speed", finalAnimSpeed, 0.1f, Time.deltaTime);
         }
     }
 }

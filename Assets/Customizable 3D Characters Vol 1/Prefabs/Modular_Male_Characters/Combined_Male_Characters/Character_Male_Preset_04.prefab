@@ -2260,9 +2260,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 80
+  m_CollisionDetection: 1
 --- !u!136 &2587750964057941532
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2282,10 +2282,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1
+  m_Radius: 0.4
+  m_Height: 1.8
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!114 &75863169330730516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2298,7 +2298,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b491f8f31ee17489f87b564bba1271, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 0
+  _mainCam: {fileID: 0}
+  _moveSpeed: 5
+  _rotateSpeed: 10
 --- !u!1 &771440424795053668
 GameObject:
   m_ObjectHideFlags: 0
