@@ -86,9 +86,9 @@ namespace I_Walk
             _anim.SetFloat("Speed", finalAnimSpeed, 0.1f,  Time.deltaTime);
         }
 
-        //private void OnAnimatorMove()
-        //{
+        private void OnAnimatorMove()
+        {
 
-        //}
+        }
     }
 }
