@@ -86,9 +86,24 @@ namespace I_Walk
             _anim.SetFloat("Speed", finalAnimSpeed, 0.1f,  Time.deltaTime);
         }
 
+
+
         private void OnAnimatorMove()
         {
+            if (_anim.applyRootMotion)
+            {
+                if (_anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+                {
+                    return;
+                }
 
+                Vector3 deltaPos = _anim.deltaPosition;
+
+                if (deltaPos.magnitude >= 0.0001f)
+                {
+                    _rigid.MovePosition(_rigid.position + deltaPos);
+                }
+            }
         }
     }
 }
