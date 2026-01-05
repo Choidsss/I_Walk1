@@ -11237,6 +11237,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 105531008273943079, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 105531008273943079, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4327434946459567824, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: _mainCam
       value: 
@@ -11245,6 +11253,10 @@ PrefabInstance:
       propertyPath: _freelookCam
       value: 
       objectReference: {fileID: 1668578861}
+    - target: {fileID: 4327434946459567824, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: _turnSensitivity
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4728285450541929389, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.47

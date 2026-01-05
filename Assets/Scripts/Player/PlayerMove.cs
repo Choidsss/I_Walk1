@@ -36,6 +36,12 @@ namespace I_Walk
         void Update()
         {
             SetDirection();
+
+            /*
+             * ************************************
+             * 멈추는 애니메이션 나오게 하기(조건: 속도가 0일때, 걷고 있을때 or 뛰고 있을때)
+             * ************************************
+             */
         }
 
         private void FixedUpdate()
@@ -44,6 +50,8 @@ namespace I_Walk
             CharacterRotation();
         }
 
+
+        
         void SetDirection()
         {
             if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.Mouse1))
@@ -65,11 +73,6 @@ namespace I_Walk
                 camForward.y = 0;
                 camRight.y = 0;
 
-                // ★ 매우 중요: Y를 0으로 만든 후 다시 정규화를 해야 방향이 정확해짐
-                camForward.Normalize();
-                camRight.Normalize();
-
-                // 최종 이동 방향 계산
                 _move = (camForward * _vertical + camRight * _horizontal).normalized;
 
                 _lookDirection = _move;
@@ -79,47 +82,54 @@ namespace I_Walk
                 _move = Vector3.zero;
             }
 
-
-
             if (_lookDirection.magnitude > 0.1f)
             {
                 Quaternion targetRotation = Quaternion.LookRotation(_lookDirection);
 
                 float lerpPct = 1f - Mathf.Exp(-_rotateSpeed * Time.deltaTime);
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, lerpPct);
-                // _rigid.MoveRotation(targetRotation);
+                _rigid.MoveRotation(targetRotation);
             }
         }
 
+        /*
+         * 기울어지는 애니메이션 다듬기 => 떨리는 문제 확인
+         */
         void CharacterRotation()
         {
             if (_lookDirection.sqrMagnitude <= 0.01f)
             {
-                _turnAmount = Mathf.Lerp(_turnAmount, 0f, Time.fixedDeltaTime * _turnAmount);
+                _turnAmount = Mathf.MoveTowards(_turnAmount, 0f, Time.fixedDeltaTime * _turnSensitivity);
                 _anim.SetFloat("turnAmount", _turnAmount);
                 return;
             }
 
-            /* 
-             * *********************
-             * _horizontal을 받아와서 서서히 _turnAmount를 변화시키기
-             * *********************
-             */
+            if (Mathf.Abs(_horizontal) > 0.1f)
+            {
+                _turnAmount += Mathf.Sign(_horizontal) * Time.fixedDeltaTime * _turnSensitivity;
+            }
+            else
+            {
+                _turnAmount = Mathf.MoveTowards(_turnAmount, 0f, Time.fixedDeltaTime * _turnSensitivity);
+            }
+
+            _turnAmount = Mathf.Clamp(_turnAmount, -1f, 1f);
+            _anim.SetFloat("turnAmount", _turnAmount);
 
             Quaternion targetRotation = Quaternion.LookRotation(_lookDirection);
-
-            float targetTurn = Mathf.Clamp(_turnAmount, -1.0f, 1.0f);
-
-            _turnAmount = Mathf.Lerp(_turnAmount, targetTurn, Time.fixedDeltaTime * _turnSensitivity);
-
-            _anim.SetFloat("turnAmount", _turnAmount);
-            
-            Debug.Log(_turnAmount);
-
             float lerpRotate = 1f - Mathf.Exp(-_rotateSpeed * Time.fixedDeltaTime);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, lerpRotate);
+
+            // Quaternion targetRotation = Quaternion.LookRotation(_lookDirection);
+            // float targetTurn = Mathf.Clamp(_turnAmount, -1.0f, 1.0f);
+            // _turnAmount = Mathf.Lerp(_turnAmount, targetTurn, Time.fixedDeltaTime * _turnSensitivity);
         }
 
+        /*
+         * **************************************************
+         * 속도를 _moveSpeed가 아닌 지역변수로 받고 있는 문제
+         * **************************************************
+         */
         void CharacterMove()
         {
             float inputMagnitude = new Vector2(_horizontal, _vertical).magnitude;
