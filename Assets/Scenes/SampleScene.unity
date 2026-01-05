@@ -4027,36 +4027,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7122877113367896873, guid: 3d48c759a60c15047b0fbea5485be031, type: 3}
   m_PrefabInstance: {fileID: 767840546}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &818469963 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6755709766471399306, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-  m_PrefabInstance: {fileID: 283946880999654675}
-  m_PrefabAsset: {fileID: 0}
---- !u!143 &818469968
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818469963}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &828031242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11315,17 +11285,10 @@ PrefabInstance:
       propertyPath: _mainCam
       value: 
       objectReference: {fileID: 330585543}
-    - target: {fileID: 6832790707519516477, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: _moveSpeed
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6755709766471399306, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 818469968}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

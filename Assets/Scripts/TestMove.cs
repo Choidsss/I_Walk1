@@ -6,11 +6,13 @@ namespace I_Walk
     {
         Animator _anim;
         Rigidbody _rigid;
+        CharacterController _controller;
 
         [SerializeField] GameObject _mainCam;
         [SerializeField] float _moveSpeed = 5f;     
-        [SerializeField] float _rotateSpeed = 10f; 
+        [SerializeField] float _rotateSpeed = 10f;
 
+        float _verticalVelocity;
         float _horizontal;
         float _vertical;
         bool _LShift = false;
@@ -22,6 +24,7 @@ namespace I_Walk
         {
             _anim = GetComponentInChildren<Animator>();
             _rigid = GetComponent<Rigidbody>();
+            _controller = GetComponent<CharacterController>();
 
             if (_mainCam == null)
             {
@@ -78,6 +81,11 @@ namespace I_Walk
             }
         }
 
+        void CharacterRotation()
+        {
+
+        }
+
         void CharacterMove()
         {
             float inputMagnitude = new Vector2(_horizontal, _vertical).magnitude;
@@ -85,22 +93,27 @@ namespace I_Walk
 
             if (inputMagnitude > 0.1f)
             {
-                // 1. 목표 속도 결정 ** 수정필요** 내가 설정한 _moveSpeed에서 값이 설정되도록
-                float targetSpeed = _LShift ? 5f : 2.5f;
-                finalAnimSpeed = inputMagnitude * targetSpeed;
-
-                Vector3 moveVel = _move * finalAnimSpeed;
-
-                moveVel.y = _rigid.linearVelocity.y;
-
-                _rigid.linearVelocity = moveVel;
-            }
-            else
-            {
-                _rigid.linearVelocity = new Vector3(0, _rigid.linearVelocity.y, 0);
+                finalAnimSpeed = _LShift ? 5f : 2.5f;
             }
 
-            _anim.SetFloat("Speed", finalAnimSpeed, 0.1f, Time.deltaTime);
+            _anim.SetFloat("Speed", finalAnimSpeed * inputMagnitude, 0.1f, Time.deltaTime);
+
+            //if (inputMagnitude > 0.1f)
+            //{
+            //    // 1. 목표 속도 결정 ** 수정필요** 내가 설정한 _moveSpeed에서 값이 설정되도록
+            //    float targetSpeed = _LShift ? 5f : 2.5f;
+            //    finalAnimSpeed = inputMagnitude * targetSpeed;
+
+            //    Vector3 moveVel = _move * finalAnimSpeed;
+
+            //    moveVel.y = _rigid.linearVelocity.y;
+
+            //    _rigid.linearVelocity = moveVel;
+            //}
+            //else
+            //{
+            //    _rigid.linearVelocity = new Vector3(0, _rigid.linearVelocity.y, 0);
+            //}
         }
 
         private void OnAnimatorMove()
@@ -109,8 +122,23 @@ namespace I_Walk
             {
                 _anim.applyRootMotion = true;
             }
+            
+            if (_anim == null) return;
+            
+            Vector3 deltaMove = _anim.deltaPosition;
 
+            if (_controller.isGrounded)
+            {
+                _verticalVelocity = -0.5f;
+            }
+            else
+            {
+                _verticalVelocity += Physics.gravity.y * Time.fixedDeltaTime;
+            }
 
+            deltaMove.y = _verticalVelocity * Time.fixedDeltaTime;
+
+            _controller.Move(_rigid.position + deltaMove);
         }
     }
 }
