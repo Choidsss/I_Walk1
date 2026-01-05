@@ -20,7 +20,7 @@ namespace I_Walk
 
         void Start()
         {
-            _anim = GetComponent<Animator>();
+            _anim = GetComponentInChildren<Animator>();
             _rigid = GetComponent<Rigidbody>();
 
             if (_mainCam == null)
@@ -85,7 +85,7 @@ namespace I_Walk
 
             if (inputMagnitude > 0.1f)
             {
-                // 1. 목표 속도 결정
+                // 1. 목표 속도 결정 ** 수정필요** 내가 설정한 _moveSpeed에서 값이 설정되도록
                 float targetSpeed = _LShift ? 5f : 2.5f;
                 finalAnimSpeed = inputMagnitude * targetSpeed;
 
@@ -102,5 +102,17 @@ namespace I_Walk
 
             _anim.SetFloat("Speed", finalAnimSpeed, 0.1f, Time.deltaTime);
         }
+
+        private void OnAnimatorMove()
+        {
+            if (!_anim.applyRootMotion)
+            {
+                _anim.applyRootMotion = true;
+            }
+
+
+        }
     }
 }
+
+    
