@@ -1,26 +1,26 @@
-using NUnit.Framework;
-using System;
 using UnityEngine;
 
 namespace I_Walk
 {
-    public class TestMove : MonoBehaviour
+    public class PlayerMove : MonoBehaviour
     {
         Animator _anim;
         Rigidbody _rigid;
 
         [SerializeField] GameObject _mainCam;
         [SerializeField] GameObject _freelookCam;
-        [SerializeField] float _moveSpeed = 5f;     
+        [SerializeField] float _moveSpeed = 5f;
         [SerializeField] float _rotateSpeed = 10f;
+        [SerializeField] float _turnSensitivity = 5f;
 
         float _verticalVelocity;
         float _horizontal;
         float _vertical;
+        float _turnAmount;
         bool _LShift = false;
 
         Vector3 _move;
-        Vector3 _lookDirection = new Vector3(0,0,0);
+        Vector3 _lookDirection = new Vector3(0, 0, 0);
 
         void Start()
         {
@@ -48,7 +48,7 @@ namespace I_Walk
         {
             if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.Mouse1))
             {
-                _LShift = !_LShift; 
+                _LShift = !_LShift;
             }
 
             _horizontal = Input.GetAxisRaw("Horizontal");
@@ -65,11 +65,11 @@ namespace I_Walk
                 camForward.y = 0;
                 camRight.y = 0;
 
-                // â˜… ë§¤ìš° ì¤‘ìš”: Yë¥¼ 0ìœ¼ë¡œ ë§Œë“  í›„ ë‹¤ì‹œ ì •ê·œí™”ë¥¼ í•´ì•¼ ë°©í–¥ì´ ì •í™•í•´ì§
+                // ¡Ú ¸Å¿ì Áß¿ä: Y¸¦ 0À¸·Î ¸¸µç ÈÄ ´Ù½Ã Á¤±ÔÈ­¸¦ ÇØ¾ß ¹æÇâÀÌ Á¤È®ÇØÁü
                 camForward.Normalize();
                 camRight.Normalize();
 
-                // ìµœì¢… ì´ë™ ë°©í–¥ ê³„ì‚°
+                // ÃÖÁ¾ ÀÌµ¿ ¹æÇâ °è»ê
                 _move = (camForward * _vertical + camRight * _horizontal).normalized;
 
                 _lookDirection = _move;
@@ -79,7 +79,7 @@ namespace I_Walk
                 _move = Vector3.zero;
             }
 
-            
+
 
             if (_lookDirection.magnitude > 0.1f)
             {
@@ -93,9 +93,28 @@ namespace I_Walk
 
         void CharacterRotation()
         {
-            if (_lookDirection.sqrMagnitude <= 0.01f) return;
+            if (_lookDirection.sqrMagnitude <= 0.01f)
+            {
+                _turnAmount = Mathf.Lerp(_turnAmount, 0f, Time.fixedDeltaTime * _turnAmount);
+                _anim.SetFloat("turnAmount", _turnAmount);
+                return;
+            }
+
+            /* 
+             * *********************
+             * _horizontalÀ» ¹Ş¾Æ¿Í¼­ ¼­¼­È÷ _turnAmount¸¦ º¯È­½ÃÅ°±â
+             * *********************
+             */
 
             Quaternion targetRotation = Quaternion.LookRotation(_lookDirection);
+
+            float targetTurn = Mathf.Clamp(_turnAmount, -1.0f, 1.0f);
+
+            _turnAmount = Mathf.Lerp(_turnAmount, targetTurn, Time.fixedDeltaTime * _turnSensitivity);
+
+            _anim.SetFloat("turnAmount", _turnAmount);
+            
+            Debug.Log(_turnAmount);
 
             float lerpRotate = 1f - Mathf.Exp(-_rotateSpeed * Time.fixedDeltaTime);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, lerpRotate);
@@ -112,23 +131,6 @@ namespace I_Walk
             }
 
             _anim.SetFloat("Speed", finalAnimSpeed * inputMagnitude, 0.1f, Time.deltaTime);
-
-            //if (inputMagnitude > 0.1f)
-            //{
-            //    // 1. ëª©í‘œ ì†ë„ ê²°ì • ** ìˆ˜ì •í•„ìš”** ë‚´ê°€ ì„¤ì •í•œ _moveSpeedì—ì„œ ê°’ì´ ì„¤ì •ë˜ë„ë¡
-            //    float targetSpeed = _LShift ? 5f : 2.5f;
-            //    finalAnimSpeed = inputMagnitude * targetSpeed;
-
-            //    Vector3 moveVel = _move * finalAnimSpeed;
-
-            //    moveVel.y = _rigid.linearVelocity.y;
-
-            //    _rigid.linearVelocity = moveVel;
-            //}
-            //else
-            //{
-            //    _rigid.linearVelocity = new Vector3(0, _rigid.linearVelocity.y, 0);
-            //}
         }
 
         private void OnAnimatorMove()
@@ -139,7 +141,7 @@ namespace I_Walk
             }
 
             if (_anim == null) return;
-            
+
             Vector3 deltaMove = _anim.deltaPosition;
 
             _verticalVelocity += Physics.gravity.y * Time.fixedDeltaTime;
@@ -150,5 +152,3 @@ namespace I_Walk
         }
     }
 }
-
-    
