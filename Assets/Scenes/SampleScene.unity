@@ -11285,6 +11285,10 @@ PrefabInstance:
       propertyPath: _mainCam
       value: 
       objectReference: {fileID: 330585543}
+    - target: {fileID: 6832790707519516477, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: _freelookCam
+      value: 
+      objectReference: {fileID: 1668578861}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
