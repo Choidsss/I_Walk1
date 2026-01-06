@@ -51,6 +51,13 @@ namespace I_Walk
 
                 _maxSpeed = 0f; 
             }
+
+            // startRun,Walk ·ÎÁ÷
+            
+            //if ()
+            //{
+
+            //}
         }
 
         private void FixedUpdate()
