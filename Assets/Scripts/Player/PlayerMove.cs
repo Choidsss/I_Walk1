@@ -34,30 +34,27 @@ namespace I_Walk
             if (_mainCam == null) _mainCam = Camera.main.gameObject;
         }
 
+
+        /*
+         * 애니메이션의 발동 조건이 겹침?
+         */
         void Update()
         {
-            // 입력 및 방향 설정
-            SetDirection();
-
-            // 상태 체크 및 트리거 발동
             AnimatorStateInfo stateInfo = _anim.GetCurrentAnimatorStateInfo(0);
-            bool isMovingState = stateInfo.IsName("Locomotion") || stateInfo.IsTag("Move"); // BT 노드 이름에 맞춰 수정
+            bool isIdle = stateInfo.IsName("Idle");
+            bool hasInput = new Vector2(_horizontal, _vertical).sqrMagnitude > 0.1f ? true : false;
 
-            // 멈춤 트리거 로직
-            if (_moveSpeed < 0.1f && !_anim.IsInTransition(0))
+            SetDirection();
+            StopAnimation();
+
+            /* **********************
+             * 버그 수정 필요 : StartRunMotion 제대로 안나옴
+             * *********************
+             */
+            if (_LShift && hasInput)
             {
-                if (_maxSpeed == 0.5f) _anim.SetTrigger("stopWalk");
-                else if (_maxSpeed == 1f) _anim.SetTrigger("stopRun");
-
-                _maxSpeed = 0f; 
+                _anim.SetTrigger("startRun");
             }
-
-            // startRun,Walk 로직
-            
-            //if ()
-            //{
-
-            //}
         }
 
         private void FixedUpdate()
@@ -70,7 +67,7 @@ namespace I_Walk
         {
             if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.Mouse1))
             {
-                _LShift = !_LShift;
+                _LShift = true;
             }
 
             _horizontal = Input.GetAxisRaw("Horizontal");
@@ -98,6 +95,24 @@ namespace I_Walk
             // 기존에 있던 transform.rotation 수정 코드와 _rigid.MoveRotation을 통째로 삭제했습니다.
             // 이유: Update(SetDirection)와 FixedUpdate(CharacterRotation) 양쪽에서 
             // 회전값을 덮어씌우면 서로 실행 주기가 달라 캐릭터가 좌우로 바들바들 떨리게 됩니다.
+        }
+
+        void StopAnimation()
+        {
+            // 스탑 트리거로직
+            if (_moveSpeed < 0.1f && !_anim.IsInTransition(0))
+            {
+                if (_maxSpeed == 0.5f)
+                {
+                    _anim.SetTrigger("stopWalk");
+                    _LShift = false;
+                }
+                else if (_maxSpeed == 1f)
+                {
+                    _anim.SetTrigger("stopRun");
+                    _LShift = false;
+                }
+            }
         }
 
         void CharacterRotation()
