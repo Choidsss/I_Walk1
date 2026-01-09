@@ -17,8 +17,10 @@ namespace I_Walk
         float _horizontal;
         float _vertical;
         float _turnAmount;
-        bool _LShift = false;
         bool _startRun = false;
+        protected bool _LShift = false;
+
+        public bool LeftShiftPush { get { return _LShift; } protected set { _LShift = value; } }
 
         Vector3 _move;
         Vector3 _lookDirection = Vector3.zero;
@@ -39,6 +41,7 @@ namespace I_Walk
             SetDirection();
             StopAnimation();
             StartRunAnim();
+            
         }
 
         private void FixedUpdate()
