@@ -18,6 +18,7 @@ namespace I_Walk
         float _vertical;
         float _turnAmount;
         bool _LShift = false;
+        bool _startRun = false;
 
         Vector3 _move;
         Vector3 _lookDirection = Vector3.zero;
@@ -27,34 +28,17 @@ namespace I_Walk
             _anim = GetComponentInChildren<Animator>();
             _rigid = GetComponent<Rigidbody>();
 
-            // 리지드바디 설정 최적화
-            _rigid.interpolation = RigidbodyInterpolation.Interpolate; // 떨림 방지 핵심
-            _rigid.constraints = RigidbodyConstraints.FreezeRotation; // 물리 회전 잠금
+            _rigid.interpolation = RigidbodyInterpolation.Interpolate; 
+            _rigid.constraints = RigidbodyConstraints.FreezeRotation; 
 
             if (_mainCam == null) _mainCam = Camera.main.gameObject;
         }
 
-
-        /*
-         * 애니메이션의 발동 조건이 겹침?
-         */
         void Update()
         {
-            AnimatorStateInfo stateInfo = _anim.GetCurrentAnimatorStateInfo(0);
-            bool isIdle = stateInfo.IsName("Idle");
-            bool hasInput = new Vector2(_horizontal, _vertical).sqrMagnitude > 0.1f ? true : false;
-
             SetDirection();
             StopAnimation();
-
-            /* **********************
-             * 버그 수정 필요 : StartRunMotion 제대로 안나옴
-             * *********************
-             */
-            if (_LShift && hasInput)
-            {
-                _anim.SetTrigger("startRun");
-            }
+            StartRunAnim();
         }
 
         private void FixedUpdate()
@@ -65,26 +49,31 @@ namespace I_Walk
 
         void SetDirection()
         {
-            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.Mouse1))
-            {
-                _LShift = true;
-            }
-
             _horizontal = Input.GetAxisRaw("Horizontal");
             _vertical = Input.GetAxisRaw("Vertical");
 
             Vector3 inputDir = new Vector3(_horizontal, 0, _vertical).normalized;
 
+            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                _LShift = true;
+                _startRun = true;
+            }
+            else
+            {
+                _startRun = false;
+            }
+
+
             if (_mainCam != null && inputDir.magnitude > 0.1f)
             {
                 Transform camTrans = _mainCam.transform;
 
-                // [수정 1] camForward.y = 0 대신 ProjectOnPlane 사용 (더 안정적인 벡터 계산)
                 Vector3 camForward = Vector3.ProjectOnPlane(camTrans.forward, Vector3.up).normalized;
                 Vector3 camRight = Vector3.ProjectOnPlane(camTrans.right, Vector3.up).normalized;
 
                 _move = (camForward * _vertical + camRight * _horizontal).normalized;
-                _lookDirection = _move; // 캐릭터가 바라볼 방향만 결정 (계산만 수행)
+                _lookDirection = _move; 
             }
             else
             {
@@ -97,10 +86,21 @@ namespace I_Walk
             // 회전값을 덮어씌우면 서로 실행 주기가 달라 캐릭터가 좌우로 바들바들 떨리게 됩니다.
         }
 
+        void StartRunAnim()
+        {
+            if (_startRun)
+            {
+                _anim.SetBool("startRun", true);
+            }
+            else
+            {
+                _anim.SetBool("startRun", false);
+            }
+        }
+
         void StopAnimation()
         {
-            // 스탑 트리거로직
-            if (_moveSpeed < 0.1f && !_anim.IsInTransition(0))
+            if (_moveSpeed < 0.1f)
             {
                 if (_maxSpeed == 0.5f)
                 {
@@ -117,7 +117,6 @@ namespace I_Walk
 
         void CharacterRotation()
         {
-            // [기울기(Banking) 로직 - FixedUpdate에서 실행되므로 고정 주기로 부드럽게 계산됨]
             if (_lookDirection.sqrMagnitude <= 0.01f)
             {
                 _turnAmount = Mathf.MoveTowards(_turnAmount, 0f, Time.fixedDeltaTime * _turnSensitivity);
@@ -134,16 +133,11 @@ namespace I_Walk
             _turnAmount = Mathf.Clamp(_turnAmount, -1f, 1f);
             _anim.SetFloat("turnAmount", _turnAmount);
 
-            // [수정 3] 실제 몸 회전 처리를 여기서만 수행
             if (_lookDirection.sqrMagnitude > 0.01f)
             {
                 Quaternion targetRotation = Quaternion.LookRotation(_lookDirection);
-
-                // [수정 4] Time.deltaTime 대신 Time.fixedDeltaTime 사용 (물리 주기에 맞춤)
                 float lerpRotate = 1f - Mathf.Exp(-_rotateSpeed * Time.fixedDeltaTime);
 
-                // [수정 5] transform.rotation 직접 대입 대신 MoveRotation 사용
-                // MoveRotation은 Rigidbody의 Interpolate(보간) 기능과 찰떡궁합이라 떨림을 최종적으로 잡아줍니다.
                 _rigid.MoveRotation(Quaternion.Slerp(_rigid.rotation, targetRotation, lerpRotate));
             }
         }
@@ -154,15 +148,26 @@ namespace I_Walk
 
             if (inputMagnitude > 0.1f)
             {
-                _maxSpeed = _LShift ? 1f : 0.5f;
-                _moveSpeed = Mathf.MoveTowards(_moveSpeed, _maxSpeed, Time.fixedDeltaTime * 2f);
+                if (_startRun)
+                {
+                    _maxSpeed = 3.0f;
+                    _moveSpeed = 3.0f; 
+
+                    _anim.SetFloat("Speed", 1.0f);
+                }
+                else
+                {
+                    _maxSpeed = _LShift ? 1f : 0.5f;
+                    _moveSpeed = Mathf.MoveTowards(_moveSpeed, _maxSpeed, Time.fixedDeltaTime * 2f);
+
+                    _anim.SetFloat("Speed", _moveSpeed, 0.05f, Time.fixedDeltaTime);
+                }
             }
             else
             {
                 _moveSpeed = Mathf.MoveTowards(_moveSpeed, 0f, Time.fixedDeltaTime * 2f);
+                _anim.SetFloat("Speed", _moveSpeed, 0.05f, Time.fixedDeltaTime);
             }
-
-            _anim.SetFloat("Speed", _moveSpeed, 0.05f, Time.fixedDeltaTime);
         }
 
         private void OnAnimatorMove()
@@ -171,13 +176,11 @@ namespace I_Walk
 
             Vector3 deltaMove = _anim.deltaPosition;
 
-            // 단순 바닥 체크 (높이가 0.1 이하일 때 바닥으로 간주)
-            // 실제로는 레이캐스트나 CharacterController.isGrounded를 쓰는게 좋지만 일단 로직 유지
             bool isGrounded = transform.position.y <= 0.1f;
 
             if (isGrounded && _verticalVelocity < 0)
             {
-                _verticalVelocity = -0.5f; // 바닥에 붙어있도록 살짝 누름
+                _verticalVelocity = -0.5f;
             }
             else
             {
@@ -186,7 +189,6 @@ namespace I_Walk
 
             deltaMove.y = _verticalVelocity * Time.fixedDeltaTime;
 
-            // MovePosition으로 최종 이동
             _rigid.MovePosition(_rigid.position + deltaMove);
         }
     }
