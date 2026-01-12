@@ -1120,8 +1120,8 @@ MonoBehaviour:
   - User Tag 32
   m_eventNames: []
   m_getBonesByName: 0
-  m_lastSaveDirectory: 
-  m_lastCreatedAnimData: {fileID: 0}
+  m_lastSaveDirectory: Assets/QuickStart/MxMAnimData
+  m_lastCreatedAnimData: {fileID: 11400000, guid: 52154006959acf04b849806e7b8238fa, type: 2}
   m_hideSubAssets: 1
   m_jointVelocityGlobal: 0
   m_compositeCategories:
