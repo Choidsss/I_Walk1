@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81e63f7102cca3c469dd38d934763347, type: 3}
-  m_Name: MxMAnimDataTest
+  m_Name: MxMAnimData
   m_EditorClassIdentifier: 
   StartPoseId: 258
   PoseInterval: 0.05
