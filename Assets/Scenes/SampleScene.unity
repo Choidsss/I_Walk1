@@ -2208,6 +2208,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4686636726105834795, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: m_debugFoldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686636726105834795, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: m_warpingFoldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686636726105834795, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: m_callbackFoldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686636726105834795, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: m_favourCurrentPose
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686636726105834795, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: m_optimisationFoldout
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4689574465750287219, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_IsActive
       value: 0

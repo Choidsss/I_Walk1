@@ -21,7 +21,7 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 0
+  GlobalTags: 8192
   GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
@@ -156,7 +156,7 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 0
+  GlobalTags: 8192
   GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
@@ -291,7 +291,7 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 0
+  GlobalTags: 4096
   GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
@@ -426,7 +426,7 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 0
+  GlobalTags: 4096
   GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
@@ -607,7 +607,7 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 0
+  GlobalTags: 8192
   GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
@@ -742,7 +742,7 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 0
+  GlobalTags: 4096
   GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
@@ -897,8 +897,8 @@ MonoBehaviour:
   - Tag 1
   - Tag 1
   - Tag 1
-  - Tag 1
-  - Tag 1
+  - Walk
+  - Run
   - Tag 1
   - Tag 1
   - Tag 1
@@ -1002,8 +1002,8 @@ MonoBehaviour:
     Extrapolate_default: 1
     FlattenTrajectory_default: 1
     RuntimeSplicing_default: 0
-    RequireTags_default: 0
-    FavourTags_default: 0
+    RequireTags_default: 4096
+    FavourTags_default: 1
   - CatagoryName: Run
     Composites:
     - {fileID: 5396594731692022237}
@@ -1016,8 +1016,8 @@ MonoBehaviour:
     Extrapolate_default: 1
     FlattenTrajectory_default: 1
     RuntimeSplicing_default: 0
-    RequireTags_default: 0
-    FavourTags_default: 0
+    RequireTags_default: 8192
+    FavourTags_default: 2
   m_overrideConfigModule: {fileID: 0}
   m_overrideTagModule: {fileID: 0}
   m_overrideEventModule: {fileID: 0}
@@ -1031,14 +1031,14 @@ MonoBehaviour:
   m_embedAnimClipsInAnimData: 0
   m_generateModifiedClipsOnPreProcess: 0
   m_generalFoldout: 0
-  m_trajectoryFoldout: 0
-  m_poseFoldout: 1
+  m_trajectoryFoldout: 1
+  m_poseFoldout: 0
   m_animationFoldout: 1
   m_animModuleFoldout: 0
   m_compositeFoldout: 1
   m_idleSetFoldout: 1
   m_blendSpaceFoldout: 0
-  m_metaDataFoldout: 1
+  m_metaDataFoldout: 0
   m_tagsFoldout: 1
   m_favourTagsFoldout: 1
   m_userTagsFoldout: 0
@@ -1066,8 +1066,8 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalTags: 4096
+  GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1201,7 +1201,7 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 0
+  GlobalTags: 4096
   GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
@@ -1336,7 +1336,7 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 0
+  GlobalTags: 8192
   GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
@@ -1471,7 +1471,7 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 0
+  GlobalTags: 8192
   GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
@@ -1606,7 +1606,7 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 0
+  GlobalTags: 4096
   GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
@@ -1741,7 +1741,7 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 0
+  GlobalTags: 8192
   GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []

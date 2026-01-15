@@ -959,7 +959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_hideSubAssets: 1
   m_overrideConfigModule: {fileID: 11400000, guid: 0fca1a885123c204294125e3dadc1719, type: 2}
-  m_overrideTagModule: {fileID: 11400000, guid: fe827fe3eb3978e4bb3f07b506725cf6, type: 2}
+  m_overrideTagModule: {fileID: 11400000, guid: 27416ad2262cb454d8a5ba83fec47d4f, type: 2}
   m_overrideEventModule: {fileID: 0}
   m_animModuleDefaults:
     IgnoreEdges: 0

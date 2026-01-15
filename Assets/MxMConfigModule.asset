@@ -13,7 +13,18 @@ MonoBehaviour:
   m_Name: MxMConfigModule
   m_EditorClassIdentifier: 
   m_targetPrefab: {fileID: 919132149155446097, guid: 39ca17e91fe1ea049a5068c61015a67e, type: 3}
-  m_poseJoints: []
+  m_poseJoints:
+  - BoneName: 
+    BoneId: 5
+  - BoneName: 
+    BoneId: 6
+  - BoneName: 
+    BoneId: 0
   m_trajectoryTimes:
-  - -0.2
+  - -0.66
+  - -0.33
+  - 0.1
+  - 0.3
+  - 0.6
+  - 1
   m_getBonesByName: 0
