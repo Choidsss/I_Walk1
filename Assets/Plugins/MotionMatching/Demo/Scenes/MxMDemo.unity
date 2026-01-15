@@ -4679,11 +4679,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489011018}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1572983621 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1441259489061459537, guid: d0cf637dcf53a764f94f39824c06cc92, type: 3}
-  m_PrefabInstance: {fileID: 4639489412066459200}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1640287163
 GameObject:
   m_ObjectHideFlags: 0
@@ -6318,15 +6313,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5585836341545092607, guid: 7509674b61ab1874b9afbdd3015c09a8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.04981371
+      value: 0.0498137
       objectReference: {fileID: 0}
     - target: {fileID: 5585836341545092607, guid: 7509674b61ab1874b9afbdd3015c09a8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 5.756231e-16
       objectReference: {fileID: 0}
     - target: {fileID: 5585836341545092607, guid: 7509674b61ab1874b9afbdd3015c09a8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -2.870956e-17
       objectReference: {fileID: 0}
     - target: {fileID: 5585836341601848407, guid: 7509674b61ab1874b9afbdd3015c09a8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6662,7 +6657,7 @@ PrefabInstance:
     - target: {fileID: 1441259490501051119, guid: d0cf637dcf53a764f94f39824c06cc92, type: 3}
       propertyPath: m_onPoseChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 6080605879874485434}
+      objectReference: {fileID: 0}
     - target: {fileID: 1441259490501051119, guid: d0cf637dcf53a764f94f39824c06cc92, type: 3}
       propertyPath: m_onPoseChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -6686,19 +6681,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1441259490102284309, guid: d0cf637dcf53a764f94f39824c06cc92, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6080605879874485424}
-    - targetCorrespondingSourceObject: {fileID: 1441259490102284309, guid: d0cf637dcf53a764f94f39824c06cc92, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6080605879874485434}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0cf637dcf53a764f94f39824c06cc92, type: 3}
---- !u!1 &4639489412066459201 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1441259490102284309, guid: d0cf637dcf53a764f94f39824c06cc92, type: 3}
-  m_PrefabInstance: {fileID: 4639489412066459200}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5338489693639708550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6796,37 +6780,10 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1441259490501051119, guid: d0cf637dcf53a764f94f39824c06cc92, type: 3}
   m_PrefabInstance: {fileID: 4639489412066459200}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4639489412066459201}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6581870d3a3d8a488583561e2c42f72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6080605879874485424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4639489412066459201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8df7d5bbc7468114a931d808811a4d20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Ball: {fileID: 0}
-  PlayerHand: {fileID: 1572983621}
-  BallPickup: {fileID: 11400000, guid: 1ceadf80c64927d47a36dabf440b5edf, type: 2}
---- !u!114 &6080605879874485434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4639489412066459201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3f5ce7cb90954a47a5957ec798db7ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &9040417056598343253

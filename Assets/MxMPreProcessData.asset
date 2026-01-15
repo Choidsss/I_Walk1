@@ -22,7 +22,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -157,7 +157,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -292,7 +292,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -419,17 +419,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CompositeName: 
   PrimaryClip: {fileID: -203655887218126122, guid: af7be60f159c98247a07faf5c353ed9c, type: 3}
-  BeforeClips:
-  - {fileID: -203655887218126122, guid: eba86130a095d8f4bac253290a061323, type: 3}
-  AfterClips:
-  - {fileID: -203655887218126122, guid: eba86130a095d8f4bac253290a061323, type: 3}
+  BeforeClips: []
+  AfterClips: []
   Looping: 0
   IgnoreEdges: 0
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -602,17 +600,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CompositeName: 
   PrimaryClip: {fileID: -203655887218126122, guid: f5219d72d2aba3b418cbed1290bc7258, type: 3}
-  BeforeClips:
-  - {fileID: -203655887218126122, guid: 0fd7588eda6ebc14b946a9a35fa6b922, type: 3}
-  AfterClips:
-  - {fileID: -203655887218126122, guid: 0fd7588eda6ebc14b946a9a35fa6b922, type: 3}
+  BeforeClips: []
+  AfterClips: []
   Looping: 0
   IgnoreEdges: 0
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -747,7 +743,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -889,9 +885,9 @@ MonoBehaviour:
   - BoneName: 
     BoneId: 5
   m_tagNames:
-  - Walk
-  - Run
-  - Idle
+  - Tag 1
+  - Tag 1
+  - Tag 1
   - Tag 1
   - Tag 1
   - Tag 1
@@ -923,7 +919,7 @@ MonoBehaviour:
   - Reserved
   m_favourTagNames:
   - Walk
-  - Idle
+  - Run
   - Favour Tag 3
   - Favour Tag 4
   - Favour Tag 5
@@ -989,7 +985,7 @@ MonoBehaviour:
   - User Tag 32
   m_eventNames: []
   m_getBonesByName: 0
-  m_lastSaveDirectory: Assets/QuickStart/MxMAnimDataTest
+  m_lastSaveDirectory: Assets/QuickStart/MxMAnimData
   m_lastCreatedAnimData: {fileID: 11400000, guid: 52154006959acf04b849806e7b8238fa, type: 2}
   m_hideSubAssets: 1
   m_jointVelocityGlobal: 0
@@ -1063,10 +1059,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CompositeName: 
   PrimaryClip: {fileID: -203655887218126122, guid: 6dc5e8be9ddf22d48985d83ddb7584d6, type: 3}
-  BeforeClips:
-  - {fileID: -203655887218126122, guid: 915282407fd8132479e93ef76877d29e, type: 3}
-  AfterClips:
-  - {fileID: -203655887218126122, guid: eba86130a095d8f4bac253290a061323, type: 3}
+  BeforeClips: []
+  AfterClips: []
   Looping: 0
   IgnoreEdges: 0
   ExtrapolateTrajectory: 1
@@ -1200,17 +1194,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CompositeName: 
   PrimaryClip: {fileID: -203655887218126122, guid: c480b830c84029344a905db5a9c5f863, type: 3}
-  BeforeClips:
-  - {fileID: -203655887218126122, guid: eba86130a095d8f4bac253290a061323, type: 3}
-  AfterClips:
-  - {fileID: -203655887218126122, guid: 915282407fd8132479e93ef76877d29e, type: 3}
+  BeforeClips: []
+  AfterClips: []
   Looping: 0
   IgnoreEdges: 0
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1337,17 +1329,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CompositeName: 
   PrimaryClip: {fileID: -203655887218126122, guid: bc280315340dc6c4d9c352f30708c2a2, type: 3}
-  BeforeClips:
-  - {fileID: -203655887218126122, guid: 0fd7588eda6ebc14b946a9a35fa6b922, type: 3}
-  AfterClips:
-  - {fileID: -203655887218126122, guid: 915282407fd8132479e93ef76877d29e, type: 3}
+  BeforeClips: []
+  AfterClips: []
   Looping: 0
   IgnoreEdges: 0
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1474,17 +1464,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CompositeName: 
   PrimaryClip: {fileID: -203655887218126122, guid: 5b41f9db8a96c0043aab792903a24b13, type: 3}
-  BeforeClips:
-  - {fileID: -203655887218126122, guid: 915282407fd8132479e93ef76877d29e, type: 3}
-  AfterClips:
-  - {fileID: -203655887218126122, guid: 0fd7588eda6ebc14b946a9a35fa6b922, type: 3}
+  BeforeClips: []
+  AfterClips: []
   Looping: 0
   IgnoreEdges: 0
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1619,7 +1607,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1754,7 +1742,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
   Events: []
