@@ -1038,7 +1038,7 @@ MonoBehaviour:
   m_compositeFoldout: 1
   m_idleSetFoldout: 1
   m_blendSpaceFoldout: 0
-  m_metaDataFoldout: 0
+  m_metaDataFoldout: 1
   m_tagsFoldout: 1
   m_favourTagsFoldout: 1
   m_userTagsFoldout: 0
