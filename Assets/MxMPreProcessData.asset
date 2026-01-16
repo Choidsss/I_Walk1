@@ -21,8 +21,8 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 8192
-  GlobalFavourTags: 2
+  GlobalTags: 0
+  GlobalFavourTags: 0
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -134,7 +134,7 @@ MonoBehaviour:
   Curves: []
   m_targetPreProcessData: {fileID: 11400000}
   m_targetAnimModule: {fileID: 0}
-  m_targetPrefab: {fileID: 919132149155446097, guid: 39ca17e91fe1ea049a5068c61015a67e, type: 3}
+  m_targetPrefab: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
 --- !u!114 &-8005254799174431033
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -156,8 +156,8 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 8192
-  GlobalFavourTags: 2
+  GlobalTags: 0
+  GlobalFavourTags: 0
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -269,7 +269,7 @@ MonoBehaviour:
   Curves: []
   m_targetPreProcessData: {fileID: 11400000}
   m_targetAnimModule: {fileID: 0}
-  m_targetPrefab: {fileID: 919132149155446097, guid: 39ca17e91fe1ea049a5068c61015a67e, type: 3}
+  m_targetPrefab: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
 --- !u!114 &-7856312835268727738
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -291,8 +291,8 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 4096
-  GlobalFavourTags: 1
+  GlobalTags: 0
+  GlobalFavourTags: 0
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -404,7 +404,7 @@ MonoBehaviour:
   Curves: []
   m_targetPreProcessData: {fileID: 11400000}
   m_targetAnimModule: {fileID: 0}
-  m_targetPrefab: {fileID: 919132149155446097, guid: 39ca17e91fe1ea049a5068c61015a67e, type: 3}
+  m_targetPrefab: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
 --- !u!114 &-6755990154379356469
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -426,8 +426,8 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 4096
-  GlobalFavourTags: 1
+  GlobalTags: 0
+  GlobalFavourTags: 0
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -539,7 +539,7 @@ MonoBehaviour:
   Curves: []
   m_targetPreProcessData: {fileID: 11400000}
   m_targetAnimModule: {fileID: 0}
-  m_targetPrefab: {fileID: 919132149155446097, guid: 39ca17e91fe1ea049a5068c61015a67e, type: 3}
+  m_targetPrefab: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
 --- !u!114 &-5555644659935639222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -607,8 +607,8 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 8192
-  GlobalFavourTags: 2
+  GlobalTags: 0
+  GlobalFavourTags: 0
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -720,7 +720,7 @@ MonoBehaviour:
   Curves: []
   m_targetPreProcessData: {fileID: 11400000}
   m_targetAnimModule: {fileID: 0}
-  m_targetPrefab: {fileID: 919132149155446097, guid: 39ca17e91fe1ea049a5068c61015a67e, type: 3}
+  m_targetPrefab: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
 --- !u!114 &-865129574972325744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -742,8 +742,8 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 4096
-  GlobalFavourTags: 1
+  GlobalTags: 0
+  GlobalFavourTags: 0
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -855,7 +855,7 @@ MonoBehaviour:
   Curves: []
   m_targetPreProcessData: {fileID: 11400000}
   m_targetAnimModule: {fileID: 0}
-  m_targetPrefab: {fileID: 919132149155446097, guid: 39ca17e91fe1ea049a5068c61015a67e, type: 3}
+  m_targetPrefab: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -868,7 +868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a8b6a4f5fd9b744a5d48dba91a8d59, type: 3}
   m_Name: MxMPreProcessData
   m_EditorClassIdentifier: 
-  m_targetPrefab: {fileID: 919132149155446097, guid: 39ca17e91fe1ea049a5068c61015a67e, type: 3}
+  m_targetPrefab: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
   m_poseInterval: 0.05
   m_trajectoryTimes:
   - -0.66
@@ -897,8 +897,8 @@ MonoBehaviour:
   - Tag 1
   - Tag 1
   - Tag 1
-  - Walk
-  - Run
+  - Tag 1
+  - Tag 1
   - Tag 1
   - Tag 1
   - Tag 1
@@ -918,8 +918,8 @@ MonoBehaviour:
   - DoNotUse
   - Reserved
   m_favourTagNames:
-  - Walk
-  - Run
+  - Favour Tag 1
+  - Favour Tag 2
   - Favour Tag 3
   - Favour Tag 4
   - Favour Tag 5
@@ -1002,8 +1002,8 @@ MonoBehaviour:
     Extrapolate_default: 1
     FlattenTrajectory_default: 1
     RuntimeSplicing_default: 0
-    RequireTags_default: 4096
-    FavourTags_default: 1
+    RequireTags_default: 0
+    FavourTags_default: 0
   - CatagoryName: Run
     Composites:
     - {fileID: 5396594731692022237}
@@ -1016,8 +1016,8 @@ MonoBehaviour:
     Extrapolate_default: 1
     FlattenTrajectory_default: 1
     RuntimeSplicing_default: 0
-    RequireTags_default: 8192
-    FavourTags_default: 2
+    RequireTags_default: 0
+    FavourTags_default: 0
   m_overrideConfigModule: {fileID: 0}
   m_overrideTagModule: {fileID: 0}
   m_overrideEventModule: {fileID: 0}
@@ -1030,9 +1030,9 @@ MonoBehaviour:
   m_motionTimingPresets: {fileID: 0}
   m_embedAnimClipsInAnimData: 0
   m_generateModifiedClipsOnPreProcess: 0
-  m_generalFoldout: 0
+  m_generalFoldout: 1
   m_trajectoryFoldout: 1
-  m_poseFoldout: 0
+  m_poseFoldout: 1
   m_animationFoldout: 1
   m_animModuleFoldout: 0
   m_compositeFoldout: 1
@@ -1042,7 +1042,7 @@ MonoBehaviour:
   m_tagsFoldout: 1
   m_favourTagsFoldout: 1
   m_userTagsFoldout: 0
-  m_eventsFoldout: 0
+  m_eventsFoldout: 1
   m_motionTimingFoldout: 1
   m_preProcessFoldout: 1
 --- !u!114 &605192663309678326
@@ -1066,8 +1066,8 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 4096
-  GlobalFavourTags: 1
+  GlobalTags: 0
+  GlobalFavourTags: 0
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1179,7 +1179,7 @@ MonoBehaviour:
   Curves: []
   m_targetPreProcessData: {fileID: 11400000}
   m_targetAnimModule: {fileID: 0}
-  m_targetPrefab: {fileID: 919132149155446097, guid: 39ca17e91fe1ea049a5068c61015a67e, type: 3}
+  m_targetPrefab: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
 --- !u!114 &2936974208014687314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1201,8 +1201,8 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 4096
-  GlobalFavourTags: 1
+  GlobalTags: 0
+  GlobalFavourTags: 0
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1314,7 +1314,7 @@ MonoBehaviour:
   Curves: []
   m_targetPreProcessData: {fileID: 11400000}
   m_targetAnimModule: {fileID: 0}
-  m_targetPrefab: {fileID: 919132149155446097, guid: 39ca17e91fe1ea049a5068c61015a67e, type: 3}
+  m_targetPrefab: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
 --- !u!114 &5269730211760998459
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1336,8 +1336,8 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 8192
-  GlobalFavourTags: 2
+  GlobalTags: 0
+  GlobalFavourTags: 0
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1449,7 +1449,7 @@ MonoBehaviour:
   Curves: []
   m_targetPreProcessData: {fileID: 11400000}
   m_targetAnimModule: {fileID: 0}
-  m_targetPrefab: {fileID: 919132149155446097, guid: 39ca17e91fe1ea049a5068c61015a67e, type: 3}
+  m_targetPrefab: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
 --- !u!114 &5396594731692022237
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1471,8 +1471,8 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 8192
-  GlobalFavourTags: 2
+  GlobalTags: 0
+  GlobalFavourTags: 0
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1584,7 +1584,7 @@ MonoBehaviour:
   Curves: []
   m_targetPreProcessData: {fileID: 11400000}
   m_targetAnimModule: {fileID: 0}
-  m_targetPrefab: {fileID: 919132149155446097, guid: 39ca17e91fe1ea049a5068c61015a67e, type: 3}
+  m_targetPrefab: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
 --- !u!114 &5703621402357715400
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1606,8 +1606,8 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 4096
-  GlobalFavourTags: 1
+  GlobalTags: 0
+  GlobalFavourTags: 0
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1719,7 +1719,7 @@ MonoBehaviour:
   Curves: []
   m_targetPreProcessData: {fileID: 11400000}
   m_targetAnimModule: {fileID: 0}
-  m_targetPrefab: {fileID: 919132149155446097, guid: 39ca17e91fe1ea049a5068c61015a67e, type: 3}
+  m_targetPrefab: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
 --- !u!114 &6324584838831970000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1741,8 +1741,8 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
-  GlobalTags: 8192
-  GlobalFavourTags: 2
+  GlobalTags: 0
+  GlobalFavourTags: 0
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1854,7 +1854,7 @@ MonoBehaviour:
   Curves: []
   m_targetPreProcessData: {fileID: 11400000}
   m_targetAnimModule: {fileID: 0}
-  m_targetPrefab: {fileID: 919132149155446097, guid: 39ca17e91fe1ea049a5068c61015a67e, type: 3}
+  m_targetPrefab: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
 --- !u!114 &8179134757759797697
 MonoBehaviour:
   m_ObjectHideFlags: 1
