@@ -34,6 +34,12 @@ public class LocomotionSpeedRamp : MonoBehaviour
         m_mxmAnimator.SetFavourMultiplier(m_favourMultiplier);
     }
 
+    //*******************추가*************************
+    private void Update()
+    {
+        UpdateSpeedRamp();
+        Debug.Log(m_currentSpeed);
+    }
     public void BeginSprint()
     {
         if (m_currentSpeed == 1)

@@ -24,4 +24,4 @@ MonoBehaviour:
   ApplyRootSpeedToNavAgent: 1
   FaceDirectionOnIdle: 0
   ScaleAdjustment: 1
-  InputProfile: {fileID: 11400000, guid: f89fb21a0a793a440a56586f6dd741fb, type: 2}
+  InputProfile: {fileID: 11400000, guid: 29d5d22ce62ea0942b1a94da0b56456f, type: 2}

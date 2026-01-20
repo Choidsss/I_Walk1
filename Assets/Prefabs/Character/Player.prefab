@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 623505991977977743}
   - component: {fileID: 2349883894179720059}
   - component: {fileID: 780720116998529268}
-  - component: {fileID: 5459917639031575578}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -109,7 +108,7 @@ CapsuleCollider:
   m_Radius: 0.35
   m_Height: 1.8
   m_Direction: 1
-  m_Center: {x: 0, y: 0.8, z: 0}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!114 &2349883894179720059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +180,7 @@ MonoBehaviour:
   m_cachedLastRightFootstepId: 0
   m_generalFoldout: 1
   m_animDataFoldout: 1
-  m_optionsFoldout: 1
+  m_optionsFoldout: 0
   m_warpingFoldout: 1
   m_optimisationFoldout: 0
   m_debugFoldout: 0
@@ -245,26 +244,8 @@ MonoBehaviour:
   m_faceDirectionOnIdle: 0
   m_scaleAdjustment: 1
   m_camTransform: {fileID: 0}
-  m_mxmInputProfile: {fileID: 0}
-  m_trajectoryGeneratorModule: {fileID: 0}
---- !u!114 &5459917639031575578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4193123990707326441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82fe7ddd8de3e084088be953a8def433, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_currentSpeed: 0
-  m_speedDowngradeTime: 0.3
-  m_playerTransform: {fileID: 6344404696354205859}
-  m_favourMultiplier: 0.6
-  m_runSpeedTagName: Run
-  m_sprintSpeedTagName: Sprint
+  m_mxmInputProfile: {fileID: 11400000, guid: e6185d4d8606f4149afac0695745b768, type: 2}
+  m_trajectoryGeneratorModule: {fileID: 11400000, guid: bddf5707e0c392643adec21bb5f330ce, type: 2}
 --- !u!1001 &7094633775950658330
 PrefabInstance:
   m_ObjectHideFlags: 0

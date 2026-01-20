@@ -10,21 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2125e7aec9b2c3941a3a8fd51f722784, type: 3}
-  m_Name: MocapInputProfile_Balanced
+  m_Name: IWalkMxMInputProfile
   m_EditorClassIdentifier: 
   m_viableInputs:
   - minInput: 0
     maxInput: 0
     viableInput: 0
-    posBias: 1
-    dirBias: 1
-  - minInput: 0.1
-    maxInput: 0.7
-    viableInput: 1.5
-    posBias: 1.5
-    dirBias: 1.5
-  - minInput: 0.7
-    maxInput: 1
-    viableInput: 2
-    posBias: 1
-    dirBias: 1
+    posBias: 0
+    dirBias: 0

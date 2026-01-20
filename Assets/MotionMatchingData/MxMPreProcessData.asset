@@ -22,7 +22,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -157,7 +157,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -292,7 +292,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -427,7 +427,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -608,7 +608,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -743,7 +743,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1019,7 +1019,7 @@ MonoBehaviour:
     RequireTags_default: 0
     FavourTags_default: 0
   m_overrideConfigModule: {fileID: 0}
-  m_overrideTagModule: {fileID: 0}
+  m_overrideTagModule: {fileID: 11400000, guid: 6b7014982c117a4419587441e184f2a2, type: 2}
   m_overrideEventModule: {fileID: 0}
   m_animModules: []
   m_animIdleSets:
@@ -1030,17 +1030,17 @@ MonoBehaviour:
   m_motionTimingPresets: {fileID: 0}
   m_embedAnimClipsInAnimData: 0
   m_generateModifiedClipsOnPreProcess: 0
-  m_generalFoldout: 1
-  m_trajectoryFoldout: 1
-  m_poseFoldout: 1
+  m_generalFoldout: 0
+  m_trajectoryFoldout: 0
+  m_poseFoldout: 0
   m_animationFoldout: 1
   m_animModuleFoldout: 0
   m_compositeFoldout: 1
   m_idleSetFoldout: 1
   m_blendSpaceFoldout: 0
   m_metaDataFoldout: 1
-  m_tagsFoldout: 1
-  m_favourTagsFoldout: 1
+  m_tagsFoldout: 0
+  m_favourTagsFoldout: 0
   m_userTagsFoldout: 0
   m_eventsFoldout: 1
   m_motionTimingFoldout: 1
@@ -1067,7 +1067,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1202,7 +1202,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1337,7 +1337,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1472,7 +1472,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1607,7 +1607,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -1742,7 +1742,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 0
+  GlobalFavourTags: 2
   TagTracks: []
   FavourTagTracks: []
   Events: []
