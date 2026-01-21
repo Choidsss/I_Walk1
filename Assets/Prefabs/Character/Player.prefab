@@ -124,13 +124,13 @@ MonoBehaviour:
   m_updateInterval: 0.012
   m_playbackSpeed: 1
   m_playbackSpeedSmoothRate: 1
-  m_matchBlendTime: 0.3
+  m_matchBlendTime: 0.6
   m_turnInPlaceThreshold: 45
   m_animationRoot: {fileID: 0}
   m_animatorControllerMask: {fileID: 0}
   m_animControllerLayer: 1
   m_animData:
-  - {fileID: 11400000, guid: 52154006959acf04b849806e7b8238fa, type: 2}
+  - {fileID: 11400000, guid: 2255da0b3843f84408cf0aacf188203f, type: 2}
   m_calibrationOverride: {fileID: 0}
   m_doNotSearch: 0
   m_debugGoal: 1
@@ -147,8 +147,8 @@ MonoBehaviour:
   m_applyHumanoidFootIK: 1
   m_applyPlayableIK: 1
   m_favourTagMethod: 0
-  m_applyTrajectoryBlending: 0
-  m_trajectoryBlendingWeight: 0.5
+  m_applyTrajectoryBlending: 1
+  m_trajectoryBlendingWeight: 0.2
   m_favourCurrentPose: 0
   m_transformGoal: 1
   m_currentPoseFavour: 0.95
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_speedWarpLimits: {x: 0, y: 0}
   m_blendSpaceSmoothing: 0
   m_blendSpaceSmoothRate: {x: 0.25, y: 0.25}
-  m_maxMixCount: 8
+  m_maxMixCount: 5
   m_primaryBlendChannel: 0
   p_DIYPlayableGraph: 0
   p_manualInitialize: 0
@@ -180,8 +180,8 @@ MonoBehaviour:
   m_cachedLastRightFootstepId: 0
   m_generalFoldout: 1
   m_animDataFoldout: 1
-  m_optionsFoldout: 0
-  m_warpingFoldout: 1
+  m_optionsFoldout: 1
+  m_warpingFoldout: 0
   m_optimisationFoldout: 0
   m_debugFoldout: 0
   m_callbackFoldout: 0
@@ -232,7 +232,7 @@ MonoBehaviour:
   p_sampleRate: 20
   p_flattenTrajectory: 0
   m_simulationSpeedScale: 1
-  m_maxSpeed: 4
+  m_maxSpeed: 2
   m_posBias: 15
   m_dirBias: 10
   m_trajectoryMode: 0
