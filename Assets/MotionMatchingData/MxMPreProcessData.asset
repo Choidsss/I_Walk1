@@ -1126,6 +1126,141 @@ MonoBehaviour:
   RuntimePlaybackSpeed: 1
   m_targetPreProcessData: {fileID: 11400000}
   m_targetAnimModule: {fileID: 0}
+--- !u!114 &-1774461085748420295
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02e0c90096ff9a54bb00ca4e068031a7, type: 3}
+  m_Name: Slow Run_comp
+  m_EditorClassIdentifier: 
+  CompositeName: 
+  PrimaryClip: {fileID: -203655887218126122, guid: 3a6286609f054ae49a60d686683d42c8, type: 3}
+  BeforeClips: []
+  AfterClips: []
+  Looping: 1
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
+  FlattenTrajectory: 1
+  RuntimeSplicing: 0
+  GlobalTags: 0
+  GlobalFavourTags: 0
+  TagTracks: []
+  FavourTagTracks: []
+  Events: []
+  LeftFootStepTrack:
+    m_trackId: 0
+    m_trackName: Footstep Left
+    m_clipLength: 0.73333335
+    m_tagPositions: []
+    m_footStepData: []
+  RightFootStepTrack:
+    m_trackId: 1
+    m_trackName: Footstep Right
+    m_clipLength: 0.73333335
+    m_tagPositions: []
+    m_footStepData: []
+  WarpPositionTrack:
+    m_trackId: 2
+    m_trackName: Disable Warp (Position)
+    m_clipLength: 0.73333335
+    m_tagPositions: []
+  WarpRotationTrack:
+    m_trackId: 3
+    m_trackName: Disable Warp (Rotation)
+    m_clipLength: 0.73333335
+    m_tagPositions: []
+  EnableRootMotionTrack:
+    m_trackId: 4
+    m_trackName: Disable Matching
+    m_clipLength: 0.73333335
+    m_tagPositions: []
+  PoseFavourTrack:
+    m_trackId: 5
+    m_trackName: Pose Favour
+    m_clipLength: 0.73333335
+    m_tagPositions: []
+    m_values: []
+    m_defaultValue: 1
+  WarpTrajLatTrack:
+    m_trackId: 6
+    m_trackName: Disable Trajectory Warp (Angular)
+    m_clipLength: 0.73333335
+    m_tagPositions: []
+  WarpTrajLongTrack:
+    m_trackId: 7
+    m_trackName: Disable Trajectory Warp (Long)
+    m_clipLength: 0.73333335
+    m_tagPositions: []
+  UserBoolTracks: []
+  RuntimePlaybackSpeed: 1
+  UseSpeedMods: 0
+  MotionModifier:
+    MotionSections:
+    - MotionSectionId: 0
+      MotionPresetId: 0
+      ModType: 0
+      SmoothType: 0
+      RawModValue: 1
+      UsePresets: 1
+      EndTime: 0.73333335
+  GeneratedClip: {fileID: 0}
+  GeneratedTagTracks: []
+  GeneratedFavourTagTracks: []
+  GeneratedEvents: []
+  GeneratedLeftFootStepTrack:
+    m_trackId: 0
+    m_trackName: 
+    m_clipLength: 0
+    m_tagPositions: []
+    m_footStepData: []
+  GeneratedRightFootStepTrack:
+    m_trackId: 0
+    m_trackName: 
+    m_clipLength: 0
+    m_tagPositions: []
+    m_footStepData: []
+  GeneratedWarpPositionTrack:
+    m_trackId: 0
+    m_trackName: 
+    m_clipLength: 0
+    m_tagPositions: []
+  GeneratedWarpRotationTrack:
+    m_trackId: 0
+    m_trackName: 
+    m_clipLength: 0
+    m_tagPositions: []
+  GeneratedEnableRootMotionTrack:
+    m_trackId: 0
+    m_trackName: 
+    m_clipLength: 0
+    m_tagPositions: []
+  GeneratedPoseFavourTrack:
+    m_trackId: 0
+    m_trackName: 
+    m_clipLength: 0
+    m_tagPositions: []
+    m_values: []
+    m_defaultValue: 0
+  GeneratedWarpTrajLatTrack:
+    m_trackId: 0
+    m_trackName: 
+    m_clipLength: 0
+    m_tagPositions: []
+  GeneratedWarpTrajLongTrack:
+    m_trackId: 0
+    m_trackName: 
+    m_clipLength: 0
+    m_tagPositions: []
+  GeneratedUserBoolTracks: []
+  Curves: []
+  m_targetPreProcessData: {fileID: 11400000}
+  m_targetAnimModule: {fileID: 0}
+  m_targetPrefab: {fileID: 919132149155446097, guid: ac7fbe4d69a6ad94485f10daa85dd05f, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1276,12 +1411,12 @@ MonoBehaviour:
     FavourTags_default: 0
   - CatagoryName: Run
     Composites:
-    - {fileID: 3878076851375736305}
     - {fileID: 1392694943770821500}
     - {fileID: 2352807116862540781}
     - {fileID: 1133441608985301284}
     - {fileID: -4967168378342260284}
     - {fileID: -5168427770389147719}
+    - {fileID: -1774461085748420295}
     IgnoreEdges_default: 0
     Extrapolate_default: 1
     FlattenTrajectory_default: 1
@@ -1303,10 +1438,10 @@ MonoBehaviour:
   m_generalFoldout: 1
   m_trajectoryFoldout: 0
   m_poseFoldout: 0
-  m_animationFoldout: 0
+  m_animationFoldout: 1
   m_animModuleFoldout: 0
-  m_compositeFoldout: 0
-  m_idleSetFoldout: 1
+  m_compositeFoldout: 1
+  m_idleSetFoldout: 0
   m_blendSpaceFoldout: 0
   m_metaDataFoldout: 0
   m_tagsFoldout: 0
@@ -1667,141 +1802,6 @@ MonoBehaviour:
       RawModValue: 1
       UsePresets: 1
       EndTime: 0.75000006
-  GeneratedClip: {fileID: 0}
-  GeneratedTagTracks: []
-  GeneratedFavourTagTracks: []
-  GeneratedEvents: []
-  GeneratedLeftFootStepTrack:
-    m_trackId: 0
-    m_trackName: 
-    m_clipLength: 0
-    m_tagPositions: []
-    m_footStepData: []
-  GeneratedRightFootStepTrack:
-    m_trackId: 0
-    m_trackName: 
-    m_clipLength: 0
-    m_tagPositions: []
-    m_footStepData: []
-  GeneratedWarpPositionTrack:
-    m_trackId: 0
-    m_trackName: 
-    m_clipLength: 0
-    m_tagPositions: []
-  GeneratedWarpRotationTrack:
-    m_trackId: 0
-    m_trackName: 
-    m_clipLength: 0
-    m_tagPositions: []
-  GeneratedEnableRootMotionTrack:
-    m_trackId: 0
-    m_trackName: 
-    m_clipLength: 0
-    m_tagPositions: []
-  GeneratedPoseFavourTrack:
-    m_trackId: 0
-    m_trackName: 
-    m_clipLength: 0
-    m_tagPositions: []
-    m_values: []
-    m_defaultValue: 0
-  GeneratedWarpTrajLatTrack:
-    m_trackId: 0
-    m_trackName: 
-    m_clipLength: 0
-    m_tagPositions: []
-  GeneratedWarpTrajLongTrack:
-    m_trackId: 0
-    m_trackName: 
-    m_clipLength: 0
-    m_tagPositions: []
-  GeneratedUserBoolTracks: []
-  Curves: []
-  m_targetPreProcessData: {fileID: 11400000}
-  m_targetAnimModule: {fileID: 0}
-  m_targetPrefab: {fileID: 919132149155446097, guid: ac7fbe4d69a6ad94485f10daa85dd05f, type: 3}
---- !u!114 &3878076851375736305
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02e0c90096ff9a54bb00ca4e068031a7, type: 3}
-  m_Name: Idle To Sprint_comp
-  m_EditorClassIdentifier: 
-  CompositeName: 
-  PrimaryClip: {fileID: -203655887218126122, guid: 5b41f9db8a96c0043aab792903a24b13, type: 3}
-  BeforeClips: []
-  AfterClips: []
-  Looping: 0
-  IgnoreEdges: 0
-  ExtrapolateTrajectory: 1
-  FlattenTrajectory: 1
-  RuntimeSplicing: 0
-  GlobalTags: 0
-  GlobalFavourTags: 0
-  TagTracks: []
-  FavourTagTracks: []
-  Events: []
-  LeftFootStepTrack:
-    m_trackId: 0
-    m_trackName: Footstep Left
-    m_clipLength: 0.8000001
-    m_tagPositions: []
-    m_footStepData: []
-  RightFootStepTrack:
-    m_trackId: 1
-    m_trackName: Footstep Right
-    m_clipLength: 0.8000001
-    m_tagPositions: []
-    m_footStepData: []
-  WarpPositionTrack:
-    m_trackId: 2
-    m_trackName: Disable Warp (Position)
-    m_clipLength: 0.8000001
-    m_tagPositions: []
-  WarpRotationTrack:
-    m_trackId: 3
-    m_trackName: Disable Warp (Rotation)
-    m_clipLength: 0.8000001
-    m_tagPositions: []
-  EnableRootMotionTrack:
-    m_trackId: 4
-    m_trackName: Disable Matching
-    m_clipLength: 0.8000001
-    m_tagPositions: []
-  PoseFavourTrack:
-    m_trackId: 5
-    m_trackName: Pose Favour
-    m_clipLength: 0.8000001
-    m_tagPositions: []
-    m_values: []
-    m_defaultValue: 1
-  WarpTrajLatTrack:
-    m_trackId: 6
-    m_trackName: Disable Trajectory Warp (Angular)
-    m_clipLength: 0.8000001
-    m_tagPositions: []
-  WarpTrajLongTrack:
-    m_trackId: 7
-    m_trackName: Disable Trajectory Warp (Long)
-    m_clipLength: 0.8000001
-    m_tagPositions: []
-  UserBoolTracks: []
-  RuntimePlaybackSpeed: 1
-  UseSpeedMods: 0
-  MotionModifier:
-    MotionSections:
-    - MotionSectionId: 0
-      MotionPresetId: 0
-      ModType: 0
-      SmoothType: 0
-      RawModValue: 1
-      UsePresets: 1
-      EndTime: 0.8000001
   GeneratedClip: {fileID: 0}
   GeneratedTagTracks: []
   GeneratedFavourTagTracks: []

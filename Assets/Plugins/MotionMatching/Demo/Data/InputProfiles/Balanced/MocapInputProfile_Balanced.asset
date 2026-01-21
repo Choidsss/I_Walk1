@@ -19,12 +19,12 @@ MonoBehaviour:
     posBias: 1
     dirBias: 1
   - minInput: 0.1
-    maxInput: 0.7
-    viableInput: 0.6
+    maxInput: 0.8
+    viableInput: 0.5
     posBias: 1.5
     dirBias: 1.5
-  - minInput: 0.7
-    maxInput: 1
-    viableInput: 1.8
+  - minInput: 0.8
+    maxInput: 2
+    viableInput: 1.5
     posBias: 1
     dirBias: 1

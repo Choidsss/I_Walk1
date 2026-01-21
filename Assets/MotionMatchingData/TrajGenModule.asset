@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c78a8c623092a904dad3f8d594867736, type: 3}
   m_Name: TrajGenModule
   m_EditorClassIdentifier: 
-  MaxSpeed: 4.3
+  MaxSpeed: 2
   PosBias: 9
   DirBias: 9
   ControlMode: 0
@@ -24,4 +24,4 @@ MonoBehaviour:
   ApplyRootSpeedToNavAgent: 1
   FaceDirectionOnIdle: 0
   ScaleAdjustment: 1
-  InputProfile: {fileID: 11400000, guid: 29d5d22ce62ea0942b1a94da0b56456f, type: 2}
+  InputProfile: {fileID: 11400000, guid: e6185d4d8606f4149afac0695745b768, type: 2}
