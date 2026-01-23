@@ -1844,38 +1844,6 @@ PrefabInstance:
       propertyPath: m_camTransform
       value: 
       objectReference: {fileID: 330585546}
-    - target: {fileID: 2349883894179720059, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: m_generalFoldout
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349883894179720059, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: m_optionsFoldout
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349883894179720059, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: m_warpingFoldout
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349883894179720059, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: m_animDataFoldout
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349883894179720059, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: m_callbackFoldout
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349883894179720059, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: m_favourCurrentPose
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349883894179720059, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: m_optimisationFoldout
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349883894179720059, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: m_nextPoseToleranceTest
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_Name
       value: Player

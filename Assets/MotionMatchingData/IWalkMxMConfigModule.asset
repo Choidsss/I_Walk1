@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b6d69363989c64db75fe3f7591b81b, type: 3}
   m_Name: IWalkMxMConfigModule
   m_EditorClassIdentifier: 
-  m_targetPrefab: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+  m_targetPrefab: {fileID: 919132149155446097, guid: ac7fbe4d69a6ad94485f10daa85dd05f, type: 3}
   m_poseJoints:
   - BoneName: 
     BoneId: 5

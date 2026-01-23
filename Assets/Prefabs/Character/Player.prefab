@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 623505991977977743}
   - component: {fileID: 2349883894179720059}
   - component: {fileID: 780720116998529268}
+  - component: {fileID: 6203410133962413261}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -124,7 +125,7 @@ MonoBehaviour:
   m_updateInterval: 0.012
   m_playbackSpeed: 1
   m_playbackSpeedSmoothRate: 1
-  m_matchBlendTime: 0.6
+  m_matchBlendTime: 1
   m_turnInPlaceThreshold: 45
   m_animationRoot: {fileID: 0}
   m_animatorControllerMask: {fileID: 0}
@@ -152,7 +153,7 @@ MonoBehaviour:
   m_favourCurrentPose: 0
   m_transformGoal: 1
   m_currentPoseFavour: 0.95
-  m_nextPoseToleranceTest: 0
+  m_nextPoseToleranceTest: 1
   m_nextPoseToleranceDist: 0.2
   m_nextPoseToleranceAngle: 2
   m_blendOutEarly: 0
@@ -170,7 +171,7 @@ MonoBehaviour:
   m_speedWarpLimits: {x: 0, y: 0}
   m_blendSpaceSmoothing: 0
   m_blendSpaceSmoothRate: {x: 0.25, y: 0.25}
-  m_maxMixCount: 5
+  m_maxMixCount: 8
   m_primaryBlendChannel: 0
   p_DIYPlayableGraph: 0
   p_manualInitialize: 0
@@ -181,7 +182,7 @@ MonoBehaviour:
   m_generalFoldout: 1
   m_animDataFoldout: 1
   m_optionsFoldout: 1
-  m_warpingFoldout: 0
+  m_warpingFoldout: 1
   m_optimisationFoldout: 0
   m_debugFoldout: 0
   m_callbackFoldout: 0
@@ -231,9 +232,9 @@ MonoBehaviour:
   p_recordingFrequency: 0
   p_sampleRate: 20
   p_flattenTrajectory: 0
-  m_simulationSpeedScale: 1
-  m_maxSpeed: 2
-  m_posBias: 15
+  m_simulationSpeedScale: 0.7
+  m_maxSpeed: 4
+  m_posBias: 13
   m_dirBias: 10
   m_trajectoryMode: 0
   m_controlMode: 0
@@ -246,6 +247,21 @@ MonoBehaviour:
   m_camTransform: {fileID: 0}
   m_mxmInputProfile: {fileID: 11400000, guid: e6185d4d8606f4149afac0695745b768, type: 2}
   m_trajectoryGeneratorModule: {fileID: 11400000, guid: bddf5707e0c392643adec21bb5f330ce, type: 2}
+--- !u!114 &6203410133962413261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4193123990707326441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea2c6168cd9bdf4ab60cbde5f75179e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetMaxSpeed: 1.8
+  _runSpeed: 8
+  _walkSpeed: 1.8
 --- !u!1001 &7094633775950658330
 PrefabInstance:
   m_ObjectHideFlags: 0

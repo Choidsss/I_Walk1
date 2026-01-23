@@ -18,3 +18,13 @@ MonoBehaviour:
     viableInput: 0
     posBias: 0
     dirBias: 0
+  - minInput: 0.3
+    maxInput: 0.8
+    viableInput: 0.3
+    posBias: 0
+    dirBias: 0
+  - minInput: 0.8
+    maxInput: 1.5
+    viableInput: 0.6
+    posBias: 0
+    dirBias: 0
