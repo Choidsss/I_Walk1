@@ -6,7 +6,7 @@ namespace I_Walk
     public class MxMInputManager : MonoBehaviour
     {
         MxMTrajectoryGenerator _mxm_T_Generator;
-        MxMAnimator _mxmAnimator; //BodyVelocity 체크용 => 추후 삭제 
+        //MxMAnimator _mxmAnimator; //BodyVelocity 체크용 => 추후 삭제 
 
         [SerializeField] float _targetMaxSpeed = 0.7f;
         [SerializeField] float _runSpeed = 6.0f;
@@ -16,12 +16,9 @@ namespace I_Walk
         void Start()
         {
             _mxm_T_Generator = GetComponent<MxMTrajectoryGenerator>();
-            _mxmAnimator = GetComponent<MxMAnimator>();
 
             if (_mxm_T_Generator == null)
                 Debug.LogError("TrajectoryGenerator 못 찾음!");
-            if (_mxmAnimator == null)
-                Debug.LogError("MxMAnimator 못 찾음!");
         }
 
         void Update()
@@ -41,8 +38,8 @@ namespace I_Walk
 
             _mxm_T_Generator.MaxSpeed = Mathf.Lerp(_mxm_T_Generator.MaxSpeed, _targetMaxSpeed, Time.deltaTime * 5f);
 
-            Debug.Log($"MaxSpeed: {_mxm_T_Generator.MaxSpeed:F2}");
-            Debug.Log($"BodyVelocity: {_mxmAnimator.BodyVelocity.magnitude:F2}");
+            //Debug.Log($"MaxSpeed: {_mxm_T_Generator.MaxSpeed:F2}");
+            //Debug.Log($"BodyVelocity: {_mxmAnimator.BodyVelocity.magnitude:F2}");
         }
 
         
