@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TagNamingModule
   m_EditorClassIdentifier: 
   m_tagNames:
-  - Combat Stance
+  - Pakour
   - Crouch
   - Strafe
   - general
