@@ -6,6 +6,7 @@ namespace I_Walk
     {
         [SerializeField] float _detectionRadius = 0;
 
+        
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.blue;
