@@ -18169,7 +18169,7 @@ MonoBehaviour:
   Events: []
   CalibrationSets:
   - CalibrationName: Calibration 0
-    PoseTrajectoryRatio: 0.9
+    PoseTrajectoryRatio: 0.6
     PoseVelocityWeight: 3
     PoseAspectMultiplier: 1
     PoseResultantVelocityMultiplier: 0.2
