@@ -10,8 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8234919371567782439}
   - component: {fileID: 5440725522483955394}
+  - component: {fileID: 4249115664023831409}
   - component: {fileID: 7533112935252137881}
   - component: {fileID: 3450527367875024820}
+  - component: {fileID: 3589629533616621211}
+  - component: {fileID: 913188623132990140}
   m_Layer: 11
   m_Name: NPC5
   m_TagString: NPCs
@@ -58,6 +61,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!135 &4249115664023831409
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4326243496361589951}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 15
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &7533112935252137881
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -108,6 +132,35 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!114 &3589629533616621211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4326243496361589951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7c6570bd65ddf64f9f295a438d09e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _detectionRadius: 15
+--- !u!114 &913188623132990140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4326243496361589951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd71d5b07d958e458e189d164494d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationSpeed: 1
+  _hopSpeed: 1
+  _hopAmound: 1
+  _bangMark: {fileID: 7421102054033287322}
 --- !u!1001 &1742207931507681217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -935,6 +988,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2e057f9c821a914c95ef79e3a673e56, type: 3}
+--- !u!1 &7421102054033287322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 784943664356881892, guid: b2e057f9c821a914c95ef79e3a673e56, type: 3}
+  m_PrefabInstance: {fileID: 7789436136123538814}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7905748446112592416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 121455035113484126, guid: b2e057f9c821a914c95ef79e3a673e56, type: 3}

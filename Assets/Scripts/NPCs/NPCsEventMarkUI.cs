@@ -4,17 +4,32 @@ namespace I_Walk
 {
     public class NPCsEventMarkUI : MonoBehaviour
     {
+        [Header("BangMark Animation Settings")]
+        [SerializeField] float _rotationSpeed = 1.0f;
+        [SerializeField] float _hopSpeed = 1.0f;
+        [SerializeField] float _hopAmound = 1.0f;
+
+        [Header("Bang Mark")]
         [SerializeField] GameObject _bangMark;
 
-        bool _isPlayer = false;
+        NPCsDetectionRange _npcDetection;
 
+        float _defaultY;
+        Vector3 _localPos;
 
-        //****************ToDo : Player Checking************************
-        //방법 1 : 콜리더를 크게 하나 트리거로 만들어서 안에 들어왔는지 체크
-        //방법 2 : SerializeField로 Player를 집어넣어서 얘가 있는지 없는지 체크
-        //방법 3 : 안에 있는 애들을 배열에 넣고 빼서, 태그가 Player인 애 찾는방법
+        // ***************ToDo : Y축 기준으로 돌리기, Y축의 좌표값을 높였다, 낮췄다 해보기****************
         void Start()
         {
+            _npcDetection = GetComponent<NPCsDetectionRange>();
+
+            if (_bangMark == null)
+            {
+                Debug.Log("이모지가 존재하지 않습니다");
+            }
+
+            _localPos = _bangMark.transform.localPosition;
+            _defaultY = _localPos.y;
+
             _bangMark.SetActive(false);   
         }
 
@@ -27,14 +42,32 @@ namespace I_Walk
 
         void ShowBangMark()
         {
-            if(_isPlayer == true)
+            if (_npcDetection == null)
+            {
+                Debug.Log("NPCsDetectionRange 스크립트가 존재하지 않습니다");
+            }
+
+
+            if(_npcDetection.IsPlayer == true)
             {
                 _bangMark.SetActive(true);
+
+                BangMarkAnimation();
             }
             else
             {
                 _bangMark.SetActive(false);
             }
+        }
+
+        void BangMarkAnimation()
+        {
+            _bangMark.transform.Rotate(Vector3.up * _rotationSpeed * Time.deltaTime);
+
+            float bounce = Mathf.Abs(Mathf.Sin(Time.time * _hopSpeed)) * _hopAmound;
+            float posY = _defaultY + bounce;
+
+            _bangMark.transform.localPosition = new Vector3(_localPos.x, posY, _localPos.z);
         }
     }
 }
