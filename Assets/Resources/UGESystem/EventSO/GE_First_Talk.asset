@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e61e9adde95d3a4418c2ca934b48d984, type: 3}
+  m_Name: GE_First_Talk
+  m_EditorClassIdentifier: 
+  <Guid>k__BackingField: 46fcee09-c2a9-4528-8e7b-f78902d7b2fa
+  _archetype: 2
+  _commands:
+  - rid: 826819114396811353
+  - rid: 826819114396811354
+  - rid: 826819114396811355
+  references:
+    version: 2
+    RefIds:
+    - rid: 826819114396811353
+      type: {class: BackgroundCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 2
+        _isNodeExpanded: 1
+        _action: 0
+        _type: 0
+        _image: {fileID: 2800000, guid: b767a1020fc05ec428b917637b1d4292, type: 3}
+        _video: {fileID: 0}
+    - rid: 826819114396811354
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 1
+        _dialogueText: 'Test Message
+
+'
+        _characterName: ce2f0f6d-6c28-481e-98aa-ad4f62583e27
+        _expression: dismissinggesture
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 1
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
+    - rid: 826819114396811355
+      type: {class: EndCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 7
+        _isNodeExpanded: 0
+        _rewards: []
+        _isBranching: 0
+        _targetNodeID: 
