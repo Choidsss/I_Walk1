@@ -768,7 +768,7 @@ MonoBehaviour:
   _characterNameText: {fileID: 1419680841}
   _dialogueText: {fileID: 1419680842}
   _continueButton: {fileID: 1419680840}
-  _dialogueSizeAdjuster: {fileID: 0}
+  _dialogueSizeAdjuster: {fileID: 323178174}
   _choiceBox: {fileID: 1419680850}
   _choiceButtons:
   - {fileID: 1419680849}
@@ -968,6 +968,17 @@ Transform:
   - {fileID: 1608338582}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &323178174 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6026646513809740433, guid: eb299d2487dd664448826e35fc2b7bb8, type: 3}
+  m_PrefabInstance: {fileID: 1419680839}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419680843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ee323a99cdea8449e20f99cb09caf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UGESystem.TMP_ContentSizeAdjuster
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2270,6 +2281,10 @@ PrefabInstance:
       propertyPath: m_camTransform
       value: 
       objectReference: {fileID: 330585546}
+    - target: {fileID: 2820251321718752325, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 419057a67ce1e784dbdef19af1915807, type: 2}
     - target: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2323,6 +2338,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+--- !u!1 &701313020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 701313021}
+  m_Layer: 0
+  m_Name: '******************ToDo : RayCast Check and Story Writing *********************************'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &701313021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701313020}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 89.64299, y: -5.7432055, z: 74.99922}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &734271581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6382,6 +6428,7 @@ SceneRoots:
   - {fileID: 108902496}
   - {fileID: 1881308748}
   - {fileID: 1454391952}
+  - {fileID: 701313021}
   - {fileID: 741012321}
   - {fileID: 1419680839}
   - {fileID: 123512927}
