@@ -56,7 +56,7 @@ MonoBehaviour:
       type: {class: ChoiceCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 3
-        _isNodeExpanded: 0
+        _isNodeExpanded: 1
         _choices:
         - _text: I'm looking around the village.
           _targetLabel: Friendly
@@ -66,7 +66,7 @@ MonoBehaviour:
       type: {class: CharacterCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 1
-        _isNodeExpanded: 1
+        _isNodeExpanded: 0
         _characterId: e7cbf9bb-40af-4380-86c8-549267f4942f
         _action: 0
         _position: 2
