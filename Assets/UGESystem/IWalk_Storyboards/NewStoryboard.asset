@@ -26,7 +26,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 1
         _isRepeatable: 0
-        _position: {x: -66, y: 3}
+        _position: {x: -281, y: -50}
         _startConditions: []
         _nextNodeIDs: []
         GameEventAsset: {fileID: 11400000, guid: 56dd688d3d9c55747a5ade5f4ac8c649, type: 2}
