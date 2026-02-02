@@ -46,8 +46,8 @@ GameObject:
   - component: {fileID: 2349883894179720059}
   - component: {fileID: 780720116998529268}
   - component: {fileID: 6203410133962413261}
-  - component: {fileID: 4566678928910145728}
-  m_Layer: 9
+  - component: {fileID: 3126290721040579497}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ Animator:
   m_GameObject: {fileID: 4193123990707326441}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ac7fbe4d69a6ad94485f10daa85dd05f, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 419057a67ce1e784dbdef19af1915807, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -295,7 +295,7 @@ MonoBehaviour:
   _targetMaxSpeed: 1.8
   _runSpeed: 8
   _walkSpeed: 1.8
---- !u!114 &4566678928910145728
+--- !u!114 &3126290721040579497
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -304,11 +304,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4193123990707326441}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81e5425f990479c4f8888b7867f4a5f4, type: 3}
+  m_Script: {fileID: 11500000, guid: dd59c66189b834547b4a228532d14c70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _castRange: 5
-  _startPos: {fileID: 6986901193077456142}
+  _interactionDistance: 3
+  _interactableLayer:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!1001 &7094633775950658330
 PrefabInstance:
   m_ObjectHideFlags: 0

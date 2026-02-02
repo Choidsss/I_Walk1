@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: e5c6636a3be3b6a409bf69f7fbfb8fef, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1067,7 +1067,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.21737659, y: 1.5119325e-10, z: -3.367102e-11, w: 0.9760878}
-  m_LocalPosition: {x: 77.026, y: 2.559, z: 44.711}
+  m_LocalPosition: {x: 76.962, y: 2.559, z: 39.908}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2281,21 +2281,13 @@ PrefabInstance:
       propertyPath: m_camTransform
       value: 
       objectReference: {fileID: 330585546}
-    - target: {fileID: 2820251321718752325, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 419057a67ce1e784dbdef19af1915807, type: 2}
     - target: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4566678928910145728, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: _castRange
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6344404696354205859, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 77.026
+      value: 76.962
       objectReference: {fileID: 0}
     - target: {fileID: 6344404696354205859, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2303,7 +2295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6344404696354205859, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 47.711
+      value: 42.908
       objectReference: {fileID: 0}
     - target: {fileID: 6344404696354205859, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2338,37 +2330,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
---- !u!1 &701313020
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 701313021}
-  m_Layer: 0
-  m_Name: '******************ToDo : RayCast Check and Story Writing *********************************'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &701313021
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 701313020}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 89.64299, y: -5.7432055, z: 74.99922}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &734271581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2496,7 +2457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d2fac72e4100134a8ebc485c93eac98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _storyboard: {fileID: 11400000, guid: 26047454d95e48f4ca3835b13c72a700, type: 2}
+  _storyboard: {fileID: 11400000, guid: 2d509dfbb62460a4f8b0c556f5312cc1, type: 2}
   _priority: 0
   _runnerId: 1985fe44-44e1-4297-b221-71b244f9f363
 --- !u!1001 &756546067
@@ -3224,6 +3185,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2125242488241799042, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3894476476696581399, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 77.091415
@@ -3267,6 +3232,14 @@ PrefabInstance:
     - target: {fileID: 4398088035677913499, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
       propertyPath: m_Name
       value: NPC1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398088035677913499, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398088035677913499, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5421,7 +5394,7 @@ Transform:
   m_GameObject: {fileID: 1668578861}
   serializedVersion: 2
   m_LocalRotation: {x: 0.21737659, y: 1.4651601e-10, z: -1.26688104e-11, w: 0.9760878}
-  m_LocalPosition: {x: 77.026, y: 2.559, z: 44.711}
+  m_LocalPosition: {x: 76.962, y: 2.559, z: 39.908}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6428,7 +6401,6 @@ SceneRoots:
   - {fileID: 108902496}
   - {fileID: 1881308748}
   - {fileID: 1454391952}
-  - {fileID: 701313021}
   - {fileID: 741012321}
   - {fileID: 1419680839}
   - {fileID: 123512927}
