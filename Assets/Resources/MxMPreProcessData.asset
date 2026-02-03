@@ -2404,7 +2404,7 @@ MonoBehaviour:
   - User Tag 32
   m_eventNames: []
   m_getBonesByName: 0
-  m_lastSaveDirectory: Assets/MotionMatchingQuickStart/MxMAnimDataCH44
+  m_lastSaveDirectory: Assets/Resources/IWalk_MotionMatchingQuickStart/MxMAnimDataCH44
   m_lastCreatedAnimData: {fileID: 11400000, guid: 2255da0b3843f84408cf0aacf188203f, type: 2}
   m_hideSubAssets: 1
   m_jointVelocityGlobal: 0
