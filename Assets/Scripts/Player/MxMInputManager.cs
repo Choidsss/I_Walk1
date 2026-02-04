@@ -6,42 +6,38 @@ namespace I_Walk
     public class MxMInputManager : MonoBehaviour
     {
         MxMTrajectoryGenerator _mxm_T_Generator;
-        //MxMAnimator _mxmAnimator; //BodyVelocity 체크용 => 추후 삭제 
+        MxMAnimator _mxmAnimator;
 
-        [SerializeField] float _targetMaxSpeed = 0.7f;
         [SerializeField] float _runSpeed = 6.0f;
         [SerializeField] float _walkSpeed = 1.0f;
-        //[SerializeField] float _jogSpeed = 1.7f;
 
+        float _targetSpeed;
+        
         void Start()
         {
             _mxm_T_Generator = GetComponent<MxMTrajectoryGenerator>();
+            _mxmAnimator = GetComponent<MxMAnimator>();
 
             if (_mxm_T_Generator == null)
-                Debug.LogError("TrajectoryGenerator 못 찾음!");
+                Debug.LogError("Can't find a TrajectoryGenerator!, Check the Component");
+            if (_mxmAnimator == null)
+                Debug.LogError("Can't find a MxMAnimator!, Check the Component");
         }
 
         void Update()
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                _mxm_T_Generator.MaxSpeed = _runSpeed; // 달리기
+                _mxmAnimator.SetRequiredTag("Run");
+                _targetSpeed = _runSpeed;
             }
-            //else if (Input.GetKey(KeyCode.LeftControl))
-            //{
-            //    _mxm_T_Generator.MaxSpeed = _jogSpeed; //조깅
-            //}
             else
             {
-                _mxm_T_Generator.MaxSpeed = _walkSpeed; // 걷기
+                _mxmAnimator.ClearRequiredTags();
+                _targetSpeed = _walkSpeed;
             }
 
-            _mxm_T_Generator.MaxSpeed = Mathf.Lerp(_mxm_T_Generator.MaxSpeed, _targetMaxSpeed, Time.deltaTime * 5f);
-
-            //Debug.Log($"MaxSpeed: {_mxm_T_Generator.MaxSpeed:F2}");
-            //Debug.Log($"BodyVelocity: {_mxmAnimator.BodyVelocity.magnitude:F2}");
+            _mxm_T_Generator.MaxSpeed = Mathf.Lerp(_mxm_T_Generator.MaxSpeed, _targetSpeed, Time.deltaTime * 5f);
         }
-
-        
     }
 }
