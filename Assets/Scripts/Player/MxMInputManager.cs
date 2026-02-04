@@ -19,9 +19,13 @@ namespace I_Walk
             _mxmAnimator = GetComponent<MxMAnimator>();
 
             if (_mxm_T_Generator == null)
+            {
                 Debug.LogError("Can't find a TrajectoryGenerator!, Check the Component");
+            }
             if (_mxmAnimator == null)
+            {
                 Debug.LogError("Can't find a MxMAnimator!, Check the Component");
+            }
         }
 
         void Update()
@@ -29,6 +33,7 @@ namespace I_Walk
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 _mxmAnimator.SetRequiredTag("Run");
+                //_mxmAnimator.SetFavourTag("Sprint", 5f);
                 _targetSpeed = _runSpeed;
             }
             else

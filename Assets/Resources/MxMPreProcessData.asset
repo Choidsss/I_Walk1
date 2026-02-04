@@ -2795,7 +2795,7 @@ MonoBehaviour:
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 32
-  GlobalFavourTags: 0
+  GlobalFavourTags: 4
   TagTracks: []
   FavourTagTracks: []
   Events: []

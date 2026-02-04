@@ -66,16 +66,20 @@ MonoBehaviour:
     <Is3D>k__BackingField: 1
     <Prefab>k__BackingField: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
     <Expressions>k__BackingField:
-    - <ExpressionName>k__BackingField: lookawaygesture
-      <AnimationStateName>k__BackingField: lookawaygesture
+    - <ExpressionName>k__BackingField: LookAway Gesture
+      <AnimationStateName>k__BackingField: LookAway Gesture
+    - <ExpressionName>k__BackingField: Angry Gesture
+      <AnimationStateName>k__BackingField: Angry Gesture
+    - <ExpressionName>k__BackingField: Dissmissing Gesture
+      <AnimationStateName>k__BackingField: Dissmissing Gesture
   - <CharacterID>k__BackingField: ce2f0f6d-6c28-481e-98aa-ad4f62583e27
     <Name>k__BackingField: IWalkNPC1
     <Is3D>k__BackingField: 1
     <Prefab>k__BackingField: {fileID: 4398088035677913499, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
     <Expressions>k__BackingField:
-    - <ExpressionName>k__BackingField: acknowledging
-      <AnimationStateName>k__BackingField: acknowledging
-    - <ExpressionName>k__BackingField: dismissinggesture
-      <AnimationStateName>k__BackingField: dismissinggesture
-    - <ExpressionName>k__BackingField: angrygesture
-      <AnimationStateName>k__BackingField: angrygesture
+    - <ExpressionName>k__BackingField: Knowledge
+      <AnimationStateName>k__BackingField: Knowledge
+    - <ExpressionName>k__BackingField: Happy Hand Gesture
+      <AnimationStateName>k__BackingField: Happy Hand Gesture
+    - <ExpressionName>k__BackingField: Angry Gesture
+      <AnimationStateName>k__BackingField: Angry Gesture

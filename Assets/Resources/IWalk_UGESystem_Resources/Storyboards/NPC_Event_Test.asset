@@ -39,7 +39,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 0
         _isRepeatable: 1
-        _position: {x: 421, y: 4}
+        _position: {x: 445, y: 0}
         _startConditions:
         - rid: 7554041859222536293
         _nextNodeIDs: []

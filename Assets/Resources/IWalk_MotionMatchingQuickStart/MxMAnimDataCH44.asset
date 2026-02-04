@@ -13145,7 +13145,7 @@ MonoBehaviour:
     - Position: {x: 0.64124465, y: 0, z: 5.929549}
       FacingAngle: 7.7941284
     Tags: 32
-    FavourTags: 0
+    FavourTags: 4
     GenericTags: 0
     UserTags: 0
     AnimType: 3
@@ -13179,7 +13179,7 @@ MonoBehaviour:
     - Position: {x: 1.5549767, y: 0, z: 5.7444}
       FacingAngle: 5.166748
     Tags: 32
-    FavourTags: 0
+    FavourTags: 4
     GenericTags: 0
     UserTags: 0
     AnimType: 3
@@ -13213,7 +13213,7 @@ MonoBehaviour:
     - Position: {x: 1.5335555, y: 0, z: 5.735822}
       FacingAngle: -1.1768799
     Tags: 32
-    FavourTags: 0
+    FavourTags: 4
     GenericTags: 0
     UserTags: 0
     AnimType: 3
@@ -13247,7 +13247,7 @@ MonoBehaviour:
     - Position: {x: 0.9422196, y: 0, z: 5.8689337}
       FacingAngle: -4.100952
     Tags: 32
-    FavourTags: 0
+    FavourTags: 4
     GenericTags: 0
     UserTags: 0
     AnimType: 3
@@ -13281,7 +13281,7 @@ MonoBehaviour:
     - Position: {x: 0.39049065, y: 0, z: 5.9374905}
       FacingAngle: -3.6454773
     Tags: 32
-    FavourTags: 0
+    FavourTags: 4
     GenericTags: 0
     UserTags: 0
     AnimType: 3
@@ -13315,7 +13315,7 @@ MonoBehaviour:
     - Position: {x: -0.8820788, y: 0, z: 5.883189}
       FacingAngle: -8.935028
     Tags: 32
-    FavourTags: 0
+    FavourTags: 4
     GenericTags: 0
     UserTags: 0
     AnimType: 3
@@ -13349,7 +13349,7 @@ MonoBehaviour:
     - Position: {x: -1.6258483, y: 0, z: 5.713317}
       FacingAngle: 356.5632
     Tags: 32
-    FavourTags: 0
+    FavourTags: 4
     GenericTags: 0
     UserTags: 0
     AnimType: 3
@@ -13383,7 +13383,7 @@ MonoBehaviour:
     - Position: {x: -1.2997189, y: 0, z: 5.784428}
       FacingAngle: -357.3437
     Tags: 32
-    FavourTags: 0
+    FavourTags: 4
     GenericTags: 0
     UserTags: 0
     AnimType: 3
@@ -13417,7 +13417,7 @@ MonoBehaviour:
     - Position: {x: -1.1243641, y: 0, z: 5.825336}
       FacingAngle: 0.8817444
     Tags: 32
-    FavourTags: 0
+    FavourTags: 4
     GenericTags: 0
     UserTags: 0
     AnimType: 3
@@ -13451,7 +13451,7 @@ MonoBehaviour:
     - Position: {x: -0.78321016, y: 0, z: 5.8864617}
       FacingAngle: 2.826355
     Tags: 32
-    FavourTags: 0
+    FavourTags: 4
     GenericTags: 0
     UserTags: 0
     AnimType: 3
