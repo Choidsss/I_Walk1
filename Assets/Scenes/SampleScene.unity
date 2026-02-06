@@ -3213,14 +3213,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1771701462422100701, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
-      propertyPath: _interactionRange
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2125242488241799042, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 1641027506926774478, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
+      propertyPath: _tmpGUI
+      value: 
+      objectReference: {fileID: 1419680842}
     - target: {fileID: 3894476476696581399, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 77.091415
@@ -3264,18 +3260,6 @@ PrefabInstance:
     - target: {fileID: 4398088035677913499, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
       propertyPath: m_Name
       value: NPC1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4398088035677913499, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4398088035677913499, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5251676857677051525, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
-      propertyPath: _detectionRadius
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

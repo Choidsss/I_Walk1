@@ -22,7 +22,7 @@ namespace UGESystem
             if (Input.GetKeyDown(KeyCode.F))
             {
                 TryInteract();
-                Debug.Log("Check");
+                //Debug.Log("Check");
             }
         }
 
@@ -43,7 +43,7 @@ namespace UGESystem
                 InteractableObject interactable = hit.collider.GetComponent<InteractableObject>();
                 if (interactable != null)
                 {
-                    Debug.Log($"{interactable.InteractionID}");
+                    //Debug.Log($"{interactable.InteractionID}");
                     if (string.IsNullOrEmpty(interactable.InteractionID))
                     {
 #if UNITY_EDITOR
