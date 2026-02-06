@@ -1,21 +1,21 @@
+using UGESystem;
 using UnityEngine;
 
 namespace I_Walk
 {
     public class NPCEmotions : MonoBehaviour
     {
-        //bool _isDialoguePrinted = false;
-
-        //public bool IsDialoguePrinted { get { return _isDialoguePrinted; } set { _isDialoguePrinted = value; } }
+        [SerializeField] GameObject _obj;
 
         void Start()
         {
-        
+
         }
 
         void Update()
         {
-        
+            
+            //Debug.Log()
         }
     }
 }
