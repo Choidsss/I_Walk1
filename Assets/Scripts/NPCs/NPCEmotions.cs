@@ -6,15 +6,10 @@ namespace I_Walk
 {
     public class NPCEmotions : MonoBehaviour
     {
-        Animator _anim;
-        
         [SerializeField] TextMeshProUGUI _tmpGUI;
+        
+        Animator _anim;
 
-        /*
-         * 글자 찍히는거 => 확인 완료
-         * 
-         * ToDo : 특정 문자열이 찍히면 그에 맞는 이모션이 나가도록 ==> 테스트 완료
-         */
         void Start()
         {
             _anim = GetComponent<Animator>();
@@ -22,8 +17,9 @@ namespace I_Walk
 
         void Update()
         {
-            if (_tmpGUI.text == "good job")
+            if (_tmpGUI.text == "평소에는 안늦더니...어쩌다가 늦었니?")
             {
+                //애니메이션이 반복재생됨 => 한번만 재생되도록 수정
                 _anim.SetTrigger("Cocky");
             }
         }
