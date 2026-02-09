@@ -15,13 +15,15 @@ GameObject:
   - component: {fileID: 7376724970749286470}
   - component: {fileID: 2557637993606359707}
   - component: {fileID: 5944346139014564889}
+  - component: {fileID: 1235521375112831661}
+  - component: {fileID: 4822148134179383378}
   m_Layer: 11
   m_Name: NPC2
   m_TagString: NPCs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5889281606379320011
 Transform:
   m_ObjectHideFlags: 0
@@ -161,6 +163,33 @@ MonoBehaviour:
   _hopSpeed: 1
   _hopAmound: 1
   _bangMark: {fileID: 6147342541828856989}
+--- !u!114 &1235521375112831661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8887721094376060984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a74246f3b2ebea24eb83051699144337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tmpGUI: {fileID: 0}
+--- !u!114 &4822148134179383378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8887721094376060984}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f6af3fdb7e17d4ca567e75471ed3b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionID: 
+  _interactionRange: 2
 --- !u!1001 &5680900411590291544
 PrefabInstance:
   m_ObjectHideFlags: 0
