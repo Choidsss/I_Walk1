@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3450527367875024820}
   - component: {fileID: 3589629533616621211}
   - component: {fileID: 913188623132990140}
+  - component: {fileID: 5911845427999460921}
   m_Layer: 11
   m_Name: NPC5
   m_TagString: NPCs
@@ -161,6 +162,20 @@ MonoBehaviour:
   _hopSpeed: 1
   _hopAmound: 1
   _bangMark: {fileID: 7421102054033287322}
+--- !u!114 &5911845427999460921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4326243496361589951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f6af3fdb7e17d4ca567e75471ed3b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionID: 
+  _interactionRange: 2
 --- !u!1001 &1742207931507681217
 PrefabInstance:
   m_ObjectHideFlags: 0

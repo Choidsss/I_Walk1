@@ -16,6 +16,7 @@ MonoBehaviour:
   _eventNodes:
   - rid: 7554041859222536280
   - rid: 7554041859222536289
+  - rid: 7554042040016961542
   references:
     version: 2
     RefIds:
@@ -49,3 +50,21 @@ MonoBehaviour:
       data:
         <Description>k__BackingField: Player interacts with a specific object.
         <TargetInteractionID>k__BackingField: NpcTalk
+    - rid: 7554042040016961542
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: cbb7bc50-1fd1-469d-be98-a9d7c983e903
+        _name: LunchTime_Talk
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 940, y: 3}
+        _startConditions:
+        - rid: 7554042040016961543
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: 07ad3ec3be90d7c41807c9481763dd6c, type: 2}
+    - rid: 7554042040016961543
+      type: {class: InteractionTriggeredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player interacts with a specific object.
+        <TargetInteractionID>k__BackingField: LunchTime
