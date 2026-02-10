@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e61e9adde95d3a4418c2ca934b48d984, type: 3}
-  m_Name: NewGameEvent 2
+  m_Name: I_RunAway_FromCompany
   m_EditorClassIdentifier: 
-  <Guid>k__BackingField: d3feea92-5af3-4b3e-b20d-4d9796bbcbda
+  <Guid>k__BackingField: f68c556d-fe35-4227-b487-f89b1c5eb6e5
   _archetype: 0
   _commands: []
   references:
