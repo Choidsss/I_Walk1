@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e61e9adde95d3a4418c2ca934b48d984, type: 3}
-  m_Name: Company_Interview
+  m_Name: Companey_Interview
   m_EditorClassIdentifier: 
   <Guid>k__BackingField: 099b1f2a-b8b6-4180-ad73-4f77d3248be9
   _archetype: 1
