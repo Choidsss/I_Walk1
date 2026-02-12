@@ -26,7 +26,7 @@ MonoBehaviour:
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
-        _isNodeExpanded: 1
+        _isNodeExpanded: 0
         _dialogueText: "\uC2DC\uAC04\uC774 \uC9C0\uB098\uACE0 \uC5B4\uB290\uB367
           \uB300"
         _characterName: 
