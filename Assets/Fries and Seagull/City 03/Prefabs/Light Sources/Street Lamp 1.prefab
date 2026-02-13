@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6858047028456008398}
   - component: {fileID: 5322580507782379366}
+  - component: {fileID: 3840680102841774922}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -40,9 +41,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3685171989860980535}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 2
-  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 5.58
@@ -92,8 +92,35 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
+--- !u!114 &3840680102841774922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3685171989860980535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &7039381655660338663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -103,32 +130,44 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 902225e1ed47d664496da4ed2bafcefd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8124
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 902225e1ed47d664496da4ed2bafcefd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8124
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 902225e1ed47d664496da4ed2bafcefd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.8124
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 902225e1ed47d664496da4ed2bafcefd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 132.88
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 902225e1ed47d664496da4ed2bafcefd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.7486801
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 902225e1ed47d664496da4ed2bafcefd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 187.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 902225e1ed47d664496da4ed2bafcefd, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7154521
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 902225e1ed47d664496da4ed2bafcefd, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 902225e1ed47d664496da4ed2bafcefd, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.69866186
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 902225e1ed47d664496da4ed2bafcefd, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 902225e1ed47d664496da4ed2bafcefd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -136,7 +175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 902225e1ed47d664496da4ed2bafcefd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -88.639
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 902225e1ed47d664496da4ed2bafcefd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
