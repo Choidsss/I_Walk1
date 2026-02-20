@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2425b0a175710b049b871c6db3615154
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Examples/Resources/UGESystem/CharacterData/CharacterDatabase.asset
+  uploadId: 863032

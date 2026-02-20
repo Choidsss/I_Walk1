@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: c91f41e3492d0a54a8d1b833bd06285c
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Data/JsonConverters/Vector2Converter.cs
+  uploadId: 863032

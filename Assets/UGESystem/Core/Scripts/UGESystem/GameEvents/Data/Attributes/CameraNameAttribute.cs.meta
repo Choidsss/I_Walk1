@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 2965c8fd4c4c27243acb4c40c04661f4
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Data/Attributes/CameraNameAttribute.cs
+  uploadId: 863032

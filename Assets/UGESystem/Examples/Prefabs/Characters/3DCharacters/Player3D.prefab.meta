@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b26cc465f280fb64692b4b496518e8fe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Examples/Prefabs/Characters/3DCharacters/Player3D.prefab
+  uploadId: 863032

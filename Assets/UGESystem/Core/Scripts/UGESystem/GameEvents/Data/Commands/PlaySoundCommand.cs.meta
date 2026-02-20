@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: cbf5dc3655e3a36468cc9fe97451ecca
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Data/Commands/PlaySoundCommand.cs
+  uploadId: 863032

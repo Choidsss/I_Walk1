@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 51d46d2e7ac660c4891fe723b525c4a4
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Data/Attributes/RunnerIdAttribute.cs
+  uploadId: 863032

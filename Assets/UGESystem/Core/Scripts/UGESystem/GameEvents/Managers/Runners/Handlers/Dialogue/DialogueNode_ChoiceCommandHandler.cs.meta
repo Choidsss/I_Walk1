@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 99bae98f17f3aba45b5b18f3d9a43532
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Managers/Runners/Handlers/Dialogue/DialogueNode_ChoiceCommandHandler.cs
+  uploadId: 863032

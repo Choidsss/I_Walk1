@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282236a47d058574c89356611d465943, type: 3}
+  m_Name: CharacterDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::UGESystem.CharacterDatabase
+  _characters:
+  - <CharacterID>k__BackingField: 4efbc079-6e06-4590-a7a5-b6c65990b5da
+    <Name>k__BackingField: Player
+    <Is3D>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+  - <CharacterID>k__BackingField: 12955645-38ea-4994-8271-ab2c8fd54b34
+    <Name>k__BackingField: NPC_Teacher
+    <Is3D>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 4398088035677913499, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+  - <CharacterID>k__BackingField: ecc68017-1e67-4701-8e8f-e96ebd68000c
+    <Name>k__BackingField: NPC_InterviewPanel
+    <Is3D>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 8887721094376060984, guid: 8f4d47d2d4c11ee4eae566bfc1222d42, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+  - <CharacterID>k__BackingField: fb8b895a-caa6-40a1-9a7b-1b50b7e72cf3
+    <Name>k__BackingField: NPC_RooMmate1
+    <Is3D>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 6574769759565292371, guid: a870f6cfcb42987469990d5b51e9c904, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+  - <CharacterID>k__BackingField: ad71761b-c31e-445c-9060-7be3d7334a7d
+    <Name>k__BackingField: NPC_RoomMate2
+    <Is3D>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 8294109395822940102, guid: 33597b2e372d8d94f8fa39d077add9bd, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+  - <CharacterID>k__BackingField: 3bb6100e-435d-49cb-a527-74435f0ae1f6
+    <Name>k__BackingField: NPC_AssemblySupervisor
+    <Is3D>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 4564802698652820844, guid: 35e7baaef1b49c04dbd94f88f097b067, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+  - <CharacterID>k__BackingField: 17cd9bd1-314c-4836-8414-e4e58efcb71c
+    <Name>k__BackingField: NPC_Executive
+    <Is3D>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 6379393437632401504, guid: 1c9e243aa60a0774dbe8e248f2afb5d4, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+  - <CharacterID>k__BackingField: 0eb6fe9c-413b-447a-9774-7f1f45701363
+    <Name>k__BackingField: NPC_Friend1
+    <Is3D>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 1870329947790349537, guid: ccd61b20b129ed2488b23e125c4e1dad, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+  - <CharacterID>k__BackingField: bfcb1cbc-80e6-4b70-99e9-79396e3ebecf
+    <Name>k__BackingField: NPC_ComManager2
+    <Is3D>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 2052806698560310391, guid: 17536fda628a8504b9bec8f02bcbf309, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+  - <CharacterID>k__BackingField: 917441cc-07ba-4059-8afc-2190ece7ecac
+    <Name>k__BackingField: NPC_Friend2
+    <Is3D>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 4326243496361589951, guid: 76cbd43d2ce63bf4bb557f59fcddff0c, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default

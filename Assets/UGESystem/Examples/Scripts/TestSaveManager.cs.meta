@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 7036720db2669da45b7db847e80c0c62
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Examples/Scripts/TestSaveManager.cs
+  uploadId: 863032

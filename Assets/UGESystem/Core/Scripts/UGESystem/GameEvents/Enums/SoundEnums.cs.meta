@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: e169214de5b7f6f45860e936f8eee9b5
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Enums/SoundEnums.cs
+  uploadId: 863032

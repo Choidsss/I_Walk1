@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 26512e9fc51ff8845957d35f518d8c4f
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Data/Commands/TriggerEventCommand.cs
+  uploadId: 863032

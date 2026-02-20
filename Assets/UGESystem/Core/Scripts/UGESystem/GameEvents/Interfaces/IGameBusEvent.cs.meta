@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 63d6b1e6838b70e49bba813e2a33e375
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Interfaces/IGameBusEvent.cs
+  uploadId: 863032

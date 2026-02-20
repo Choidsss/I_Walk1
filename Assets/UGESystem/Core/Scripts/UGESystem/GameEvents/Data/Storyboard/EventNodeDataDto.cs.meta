@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 6eae7780dedd5444f92b191f1941a256
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Data/Storyboard/EventNodeDataDto.cs
+  uploadId: 863032

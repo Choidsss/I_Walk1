@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 859ee12584a426445a2b04cb9022d926
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Managers/Runners/Handlers/Dialogue/ScreenEffectCommandHandler.cs
+  uploadId: 863032

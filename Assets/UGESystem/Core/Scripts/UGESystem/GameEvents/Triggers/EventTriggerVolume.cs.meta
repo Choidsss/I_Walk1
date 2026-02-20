@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 323a9728b515df04e84b1c18e2670ff6
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Triggers/EventTriggerVolume.cs
+  uploadId: 863032

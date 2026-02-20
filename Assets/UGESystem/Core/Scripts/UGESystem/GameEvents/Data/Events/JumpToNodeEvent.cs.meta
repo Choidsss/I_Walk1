@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: ad2e036daa0ff8648b5097de1a697320
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Data/Events/JumpToNodeEvent.cs
+  uploadId: 863032

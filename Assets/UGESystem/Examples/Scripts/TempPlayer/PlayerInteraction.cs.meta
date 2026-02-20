@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: dd59c66189b834547b4a228532d14c70
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Examples/Scripts/TempPlayer/PlayerInteraction.cs
+  uploadId: 863032

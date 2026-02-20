@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 4b8c0d3fb7df7b5478ff994660c3b3a1
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Managers/Runners/GameEventNodeRunner.cs
+  uploadId: 863032

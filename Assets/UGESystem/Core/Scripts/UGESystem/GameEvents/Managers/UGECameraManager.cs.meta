@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: d5429b64343e4c54b8bfe290a48c7c69
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Managers/UGECameraManager.cs
+  uploadId: 863032

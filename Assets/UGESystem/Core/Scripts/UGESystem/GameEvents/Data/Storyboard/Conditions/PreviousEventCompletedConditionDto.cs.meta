@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 4defbb46f199b4644b900c94dac064eb
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Data/Storyboard/Conditions/PreviousEventCompletedConditionDto.cs
+  uploadId: 863032

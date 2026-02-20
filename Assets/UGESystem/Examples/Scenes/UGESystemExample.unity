@@ -218,6 +218,17 @@ MonoBehaviour:
     DissipationDistance: 100
     PropagationSpeed: 343
   DefaultVelocity: {x: 0, y: -1, z: 0}
+--- !u!114 &354715235 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5536987635253516390, guid: eb299d2487dd664448826e35fc2b7bb8, type: 3}
+  m_PrefabInstance: {fileID: 612740699}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1 &381388003
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +662,10 @@ PrefabInstance:
     - target: {fileID: 3657363175893809046, guid: eb299d2487dd664448826e35fc2b7bb8, type: 3}
       propertyPath: m_Name
       value: VNEventCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039778837420298901, guid: eb299d2487dd664448826e35fc2b7bb8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 46.999756
       objectReference: {fileID: 0}
     - target: {fileID: 6347946412344735081, guid: eb299d2487dd664448826e35fc2b7bb8, type: 3}
       propertyPath: m_Pivot.x
@@ -1232,6 +1247,7 @@ MonoBehaviour:
   _dialogueText: {fileID: 612740702}
   _continueButton: {fileID: 612740700}
   _dialogueSizeAdjuster: {fileID: 1851042200}
+  _globalSkipButton: {fileID: 354715235}
   _choiceBox: {fileID: 612740710}
   _choiceButtons:
   - {fileID: 612740709}
@@ -1254,6 +1270,30 @@ PrefabInstance:
     - target: {fileID: 295360578959627094, guid: c511410ea2828984db82d1a663a78b60, type: 3}
       propertyPath: m_Name
       value: Character3DAnchor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7413030071246837642, guid: c511410ea2828984db82d1a663a78b60, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7413030071246837642, guid: c511410ea2828984db82d1a663a78b60, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7413030071246837642, guid: c511410ea2828984db82d1a663a78b60, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7413030071246837642, guid: c511410ea2828984db82d1a663a78b60, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7413030071246837642, guid: c511410ea2828984db82d1a663a78b60, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7413030071246837642, guid: c511410ea2828984db82d1a663a78b60, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8003852584028413193, guid: c511410ea2828984db82d1a663a78b60, type: 3}
       propertyPath: m_LocalPosition.x

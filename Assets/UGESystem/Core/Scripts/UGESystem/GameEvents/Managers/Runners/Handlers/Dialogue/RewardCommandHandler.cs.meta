@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: dcb69ffa43fa25c438d2e51784645a46
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Managers/Runners/Handlers/Dialogue/RewardCommandHandler.cs
+  uploadId: 863032

@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 2bba2e834fdc08144b633965fa371716
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/Editor/GameEventGuidManager.cs
+  uploadId: 863032

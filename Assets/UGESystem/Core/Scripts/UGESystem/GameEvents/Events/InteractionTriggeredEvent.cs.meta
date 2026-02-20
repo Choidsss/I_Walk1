@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 7cdd827c0f3305d46b7bce13132e7d68
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Events/InteractionTriggeredEvent.cs
+  uploadId: 863032

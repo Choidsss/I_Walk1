@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d0f308a4b357a494896b30a7299ab056
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Examples/Prefabs/Characters/3DCharacters/NPC3D.prefab
+  uploadId: 863032

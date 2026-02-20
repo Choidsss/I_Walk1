@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: deee392542efa7d458d3fca380af4bfa
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Enums/BackgroundEnums.cs
+  uploadId: 863032

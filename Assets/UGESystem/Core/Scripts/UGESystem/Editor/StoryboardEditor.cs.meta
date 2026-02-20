@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 3def2bbc2741f8d49865a4748fa7340d
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/Editor/StoryboardEditor.cs
+  uploadId: 863032

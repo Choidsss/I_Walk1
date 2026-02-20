@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 49ee323a99cdea8449e20f99cb09caf4
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Examples/Scripts/TMP_ContentSizeAdjuster.cs
+  uploadId: 863032

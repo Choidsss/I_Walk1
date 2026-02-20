@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 294c2c9eb9d3f7b408161559b49b9340
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Third-Party Notices.txt
+  uploadId: 863032

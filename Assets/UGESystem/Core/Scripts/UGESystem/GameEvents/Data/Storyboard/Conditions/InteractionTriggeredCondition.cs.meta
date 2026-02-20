@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: c2ffbf1259a8fe743af8dcc698110fdd
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Data/Storyboard/Conditions/InteractionTriggeredCondition.cs
+  uploadId: 863032

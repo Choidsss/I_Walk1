@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 8e3018017ca220440872936ab35a175b
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/Editor/PropertyDrawers/CharacterDataDrawer.cs
+  uploadId: 863032

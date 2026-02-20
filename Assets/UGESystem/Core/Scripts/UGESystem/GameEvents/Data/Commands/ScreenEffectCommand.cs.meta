@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: eb4f7f7183785a64bb96ac7424253d41
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Data/Commands/ScreenEffectCommand.cs
+  uploadId: 863032

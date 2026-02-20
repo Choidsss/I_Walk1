@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 50b1d2077c9c11f4984ce807b28bc10d
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Examples/Art/3DCharacters/KayKit_Adventurers_2.0_FREE/License.txt
+  uploadId: 863032

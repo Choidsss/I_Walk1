@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 43982697dc11b7b44b72f8bab1f7e260
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/Editor/GameEventCreation.cs
+  uploadId: 863032

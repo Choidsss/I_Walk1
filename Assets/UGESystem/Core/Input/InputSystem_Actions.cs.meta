@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 26641fc4e83bcd04e811910b5828f6b2
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Input/InputSystem_Actions.cs
+  uploadId: 863032

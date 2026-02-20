@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 9f3b9f45d677782429cba264e3638f0e
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/Editor/PropertyDrawers/NodeNameDrawer.cs
+  uploadId: 863032

@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: d94cebd6d4a8699459971f4a8a063fa6
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Enums/GameEventType.cs
+  uploadId: 863032

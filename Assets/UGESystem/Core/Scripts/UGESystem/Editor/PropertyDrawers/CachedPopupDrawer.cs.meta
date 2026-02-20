@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: a17bb5187bc981b41918521ea89ba9b0
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/Editor/PropertyDrawers/CachedPopupDrawer.cs
+  uploadId: 863032

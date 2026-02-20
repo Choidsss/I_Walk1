@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 495534d9d8e960540b0d6a4a88622dfd
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/Singleton.cs
+  uploadId: 863032

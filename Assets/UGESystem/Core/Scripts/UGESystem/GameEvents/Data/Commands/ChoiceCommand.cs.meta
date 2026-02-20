@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 373631158e8a0b8468d6454b78737816
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Data/Commands/ChoiceCommand.cs
+  uploadId: 863032

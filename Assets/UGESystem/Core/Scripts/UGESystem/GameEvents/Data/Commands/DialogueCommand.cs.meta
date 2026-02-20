@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: f41ea7d57f4a7c042903367f93d56242
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Data/Commands/DialogueCommand.cs
+  uploadId: 863032

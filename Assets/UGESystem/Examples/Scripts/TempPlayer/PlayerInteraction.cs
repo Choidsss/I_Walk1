@@ -22,7 +22,6 @@ namespace UGESystem
             if (Input.GetKeyDown(KeyCode.F))
             {
                 TryInteract();
-                //Debug.Log("Check");
             }
         }
 
@@ -35,15 +34,13 @@ namespace UGESystem
             Vector3 rayOrigin = transform.position;
             Vector3 rayDirection = transform.forward;
 
-
             // Raycast를 사용하여 상호작용 가능한 오브젝트 감지
             // Detect interactable objects using Raycast
-            if (Physics.Raycast(rayOrigin + Vector3.up, rayDirection, out hit, _interactionDistance, _interactableLayer))
+            if (Physics.Raycast(rayOrigin, rayDirection, out hit, _interactionDistance, _interactableLayer))
             {
                 InteractableObject interactable = hit.collider.GetComponent<InteractableObject>();
                 if (interactable != null)
                 {
-                    //Debug.Log($"{interactable.InteractionID}");
                     if (string.IsNullOrEmpty(interactable.InteractionID))
                     {
 #if UNITY_EDITOR
@@ -66,7 +63,7 @@ namespace UGESystem
             Gizmos.color = Color.blue;
             Vector3 rayOrigin = transform.position;
             Vector3 rayDirection = transform.forward;
-            Gizmos.DrawRay(rayOrigin + Vector3.up, rayDirection * _interactionDistance);
+            Gizmos.DrawRay(rayOrigin, rayDirection * _interactionDistance);
         }
     }
 }

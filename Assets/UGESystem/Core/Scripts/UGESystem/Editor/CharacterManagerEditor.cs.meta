@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 5d069b64732706b4d81d3847b6f22295
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/Editor/CharacterManagerEditor.cs
+  uploadId: 863032

@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 5e01b5e20eaf6104d838d9e1ca27b354
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Data/Commands/BackgroundCommand.cs
+  uploadId: 863032

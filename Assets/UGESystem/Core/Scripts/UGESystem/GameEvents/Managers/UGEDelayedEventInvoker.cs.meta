@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 5274a1e66aeeb4c4ca4aa08ba5c1f32e
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Managers/UGEDelayedEventInvoker.cs
+  uploadId: 863032

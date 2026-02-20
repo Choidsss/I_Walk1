@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 2fe94e8770427c148b79d3313ecca88e
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Enums/CharacterAction.cs
+  uploadId: 863032

@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 4dc3204ed111ded44a57d02f8b7a3471
+AssetOrigin:
+  serializedVersion: 1
+  productId: 351930
+  packageName: 'UGESystem: Universal Game Event Framework'
+  packageVersion: 1.0
+  assetPath: Assets/UGESystem/Core/Scripts/UGESystem/GameEvents/Data/State/UGESystemStateDtos.cs
+  uploadId: 863032
