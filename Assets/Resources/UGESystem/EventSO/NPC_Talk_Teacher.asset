@@ -34,7 +34,7 @@ MonoBehaviour:
         _isNodeExpanded: 0
         _dialogueText: "\uD3C9\uC18C\uC5D0\uB294 \uC548\uB2A6\uB354\uB2C8...\uC5B4\uCA4C\uB2E4\uAC00
           \uB2A6\uC5C8\uB2C8?"
-        _characterName: ce2f0f6d-6c28-481e-98aa-ad4f62583e27
+        _characterName: 12955645-38ea-4994-8271-ab2c8fd54b34
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
         _dialogueText: "\uB2A6\uC7A0\uC790\uB2E4\uAC00 \uB2A6\uC5C8\uC2B5\uB2C8\uB2E4....\uC8C4\uC1A1\uD569\uB2C8\uB2E4....."
-        _characterName: 5579238e-6ca0-43b3-8df5-35d5adf9399b
+        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -62,8 +62,8 @@ MonoBehaviour:
         _dialogueText: "\uC194\uC9C1\uD558\uB2C8\uAE4C \uBB50\uB77C\uACE0 \uB9D0\uC740
           \uC548\uD558\uACA0\uC9C0\uB9CC, \uB2A6\uC740\uAC74 \uB2A6\uC740\uAC70\uB2C8\uAE4C
           \uC9C0\uAC01\uCC98\uB9AC \uB420\uAEBC\uC57C \uC54C\uACA0\uC9C0?"
-        _characterName: ce2f0f6d-6c28-481e-98aa-ad4f62583e27
-        _expression: Knowledge
+        _characterName: 12955645-38ea-4994-8271-ab2c8fd54b34
+        _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
         _showCharacter: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
         _isNodeExpanded: 0
         _dialogueText: "\uB135, \uB2E4\uC74C\uBD80\uD134 \uB2A6\uC9C0 \uC54A\uAC8C
           \uC624\uACA0\uC2B5\uB2C8\uB2E4."
-        _characterName: 5579238e-6ca0-43b3-8df5-35d5adf9399b
+        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
