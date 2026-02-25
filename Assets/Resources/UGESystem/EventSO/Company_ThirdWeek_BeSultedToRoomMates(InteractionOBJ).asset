@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e61e9adde95d3a4418c2ca934b48d984, type: 3}
-  m_Name: Companey_HardWork_1111
+  m_Name: Company_ThirdWeek_BeSultedToRoomMates(InteractionOBJ)
   m_EditorClassIdentifier: 
   <Guid>k__BackingField: 7dbeac63-c677-41dc-9a6d-0831124607a5
   _archetype: 0
