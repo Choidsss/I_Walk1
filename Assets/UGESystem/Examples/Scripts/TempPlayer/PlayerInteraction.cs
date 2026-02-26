@@ -17,6 +17,8 @@ namespace UGESystem
         [Tooltip("Select the layer to which interactable objects belong.")]
         [SerializeField] private LayerMask _interactableLayer;
 
+        [SerializeField] private Vector3 _interactionOffset = new Vector3(0.0f, 0.5f, 0.0f);
+
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.F))
@@ -31,7 +33,7 @@ namespace UGESystem
             
             // 플레이어의 위치에서 정면으로 레이 발사
             // Fire a ray forward from the player's position
-            Vector3 rayOrigin = transform.position;
+            Vector3 rayOrigin = transform.position + _interactionOffset;
             Vector3 rayDirection = transform.forward;
 
             // Raycast를 사용하여 상호작용 가능한 오브젝트 감지
@@ -61,7 +63,7 @@ namespace UGESystem
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.blue;
-            Vector3 rayOrigin = transform.position;
+            Vector3 rayOrigin = transform.position + _interactionOffset;
             Vector3 rayDirection = transform.forward;
             Gizmos.DrawRay(rayOrigin, rayDirection * _interactionDistance);
         }

@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e61e9adde95d3a4418c2ca934b48d984, type: 3}
+  m_Name: Start_FirstWakeUP
+  m_EditorClassIdentifier: 
+  <Guid>k__BackingField: fac6cd02-a0fa-4169-b5a8-de8ec89d8b83
+  _archetype: 0
+  _commands:
+  - rid: 7554042379971330141
+  - rid: 7554042379971330144
+  - rid: 7554042379971330145
+  - rid: 7554042379971330151
+  - rid: 7554042379971330153
+  - rid: 7554042379971330167
+  - rid: 7554042379971330155
+  - rid: 7554042379971330156
+  - rid: 7554042379971330142
+  references:
+    version: 2
+    RefIds:
+    - rid: 7554042379971330141
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 0
+        _dialogueText: '................
+
+'
+        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
+        _expression: 
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 0
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
+    - rid: 7554042379971330142
+      type: {class: EndCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 7
+        _isNodeExpanded: 0
+        _rewards: []
+        _isBranching: 0
+        _targetNodeID: 
+    - rid: 7554042379971330144
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 0
+        _dialogueText: .................??
+        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
+        _expression: 
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 0
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
+    - rid: 7554042379971330145
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 0
+        _dialogueText: "\uC5B4....??? \uBB50\uC57C \uC54C\uB78C \uB9DE\uCDC4\uB294\uB370
+          \uC65C 1\uC2DC\uAC04\uC774 \uC9C0\uB09C\uAC70\uC57C!!!!"
+        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
+        _expression: 
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 0
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
+    - rid: 7554042379971330151
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 0
+        _dialogueText: "\uBE68\uB9AC \uC900\uBE44\uD558\uACE0 \uB098\uAC00\uC790......"
+        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
+        _expression: 
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 0
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
+    - rid: 7554042379971330153
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: FreeLook Camera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 7554042379971330155
+      type: {class: LabelCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 4
+        _isNodeExpanded: 1
+        _labelName: WakeUp
+    - rid: 7554042379971330156
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 0
+        _dialogueText: "\uBE68\uB9AC \uC77C\uC5B4\uB098\uC790\n"
+        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
+        _expression: 
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 0
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
+    - rid: 7554042379971330167
+      type: {class: ChoiceCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 3
+        _isNodeExpanded: 0
+        _choices:
+        - _text: "\uBE68\uB9AC \uC77C\uB7EC\uB098\uC11C \uB4F1\uAD50\uD55C\uB2E4"
+          _targetLabel: WakeUp

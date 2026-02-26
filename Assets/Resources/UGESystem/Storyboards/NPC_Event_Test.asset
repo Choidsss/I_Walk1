@@ -16,7 +16,8 @@ MonoBehaviour:
   _eventNodes:
   - rid: 7554041859222536280
   - rid: 7554041859222536289
-  - rid: 7554042040016961542
+  - rid: 7554042379971330187
+  - rid: 7554042379971330202
   references:
     version: 2
     RefIds:
@@ -31,16 +32,16 @@ MonoBehaviour:
         _position: {x: -112, y: 1}
         _startConditions: []
         _nextNodeIDs: []
-        GameEventAsset: {fileID: 11400000, guid: 17d9228a6d3ab064aa681c90cbfaf362, type: 2}
+        GameEventAsset: {fileID: 11400000, guid: 1774a67a67b8c65408d7ea4448562c14, type: 2}
     - rid: 7554041859222536289
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:
         _nodeID: 759a20e1-3b2c-41e0-9e74-d7c612ce19e7
-        _name: Second_Talk
+        _name: Teacher_Talk
         _type: 0
         IsStartNode: 0
-        _isRepeatable: 1
-        _position: {x: 445, y: 0}
+        _isRepeatable: 0
+        _position: {x: 314, y: 3}
         _startConditions:
         - rid: 7554041859222536293
         _nextNodeIDs: []
@@ -49,22 +50,40 @@ MonoBehaviour:
       type: {class: InteractionTriggeredCondition, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <Description>k__BackingField: Player interacts with a specific object.
-        <TargetInteractionID>k__BackingField: NpcTalk
-    - rid: 7554042040016961542
+        <TargetInteractionID>k__BackingField: TeacherTalk
+    - rid: 7554042379971330187
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:
-        _nodeID: cbb7bc50-1fd1-469d-be98-a9d7c983e903
-        _name: LunchTime_Talk
+        _nodeID: 7eb4e71b-396c-4853-a6a7-223362e968a5
+        _name: SchoolLate
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
-        _position: {x: 940, y: 3}
+        _position: {x: 751, y: 0}
         _startConditions:
-        - rid: 7554042040016961543
+        - rid: 7554042379971330188
         _nextNodeIDs: []
-        GameEventAsset: {fileID: 11400000, guid: 07ad3ec3be90d7c41807c9481763dd6c, type: 2}
-    - rid: 7554042040016961543
-      type: {class: InteractionTriggeredCondition, ns: UGESystem, asm: Assembly-CSharp}
+        GameEventAsset: {fileID: 11400000, guid: 38db198716b6876449184292a98f4e3b, type: 2}
+    - rid: 7554042379971330188
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
       data:
-        <Description>k__BackingField: Player interacts with a specific object.
-        <TargetInteractionID>k__BackingField: LunchTime
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: SchoolNarate
+    - rid: 7554042379971330202
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: b2d5489e-d980-4734-970c-efaa452efa15
+        _name: Entered_Univercity
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 0, y: 0}
+        _startConditions:
+        - rid: 7554042379971330203
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: 7af36f522f935074982aea4c9d1a3c99, type: 2}
+    - rid: 7554042379971330203
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: EnteredUnivercity
