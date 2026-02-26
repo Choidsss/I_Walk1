@@ -20,7 +20,6 @@ namespace I_Walk
         {
             _anim = GetComponent<Animator>();
             _splineAnimate = GetComponent<SplineAnimate>();
-            _tmpUGUI = GetComponent<TextMeshProUGUI>();
         }
 
         // Update is called once per frame
@@ -29,9 +28,14 @@ namespace I_Walk
             /*
              * ToDo : 텍스트가 재생중일때는, 키입력을 막아두기
              */
-            if (_tmpUGUI != null && _tmpUGUI.text == _playKeyward)
+            if (_tmpUGUI.text == _playKeyward)
             {
                 SplineAnimationPlayOn();
+            }
+
+            if(_splineAnimate.NormalizedTime >= 1f)
+            {
+                SplineAnimationEnded();
             }
         }
 

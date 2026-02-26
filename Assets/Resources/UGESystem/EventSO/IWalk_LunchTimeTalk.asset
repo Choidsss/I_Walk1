@@ -18,6 +18,9 @@ MonoBehaviour:
   - rid: 7554042402533539842
   - rid: 7554042402533539840
   - rid: 7554042402533539841
+  - rid: 7554042402533539934
+  - rid: 7554042402533539935
+  - rid: 7554042402533539933
   - rid: 7554042016868860001
   references:
     version: 2
@@ -35,12 +38,13 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: 
-        _characterName: 
+        _dialogueText: "\uB2A6\uAC8C\uAC00\uBA74 \uC6B4\uB3D9\uC7A5\uC5D0 \uC790\uB9AC
+          \uC5C6\uB2E4\uACE0!"
+        _characterName: 0eb6fe9c-413b-447a-9774-7f1f45701363
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
-        _showCharacter: 1
+        _showCharacter: 0
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3
     - rid: 7554042402533539841
@@ -48,24 +52,51 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: 
-        _characterName: 
+        _dialogueText: "\uB6F8 \uC900\uBE44 \uB410\uC9C0?"
+        _characterName: 0eb6fe9c-413b-447a-9774-7f1f45701363
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
-        _showCharacter: 1
+        _showCharacter: 0
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3
     - rid: 7554042402533539842
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
-        _isNodeExpanded: 1
-        _dialogueText: 
-        _characterName: 
+        _isNodeExpanded: 0
+        _dialogueText: "\uBE68\uB9AC \uB6F0\uC5B4!"
+        _characterName: 0eb6fe9c-413b-447a-9774-7f1f45701363
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
-        _showCharacter: 1
+        _showCharacter: 0
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3
+    - rid: 7554042402533539933
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 0
+        _dialogueText: "\uB6F0\uC5B4!"
+        _characterName: 0eb6fe9c-413b-447a-9774-7f1f45701363
+        _expression: 
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 0
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
+    - rid: 7554042402533539934
+      type: {class: ChoiceCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 3
+        _isNodeExpanded: 0
+        _choices:
+        - _text: "\uB2F9\uC5F0\uD558\uC9C0 \uBE0C\uB77C\uB354"
+          _targetLabel: Run
+    - rid: 7554042402533539935
+      type: {class: LabelCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 4
+        _isNodeExpanded: 1
+        _labelName: Run

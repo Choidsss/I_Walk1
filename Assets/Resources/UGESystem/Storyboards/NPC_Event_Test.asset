@@ -18,6 +18,7 @@ MonoBehaviour:
   - rid: 7554041859222536289
   - rid: 7554042379971330187
   - rid: 7554042379971330202
+  - rid: 7554042402533539946
   references:
     version: 2
     RefIds:
@@ -73,7 +74,7 @@ MonoBehaviour:
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:
         _nodeID: b2d5489e-d980-4734-970c-efaa452efa15
-        _name: Entered_Univercity
+        _name: LunchTimeRunning
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
@@ -81,9 +82,27 @@ MonoBehaviour:
         _startConditions:
         - rid: 7554042379971330203
         _nextNodeIDs: []
-        GameEventAsset: {fileID: 11400000, guid: 7af36f522f935074982aea4c9d1a3c99, type: 2}
+        GameEventAsset: {fileID: 11400000, guid: 07ad3ec3be90d7c41807c9481763dd6c, type: 2}
     - rid: 7554042379971330203
       type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <Description>k__BackingField: Player enters a specific area.
-        <TargetTriggerID>k__BackingField: EnteredUnivercity
+        <TargetTriggerID>k__BackingField: LunchTimeRunning
+    - rid: 7554042402533539946
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: 07ee6c65-d62f-4d2a-baf4-c045b137757f
+        _name: DuringLunchtime
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 0, y: 0}
+        _startConditions:
+        - rid: 7554042402533539947
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: 2ed33609a87180f4a849ef59769b109f, type: 2}
+    - rid: 7554042402533539947
+      type: {class: InteractionTriggeredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player interacts with a specific object.
+        <TargetInteractionID>k__BackingField: "\uB3C4\uCC29"

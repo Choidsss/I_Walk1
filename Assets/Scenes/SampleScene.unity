@@ -10705,7 +10705,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.21737674, y: 0, z: 0, w: 0.9760878}
-  m_LocalPosition: {x: 252, y: 2.53, z: 106.64}
+  m_LocalPosition: {x: 355.02, y: 2.53, z: 122.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18470,7 +18470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323a9728b515df04e84b1c18e2670ff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _triggerID: 
+  _triggerID: LunchTimeRunning
   _triggerOnce: 1
 --- !u!65 &562857349
 BoxCollider:
@@ -22567,7 +22567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6344404696354205859, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 252
+      value: 355.02
       objectReference: {fileID: 0}
     - target: {fileID: 6344404696354205859, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22575,7 +22575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6344404696354205859, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 109.64
+      value: 125.51
       objectReference: {fileID: 0}
     - target: {fileID: 6344404696354205859, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -54003,7 +54003,7 @@ Transform:
   m_GameObject: {fileID: 1668578861}
   serializedVersion: 2
   m_LocalRotation: {x: 0.21737671, y: 0, z: 0, w: 0.9760878}
-  m_LocalPosition: {x: 252, y: 2.53, z: 106.64}
+  m_LocalPosition: {x: 355.02, y: 2.53, z: 122.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67955,6 +67955,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 656526330162374830, guid: ccd61b20b129ed2488b23e125c4e1dad, type: 3}
+      propertyPath: _interactionID
+      value: "\uB3C4\uCC29"
+      objectReference: {fileID: 0}
     - target: {fileID: 1870329947790349537, guid: ccd61b20b129ed2488b23e125c4e1dad, type: 3}
       propertyPath: m_Name
       value: NPC_Friend1
@@ -67963,6 +67967,10 @@ PrefabInstance:
       propertyPath: _tmpUGUI
       value: 
       objectReference: {fileID: 1419680842}
+    - target: {fileID: 3252516235277443141, guid: ccd61b20b129ed2488b23e125c4e1dad, type: 3}
+      propertyPath: _playKeyward
+      value: "\uB6F0\uC5B4!"
+      objectReference: {fileID: 0}
     - target: {fileID: 4697231177076262160, guid: ccd61b20b129ed2488b23e125c4e1dad, type: 3}
       propertyPath: _tmpGUI
       value: 
@@ -67971,6 +67979,14 @@ PrefabInstance:
       propertyPath: m_Target
       value: 
       objectReference: {fileID: 1347578559}
+    - target: {fileID: 5839663910701103019, guid: ccd61b20b129ed2488b23e125c4e1dad, type: 3}
+      propertyPath: m_LoopMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839663910701103019, guid: ccd61b20b129ed2488b23e125c4e1dad, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8567246016398550668, guid: ccd61b20b129ed2488b23e125c4e1dad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 362.4625
