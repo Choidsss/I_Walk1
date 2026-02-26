@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 65887598978225321}
   - component: {fileID: 4697231177076262160}
   - component: {fileID: 656526330162374830}
+  - component: {fileID: 5839663910701103019}
+  - component: {fileID: 3252516235277443141}
   m_Layer: 0
   m_Name: NPC_Friend1
   m_TagString: Untagged
@@ -99,7 +101,7 @@ Animator:
   m_GameObject: {fileID: 1870329947790349537}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ac7fbe4d69a6ad94485f10daa85dd05f, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce3f4e84cad061b479dada6d3e870c8b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -167,6 +169,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactionID: 
   _interactionRange: 2
+--- !u!114 &5839663910701103019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870329947790349537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a074d529cf945029ef7cf40540c9df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_LoopMode: 2
+  m_Method: 0
+  m_Duration: 5
+  m_MaxSpeed: 10.40303
+  m_EasingMode: 0
+  m_AlignmentMode: 1
+  m_ObjectForwardAxis: 2
+  m_ObjectUpAxis: 1
+  m_StartOffset: 0
+--- !u!114 &3252516235277443141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870329947790349537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e1fdfb210d90946a9a7c3a863faf7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tmpUGUI: {fileID: 0}
+  _playKeyward: 
 --- !u!1001 &8093799020237161641
 PrefabInstance:
   m_ObjectHideFlags: 0

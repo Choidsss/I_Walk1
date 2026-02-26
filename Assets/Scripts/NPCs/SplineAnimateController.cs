@@ -26,6 +26,9 @@ namespace I_Walk
         // Update is called once per frame
         void Update()
         {
+            /*
+             * ToDo : 텍스트가 재생중일때는, 키입력을 막아두기
+             */
             if (_tmpUGUI != null && _tmpUGUI.text == _playKeyward)
             {
                 SplineAnimationPlayOn();
