@@ -19,6 +19,7 @@ MonoBehaviour:
   - rid: 7554042379971330187
   - rid: 7554042379971330202
   - rid: 7554042402533539946
+  - rid: 7554042424944754688
   references:
     version: 2
     RefIds:
@@ -106,3 +107,21 @@ MonoBehaviour:
       data:
         <Description>k__BackingField: Player interacts with a specific object.
         <TargetInteractionID>k__BackingField: "\uB3C4\uCC29"
+    - rid: 7554042424944754688
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: d4b476f7-8b96-4b69-ab51-1c031ba69315
+        _name: EnteredUnivercity
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 0, y: 0}
+        _startConditions:
+        - rid: 7554042424944754689
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: 7af36f522f935074982aea4c9d1a3c99, type: 2}
+    - rid: 7554042424944754689
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: EnteredUnivercity
