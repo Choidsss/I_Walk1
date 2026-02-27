@@ -21,6 +21,7 @@ MonoBehaviour:
   - rid: 7554042402533539946
   - rid: 7554042424944754688
   - rid: 7554042424944754773
+  - rid: 7554042424944754790
   references:
     version: 2
     RefIds:
@@ -144,3 +145,21 @@ MonoBehaviour:
       data:
         <Description>k__BackingField: Player enters a specific area.
         <TargetTriggerID>k__BackingField: SchoolNarate2
+    - rid: 7554042424944754790
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: 330084b9-905c-40f5-a093-ce5ab24a66e1
+        _name: CommonUnivercity
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 2866, y: 9}
+        _startConditions:
+        - rid: 7554042424944754791
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: aaa0426c0151e8e48aa7cd4cfe34780a, type: 2}
+    - rid: 7554042424944754791
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: Corona19
