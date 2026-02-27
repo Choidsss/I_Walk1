@@ -38,8 +38,8 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uB2A6\uAC8C\uAC00\uBA74 \uC6B4\uB3D9\uC7A5\uC5D0 \uC790\uB9AC
-          \uC5C6\uB2E4\uACE0!"
+        _dialogueText: "\uB2A6\uC73C\uBA74 \uC6B4\uB3D9\uC7A5\uC5D0\uC11C \uCD95\uAD6C
+          \uBABB\uD574"
         _characterName: 0eb6fe9c-413b-447a-9774-7f1f45701363
         _expression: 
         _characterPosition: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uB6F8 \uC900\uBE44 \uB410\uC9C0?"
+        _dialogueText: "\uC900\uBE44 \uB410\uC9C0?"
         _characterName: 0eb6fe9c-413b-447a-9774-7f1f45701363
         _expression: 
         _characterPosition: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uBE68\uB9AC \uB6F0\uC5B4!"
+        _dialogueText: "\u3148\u3134 \uB6F8 \uC900\uBE44 \uD574"
         _characterName: 0eb6fe9c-413b-447a-9774-7f1f45701363
         _expression: 
         _characterPosition: 0
@@ -90,13 +90,13 @@ MonoBehaviour:
       type: {class: ChoiceCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 3
-        _isNodeExpanded: 0
+        _isNodeExpanded: 1
         _choices:
-        - _text: "\uB2F9\uC5F0\uD558\uC9C0 \uBE0C\uB77C\uB354"
+        - _text: "\uB2F9\uC5F0\uD558\uC9C0"
           _targetLabel: Run
     - rid: 7554042402533539935
       type: {class: LabelCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 4
-        _isNodeExpanded: 1
+        _isNodeExpanded: 0
         _labelName: Run

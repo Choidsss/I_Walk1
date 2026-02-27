@@ -20,6 +20,7 @@ MonoBehaviour:
   - rid: 7554042379971330202
   - rid: 7554042402533539946
   - rid: 7554042424944754688
+  - rid: 7554042424944754773
   references:
     version: 2
     RefIds:
@@ -43,7 +44,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
-        _position: {x: 314, y: 3}
+        _position: {x: 734, y: 4}
         _startConditions:
         - rid: 7554041859222536293
         _nextNodeIDs: []
@@ -61,7 +62,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
-        _position: {x: 751, y: 0}
+        _position: {x: 322, y: 2}
         _startConditions:
         - rid: 7554042379971330188
         _nextNodeIDs: []
@@ -79,7 +80,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
-        _position: {x: 0, y: 0}
+        _position: {x: 1578, y: 7}
         _startConditions:
         - rid: 7554042379971330203
         _nextNodeIDs: []
@@ -97,7 +98,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
-        _position: {x: 0, y: 0}
+        _position: {x: 1995, y: 8}
         _startConditions:
         - rid: 7554042402533539947
         _nextNodeIDs: []
@@ -115,7 +116,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
-        _position: {x: 0, y: 0}
+        _position: {x: 2426, y: 7}
         _startConditions:
         - rid: 7554042424944754689
         _nextNodeIDs: []
@@ -125,3 +126,21 @@ MonoBehaviour:
       data:
         <Description>k__BackingField: Player enters a specific area.
         <TargetTriggerID>k__BackingField: EnteredUnivercity
+    - rid: 7554042424944754773
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: 2e17518a-66c4-4437-bad0-2031979c6e1f
+        _name: JustBeforeLunchtime
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 1157, y: 4}
+        _startConditions:
+        - rid: 7554042424944754774
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: db4495d6721d70a44af0b7a4e33a263c, type: 2}
+    - rid: 7554042424944754774
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: SchoolNarate2

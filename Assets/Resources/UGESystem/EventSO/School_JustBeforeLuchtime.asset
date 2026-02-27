@@ -10,61 +10,61 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e61e9adde95d3a4418c2ca934b48d984, type: 3}
-  m_Name: NewGameEvent
+  m_Name: School_JustBeforeLuchtime
   m_EditorClassIdentifier: 
-  <Guid>k__BackingField: 9dd21501-d551-42e5-a2d1-9a0c7a0d3808
+  <Guid>k__BackingField: 68c128e7-7caf-4a02-af56-4ecddf6a05f5
   _archetype: 0
   _commands:
-  - rid: 7554042402533539941
-  - rid: 7554042402533539942
-  - rid: 7554042402533539943
-  - rid: 7554042402533539944
-  - rid: 7554042402533539945
+  - rid: 7554042424944754778
+  - rid: 7554042424944754779
+  - rid: 7554042424944754780
+  - rid: 7554042424944754782
   references:
     version: 2
     RefIds:
-    - rid: 7554042402533539941
+    - rid: 7554042424944754778
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "2\uBE60"
-        _characterName: 0eb6fe9c-413b-447a-9774-7f1f45701363
+        _dialogueText: "\uC9C0\uAC01\uC744 \uB4A4\uB85C\uD55C \uCCB4, \uC2DC\uAC04\uC740
+          \uC5B4\uB290\uB367 4\uAD50\uC2DC\uAC00 \uB05D\uB098\uAC08 \uBB34\uB835"
+        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
-        _showCharacter: 1
+        _showCharacter: 0
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3
-    - rid: 7554042402533539942
-      type: {class: ChoiceCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 3
-        _isNodeExpanded: 1
-        _choices:
-        - _text: "3\uBE60"
-          _targetLabel: 33333
-    - rid: 7554042402533539943
-      type: {class: LabelCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 4
-        _isNodeExpanded: 0
-        _labelName: 33333
-    - rid: 7554042402533539944
+    - rid: 7554042424944754779
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\"\uC774\uB807\uAC8C \uC810\uC2EC\uC2DC\uAC04 \uB9C8\uB2E4
-          \uB6F0\uB294 \uC2DC\uAC04\uB3C4 \uC5BC\uB9C8 \uC548\uB0A8\uC558\uB124\""
+        _dialogueText: "4\uAD50\uC2DC \uCCB4\uC721 \uC2DC\uAC04\uC774 \uB05D\uB098\uAE30
+          10\uBD84\uC804\uC774 \uB418\uC5C8\uB2E4."
         _characterName: 
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
-        _showCharacter: 1
+        _showCharacter: 0
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3
-    - rid: 7554042402533539945
+    - rid: 7554042424944754780
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 0
+        _dialogueText: "\uBAA8\uB450 \uD558\uB358\uAC83\uC744 \uBA48\uCD94\uACE0
+          \uC790\uB9AC\uC5D0\uC11C \uB300\uAE30\uD558\uAE30 \uC2DC\uC791\uD55C\uB2E4"
+        _characterName: 
+        _expression: 
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 0
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
+    - rid: 7554042424944754782
       type: {class: EndCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 7
