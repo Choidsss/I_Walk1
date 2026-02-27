@@ -22,6 +22,7 @@ MonoBehaviour:
   - rid: 7554042424944754688
   - rid: 7554042424944754773
   - rid: 7554042424944754790
+  - rid: 7554042424944754796
   references:
     version: 2
     RefIds:
@@ -163,3 +164,21 @@ MonoBehaviour:
       data:
         <Description>k__BackingField: Player enters a specific area.
         <TargetTriggerID>k__BackingField: Corona19
+    - rid: 7554042424944754796
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: e96082c5-7586-481a-9506-7a5d83a7c5b6
+        _name: Univercity_4Grade
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 0, y: 0}
+        _startConditions:
+        - rid: 7554042424944754797
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: 1b0c66d5d5a7a4440a89a2e25879e08a, type: 2}
+    - rid: 7554042424944754797
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: 4Grade
