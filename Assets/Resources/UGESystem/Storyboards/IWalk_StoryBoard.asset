@@ -24,6 +24,8 @@ MonoBehaviour:
   - rid: 7554042424944754790
   - rid: 7554042424944754796
   - rid: 7554042424944754799
+  - rid: 7554042424944754837
+  - rid: 7554042424944754839
   references:
     version: 2
     RefIds:
@@ -173,7 +175,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
-        _position: {x: 0, y: 0}
+        _position: {x: 3313, y: 10}
         _startConditions:
         - rid: 7554042424944754797
         _nextNodeIDs: []
@@ -191,7 +193,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
-        _position: {x: 0, y: 0}
+        _position: {x: 3750, y: 14}
         _startConditions:
         - rid: 7554042424944754800
         _nextNodeIDs: []
@@ -201,3 +203,39 @@ MonoBehaviour:
       data:
         <Description>k__BackingField: Player enters a specific area.
         <TargetTriggerID>k__BackingField: Interview
+    - rid: 7554042424944754837
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: 098d980c-a301-44d3-a245-bb1dcd7f2ec2
+        _name: LearningWork
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 4174, y: 17}
+        _startConditions:
+        - rid: 7554042424944754838
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: 0504b2e7e1a7716448d78bdfd46e258b, type: 2}
+    - rid: 7554042424944754838
+      type: {class: InteractionTriggeredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player interacts with a specific object.
+        <TargetInteractionID>k__BackingField: Learning
+    - rid: 7554042424944754839
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: 56d12d7d-1fc4-4102-8cbb-9144be49b4c1
+        _name: LearningWorkAfter
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 0, y: 0}
+        _startConditions:
+        - rid: 7554042424944754840
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: 1ce8a6c0c7d3dda468083a86ea8a190a, type: 2}
+    - rid: 7554042424944754840
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: FirstWeek
