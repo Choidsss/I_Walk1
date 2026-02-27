@@ -15,13 +15,10 @@ MonoBehaviour:
   <Guid>k__BackingField: b5572eea-4649-4b83-a35a-eb29730b1188
   _archetype: 0
   _commands:
+  - rid: 7554042424944754822
   - rid: 7554042062874869814
   - rid: 7554042062874869815
-  - rid: 7554042062874869816
-  - rid: 7554042062874869817
-  - rid: 7554042062874869818
-  - rid: 7554042062874869819
-  - rid: 7554042062874869820
+  - rid: 7554042424944754803
   references:
     version: 2
     RefIds:
@@ -30,7 +27,7 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uC624\uB298 \uC778\uC218\uC778\uACC4 \uD560\uAC70\uC57C."
+        _dialogueText: "\uADF8\uB807\uAC8C \uB098\uC758 \uCD9C\uADFC \uCCAB\uB0A0"
         _characterName: 
         _expression: 
         _characterPosition: 0
@@ -43,8 +40,8 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uC788\uB2E4\uAC00 \uB2E4\uB978\uBD80\uC11C\uC5D0\uC11C \uD55C\uBA85
-          \uC62C\uAC74\uB370, \uAC54\uAC00 \uC54C\uB824\uC8FC\uB7EC \uC62C\uAC70\uC57C."
+        _dialogueText: "\uBB54\uAC00 \uC548\uC88B\uC740 \uB290\uB08C\uC774 \uB4E4\uAE30
+          \uC2DC\uC791\uD588\uB2E4."
         _characterName: 
         _expression: 
         _characterPosition: 0
@@ -52,67 +49,21 @@ MonoBehaviour:
         _showCharacter: 1
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3
-    - rid: 7554042062874869816
+    - rid: 7554042424944754803
+      type: {class: EndCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 7
+        _isNodeExpanded: 0
+        _rewards: []
+        _isBranching: 0
+        _targetNodeID: 
+    - rid: 7554042424944754822
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uC9C0\uAE08 \uB4E4\uC744\uB54C \uC798 \uB4E4\uC5B4\uB194.
-          \uB2E4\uB978 \uBD80\uC11C\uB77C\uC11C \uB098\uC911\uC5D0 \uBB3C\uC5B4\uBCFC\uB550
-          \uC880 \uD798\uB4E4\uC218\uB3C4 \uC788\uC5B4"
-        _characterName: 
-        _expression: 
-        _characterPosition: 0
-        _clearAllCharacters: 0
-        _showCharacter: 1
-        _cinematicAnimDuration: 1
-        _cinematicDisplayDuration: 3
-    - rid: 7554042062874869817
-      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 0
-        _isNodeExpanded: 0
-        _dialogueText: "\uADF8\uB2C8\uAE4C \uC9C0\uAE08 \uD560\uB54C \uBAA8\uB974\uB294\uAC70
-          \uB2E4 \uBB3C\uC5B4\uBD10\uB77C, \uC54C\uACA0\uC9C0?"
-        _characterName: 
-        _expression: 
-        _characterPosition: 0
-        _clearAllCharacters: 0
-        _showCharacter: 1
-        _cinematicAnimDuration: 1
-        _cinematicDisplayDuration: 3
-    - rid: 7554042062874869818
-      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 0
-        _isNodeExpanded: 0
-        _dialogueText: "\uB135 \uC54C\uACA0\uC2B5\uB2C8\uB2E4."
-        _characterName: 
-        _expression: 
-        _characterPosition: 0
-        _clearAllCharacters: 0
-        _showCharacter: 1
-        _cinematicAnimDuration: 1
-        _cinematicDisplayDuration: 3
-    - rid: 7554042062874869819
-      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 0
-        _isNodeExpanded: 0
-        _dialogueText: 
-        _characterName: 
-        _expression: 
-        _characterPosition: 0
-        _clearAllCharacters: 0
-        _showCharacter: 1
-        _cinematicAnimDuration: 1
-        _cinematicDisplayDuration: 3
-    - rid: 7554042062874869820
-      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 0
-        _isNodeExpanded: 0
-        _dialogueText: 
+        _dialogueText: "\uADF8\uB807\uAC8C \uB098\uB294 \uC81C\uB300\uB85C \uC774\uD574\uD558\uC9C0
+          \uBABB\uD55C\uCC44\uB85C \uC778\uC218\uC778\uACC4\uAC00 \uB05D\uB0AC\uB2E4"
         _characterName: 
         _expression: 
         _characterPosition: 0

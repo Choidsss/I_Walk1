@@ -23,6 +23,7 @@ MonoBehaviour:
   - rid: 7554042424944754773
   - rid: 7554042424944754790
   - rid: 7554042424944754796
+  - rid: 7554042424944754799
   references:
     version: 2
     RefIds:
@@ -182,3 +183,21 @@ MonoBehaviour:
       data:
         <Description>k__BackingField: Player enters a specific area.
         <TargetTriggerID>k__BackingField: 4Grade
+    - rid: 7554042424944754799
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: 8a976be2-cfea-47c6-8638-c1862e1a3517
+        _name: Company_Interview
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 0, y: 0}
+        _startConditions:
+        - rid: 7554042424944754800
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: 13793c9a53efbf649ad4fd98edc312f8, type: 2}
+    - rid: 7554042424944754800
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: Interview

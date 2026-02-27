@@ -1175,6 +1175,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: {x: 0, y: 0, z: -1.74}
   end: {x: 0, y: 0, z: 1.74}
+--- !u!1 &35268628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 802339559495243202, guid: 623ff708cff91794fb1a71aa999d1476, type: 3}
+  m_PrefabInstance: {fileID: 163058841}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &35268630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35268628}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 307.59985, y: 1, z: 303.64822}
+  m_Center: {x: -72.38495, y: 0, z: 62.623184}
 --- !u!1001 &38249025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5855,6 +5881,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Water
       objectReference: {fileID: 0}
+    - target: {fileID: 802339559495243202, guid: 623ff708cff91794fb1a71aa999d1476, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2054544288196247620, guid: 623ff708cff91794fb1a71aa999d1476, type: 3}
       propertyPath: m_LocalScale.x
       value: 32.474873
@@ -5922,7 +5952,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 802339559495243202, guid: 623ff708cff91794fb1a71aa999d1476, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 35268630}
   m_SourcePrefab: {fileID: 100100000, guid: 623ff708cff91794fb1a71aa999d1476, type: 3}
 --- !u!1001 &166922121
 PrefabInstance:
@@ -13326,6 +13359,74 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3732829152898834033, guid: 9e9ecddc6aff81746a0c7c7589194a0d, type: 3}
   m_PrefabInstance: {fileID: 406716344}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &408159687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 408159690}
+  - component: {fileID: 408159689}
+  - component: {fileID: 408159688}
+  m_Layer: 0
+  m_Name: Interview_Room
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &408159688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408159687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 323a9728b515df04e84b1c18e2670ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _triggerID: Interview
+  _triggerOnce: 1
+--- !u!65 &408159689
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408159687}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.00531, y: 3.1307678, z: 1.9010925}
+  m_Center: {x: -1.002655, y: 1.0653839, z: -0.5709076}
+--- !u!4 &408159690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408159687}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 885.57, y: 35.63, z: 401.95}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -68352,6 +68453,7 @@ SceneRoots:
   - {fileID: 898251223}
   - {fileID: 22814694}
   - {fileID: 1001165065}
+  - {fileID: 408159690}
   - {fileID: 260396849}
   - {fileID: 199310982}
   - {fileID: 1285694604}
