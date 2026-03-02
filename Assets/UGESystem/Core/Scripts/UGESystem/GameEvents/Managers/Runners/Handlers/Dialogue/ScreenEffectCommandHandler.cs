@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -5,17 +6,10 @@ namespace UGESystem
 {
     /// <summary>
     /// Command handler for <see cref="ScreenEffectCommand"/> that interacts with <see cref="UGEScreenEffectManager"/>
-    /// to execute full-screen visual effects such as fades, flashes, and tints.
+    /// to execute full-screen visual effects with optional scene cleanup at the peak of the effect.
     /// </summary>
     public class ScreenEffectCommandHandler : ICommandHandler
     {
-        /// <summary>
-        /// Executes the <see cref="ScreenEffectCommand"/>. It delegates the screen effect operations
-        /// to the <see cref="UGESystemController.Instance.ScreenEffectManager"/> based on the command's effect type.
-        /// </summary>
-        /// <param name="genericCommand">The command to execute, expected to be a <see cref="ScreenEffectCommand"/>.</param>
-        /// <param name="controller">The <see cref="UGEGameEventController"/> managing the current game event flow.</param>
-        /// <returns>An IEnumerator for coroutine execution.</returns>
         public IEnumerator Execute(IGameEventCommand genericCommand, UGEGameEventController controller)
         {
             var command = (ScreenEffectCommand)genericCommand;
@@ -24,33 +18,49 @@ namespace UGESystem
             if (screenEffectManager == null)
             {
 #if UNITY_EDITOR
-                Debug.LogError("[ScreenEffectCommandHandler] UGEScreenEffectManager is not available on UGESystemController.");
+                Debug.LogError("[ScreenEffectCommandHandler] UGEScreenEffectManager is not available.");
 #endif
                 yield break;
             }
 
+            // Define the cleanup logic to be executed at the peak of the effect
+            Action cleanupAction = () => {
+                if (command.HideAll)
+                {
+                    controller.UIManager.HideAllUI();
+                    controller.CharacterManager.HideAllCharacters();
+                }
+                else
+                {
+                    if (command.HideUI) controller.UIManager.HideDialogueAndChoices();
+                    if (command.HideCharacters) controller.CharacterManager.HideAllCharacters();
+                    if (command.HideBackground) controller.UIManager.HideBackground();
+                }
+            };
+
             switch (command.EffectType)
             {
                 case ScreenEffectType.FadeOut:
-                    // Fade from current (likely transparent) to TargetColor
-                    yield return screenEffectManager.Fade(command.TargetColor, command.Duration);
+                    // Standard fade to color
+                    yield return screenEffectManager.FadeOut(command.TargetColor, command.Duration, cleanupAction);
                     break;
 
                 case ScreenEffectType.FadeIn:
-                    yield return screenEffectManager.FadeIn(command.TargetColor, command.Duration);
+                    // Start from target color (fully covering) and fade to transparent
+                    yield return screenEffectManager.FadeIn(command.TargetColor, command.Duration, cleanupAction);
                     break;
                 
                 case ScreenEffectType.Flash:
-                    float fadeTime = command.Duration - command.FlashHoldDuration;
-                    if (fadeTime < 0) fadeTime = 0;
-                    float fadeInTime = fadeTime * 0.2f; // 20% of remaining time for fade-in
-                    float fadeOutTime = fadeTime * 0.8f; // 80% of remaining time for fade-out
-                    yield return screenEffectManager.Flash(command.TargetColor, fadeInTime, command.FlashHoldDuration, fadeOutTime);
+                    // Instant high-impact attack (fixed 0.02s) for snappy feel.
+                    // Duration from the editor is used purely for the decay/afterimage time.
+                    float attackTime = 0.02f; 
+                    float decayTime = Mathf.Max(0.05f, command.Duration);
+                    yield return screenEffectManager.Flash(command.TargetColor, attackTime, command.FlashHoldDuration, decayTime, cleanupAction);
                     break;
 
                 case ScreenEffectType.Tint:
-                    // Fade from current to a specific tint color
-                    yield return screenEffectManager.Tint(command.TargetColor, command.Duration);
+                    // Gradual transition into a color, hold, then return.
+                    yield return screenEffectManager.Tint(command.TargetColor, command.Duration, command.FlashHoldDuration, cleanupAction);
                     break;
 
                 default:

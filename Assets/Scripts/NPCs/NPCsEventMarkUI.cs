@@ -4,70 +4,76 @@ namespace I_Walk
 {
     public class NPCsEventMarkUI : MonoBehaviour
     {
-        [Header("BangMark Animation Settings")]
+        [Header("QuestionMark Animation Settings")]
         [SerializeField] float _rotationSpeed = 1.0f;
         [SerializeField] float _hopSpeed = 1.0f;
         [SerializeField] float _hopAmound = 1.0f;
 
-        [Header("Bang Mark")]
-        [SerializeField] GameObject _bangMark;
+        [Header("QuestionMark")]
+        [SerializeField] GameObject _QMark;
 
-        NPCsDetectionRange _npcDetection;
+        [Header("Interaction Settings")]
+        [Tooltip("Maximum distance at which interaction will be detected")]
+        [SerializeField] private float _interactionDistance = 3f;
+
+        [Header("HitLayer")]
+        [SerializeField] private LayerMask _layer;
 
         float _defaultY;
+        bool _isPlayer = false;
         Vector3 _localPos;
 
-        // ***************ToDo : Y축 기준으로 돌리기, Y축의 좌표값을 높였다, 낮췄다 해보기****************
         void Start()
         {
-            _npcDetection = GetComponent<NPCsDetectionRange>();
-
-            if (_bangMark == null)
+            if (_QMark == null)
             {
                 Debug.Log("이모지가 존재하지 않습니다");
             }
 
-            _localPos = _bangMark.transform.localPosition;
+            _localPos = _QMark.transform.localPosition;
             _defaultY = _localPos.y;
 
-            _bangMark.SetActive(false);   
+            _QMark.SetActive(true);   
         }
 
         // Update is called once per frame
         void Update()
         {
-            ShowBangMark();
+            CheckShowBangMark();
+
+            if (_isPlayer)
+            {
+                _QMark.SetActive(false);
+            }
         }
 
 
-        void ShowBangMark()
+        void CheckShowBangMark()
         {
-            if (_npcDetection == null)
+            RaycastHit hit;
+
+            Vector3 RayOrigin = transform.position;
+            Vector3 RayDirection = transform.forward;
+
+            if (Physics.Raycast(RayOrigin, RayDirection, _interactionDistance, _layer))
             {
-                Debug.Log("NPCsDetectionRange 스크립트가 존재하지 않습니다");
-            }
-
-
-            if(_npcDetection.IsPlayer == true)
-            {
-                _bangMark.SetActive(true);
-
-                BangMarkAnimation();
+                _isPlayer = true;
             }
             else
             {
-                _bangMark.SetActive(false);
+                _isPlayer = false;
             }
+            BangMarkAnimation();
         }
 
         void BangMarkAnimation()
         {
-            _bangMark.transform.Rotate(Vector3.up * _rotationSpeed * Time.deltaTime);
+            _QMark.transform.Rotate(Vector3.up * _rotationSpeed * Time.deltaTime);
 
             float bounce = Mathf.Abs(Mathf.Sin(Time.time * _hopSpeed)) * _hopAmound;
             float posY = _defaultY + bounce;
 
-            _bangMark.transform.localPosition = new Vector3(_localPos.x, posY, _localPos.z);
+            _QMark.transform.localPosition = new Vector3(_localPos.x, posY, _localPos.z);
         }
     }
 }

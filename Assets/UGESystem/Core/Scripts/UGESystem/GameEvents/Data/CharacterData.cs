@@ -37,6 +37,12 @@ namespace UGESystem
         public List<CharacterExpression> Expressions { get; private set; } = new List<CharacterExpression>();
 
         /// <summary>
+        /// Tracks which original character asset's visual data this character is currently using.
+        /// (Korean) 이 캐릭터가 현재 사용 중인 원본 캐릭터 에셋의 ID를 추적합니다.
+        /// </summary>
+        [field: SerializeField] public string SourceTemplateID { get; private set; }
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="CharacterData"/> class.
         /// Note that primary initialization is handled by the <see cref="CharacterDatabaseEditor"/> for robust serialization.
         /// </summary>
@@ -44,6 +50,38 @@ namespace UGESystem
         {
             // Initialization is now handled by CharacterDatabaseEditor to robustly deal with
             // Unity's serialization behavior (e.g., duplicating elements instead of calling constructors).
+        }
+
+        /// <summary>
+        /// Updates the character's properties, keeping the CharacterID unchanged.
+        /// /// (Korean) CharacterID는 유지한 채 캐릭터의 속성을 업데이트합니다.
+        /// </summary>
+        public void UpdateData(string name, bool is3D, GameObject prefab, List<CharacterExpression> expressions, string sourceTemplateID = "")
+        {
+            Name = name;
+            Is3D = is3D;
+            Prefab = prefab;
+            SourceTemplateID = sourceTemplateID;
+            
+            Expressions.Clear();
+            if (expressions != null)
+            {
+                foreach (var exp in expressions)
+                {
+                    var newExp = new CharacterExpression();
+                    newExp.SetData(exp.ExpressionName, exp.AnimationStateName);
+                    Expressions.Add(newExp);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Sets the CharacterID. Should be used primarily during initialization or cloning.
+        /// /// (Korean) CharacterID를 설정합니다. 주로 초기화나 클로닝 중에 사용해야 합니다.
+        /// </summary>
+        public void SetID(string id)
+        {
+            CharacterID = id;
         }
     }
 }

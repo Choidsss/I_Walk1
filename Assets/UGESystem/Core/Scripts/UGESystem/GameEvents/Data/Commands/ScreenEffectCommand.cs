@@ -23,27 +23,17 @@ namespace UGESystem
     /// </summary>
     public class ScreenEffectCommandDto : IEventCommandDto
     {
-        /// <summary>
-        /// Gets or sets the type of screen effect.
-        /// </summary>
         [JsonProperty] public ScreenEffectType EffectType { get; set; }
-        /// <summary>
-        /// Gets or sets the duration of the effect in seconds.
-        /// </summary>
         [JsonProperty] public float Duration { get; set; }
-        /// <summary>
-        /// Gets or sets the target color for the effect. Alpha is used for Tint and FadeIn.
-        /// </summary>
         [JsonProperty] public Color TargetColor { get; set; }
-        /// <summary>
-        /// Gets or sets how long the flash stays at full color before fading out.
-        /// </summary>
         [JsonProperty] public float FlashHoldDuration { get; set; }
 
-        /// <summary>
-        /// Converts this DTO into a <see cref="ScreenEffectCommand"/> instance.
-        /// </summary>
-        /// <returns>A new <see cref="ScreenEffectCommand"/> instance.</returns>
+        // Transition Cleanup Flags
+        [JsonProperty] public bool HideAll { get; set; }
+        [JsonProperty] public bool HideUI { get; set; }
+        [JsonProperty] public bool HideCharacters { get; set; }
+        [JsonProperty] public bool HideBackground { get; set; }
+
         public EventCommand ToCommand()
         {
             return new ScreenEffectCommand(this);
@@ -52,70 +42,78 @@ namespace UGESystem
 
     /// <summary>
     /// A command for controlling full-screen visual effects such as fades, flashes, and tints,
-    /// via <see cref="UGEScreenEffectManager"/>.
+    /// with optional scene cleanup flags for transitions.
     /// </summary>
     [System.Serializable]
     [AvailableIn(GameEventType.Dialogue, GameEventType.CinematicText)]
     public class ScreenEffectCommand : EventCommand
     {
-        [field: Header("Effect Settings")]
-        [field: SerializeField]
-        [JsonIgnore] /// <summary>Gets the type of screen effect to apply.</summary>
-        public ScreenEffectType EffectType { get; private set; }
+        [Header("Effect Settings")]
+        [SerializeField] private ScreenEffectType _effectType;
+        [JsonIgnore] public ScreenEffectType EffectType => _effectType;
 
-        [field: SerializeField]
-        [field: Tooltip("Duration of the effect in seconds.")]
-        [JsonIgnore] /// <summary>Gets the duration of the effect in seconds.</summary>
-        public float Duration { get; private set; } = 1.0f;
+        [Tooltip("Duration of the effect in seconds.")]
+        [SerializeField] private float _duration = 1.0f;
+        [JsonIgnore] public float Duration => _duration;
         
-        [field: SerializeField]
-        [field: Tooltip("Target color for the effect. Alpha is used for Tint and FadeIn.")]
-        [JsonIgnore] /// <summary>Gets the target color for the effect. Alpha is used for Tint and FadeIn.</summary>
-        public Color TargetColor { get; private set; } = Color.black;
+        [Tooltip("Target color for the effect. Alpha is used for Tint and FadeIn.")]
+        [SerializeField] private Color _targetColor = Color.black;
+        [JsonIgnore] public Color TargetColor => _targetColor;
 
-        [Header("Flash Specific Settings")]
+        [Header("Flash & Tint Settings")]
         [SerializeField]
-        [Tooltip("How long the flash stays at full color before fading out.")]
+        [Tooltip("How long the effect stays at full intensity/color.")]
         private float _flashHoldDuration = 0.1f;
-        /// <summary>
-        /// Gets how long the flash stays at full color before fading out.
-        /// </summary>
         [JsonIgnore] public float FlashHoldDuration => _flashHoldDuration;
 
+        [Header("Transition Cleanup Options")]
+        [Tooltip("Hides everything (UI, Characters, Background) at the peak of the effect.")]
+        [SerializeField] private bool _hideAll;
+        [JsonIgnore] public bool HideAll => _hideAll;
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ScreenEffectCommand"/> class.
-        /// </summary>
+        [Tooltip("Hides the dialogue box and choice box.")]
+        [SerializeField] private bool _hideUI;
+        [JsonIgnore] public bool HideUI => _hideUI;
+
+        [Tooltip("Hides all characters from the scene.")]
+        [SerializeField] private bool _hideCharacters;
+        [JsonIgnore] public bool HideCharacters => _hideCharacters;
+
+        [Tooltip("Hides the currently active background.")]
+        [SerializeField] private bool _hideBackground;
+        [JsonIgnore] public bool HideBackground => _hideBackground;
+
+
         public ScreenEffectCommand()
         {
             CommandType = CommandType.ScreenEffect;
         }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ScreenEffectCommand"/> class from a DTO.
-        /// </summary>
-        /// <param name="dto">The <see cref="ScreenEffectCommandDto"/> containing the initial data.</param>
         public ScreenEffectCommand(ScreenEffectCommandDto dto)
         {
             CommandType = CommandType.ScreenEffect;
-            EffectType = dto.EffectType;
-            Duration = dto.Duration;
-            TargetColor = dto.TargetColor;
+            _effectType = dto.EffectType;
+            _duration = dto.Duration;
+            _targetColor = dto.TargetColor;
             _flashHoldDuration = dto.FlashHoldDuration;
+            _hideAll = dto.HideAll;
+            _hideUI = dto.HideUI;
+            _hideCharacters = dto.HideCharacters;
+            _hideBackground = dto.HideBackground;
         }
 
-        /// <summary>
-        /// Converts this <see cref="ScreenEffectCommand"/> instance into a <see cref="ScreenEffectCommandDto"/> for serialization.
-        /// </summary>
-        /// <returns>A new <see cref="ScreenEffectCommandDto"/> instance.</returns>
         public override IEventCommandDto ToDto()
         {
             return new ScreenEffectCommandDto
             {
-                EffectType = EffectType,
-                Duration = Duration,
-                TargetColor = TargetColor,
-                FlashHoldDuration = _flashHoldDuration
+                EffectType = _effectType,
+                Duration = _duration,
+                TargetColor = _targetColor,
+                FlashHoldDuration = _flashHoldDuration,
+                HideAll = _hideAll,
+                HideUI = _hideUI,
+                HideCharacters = _hideCharacters,
+                HideBackground = _hideBackground
             };
         }
     }

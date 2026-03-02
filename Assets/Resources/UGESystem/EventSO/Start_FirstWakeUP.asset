@@ -37,7 +37,7 @@ MonoBehaviour:
         _dialogueText: '................
 
 '
-        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -58,7 +58,7 @@ MonoBehaviour:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
         _dialogueText: .................??
-        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -71,7 +71,7 @@ MonoBehaviour:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
         _dialogueText: "\uC5B4.....\uC2DC\uAC04\uC774....."
-        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -84,7 +84,7 @@ MonoBehaviour:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
         _dialogueText: "\uBB50\uC57C......."
-        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -101,9 +101,9 @@ MonoBehaviour:
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
-        _isNodeExpanded: 0
+        _isNodeExpanded: 1
         _dialogueText: "\uBE68\uB9AC \uC77C\uC5B4\uB098\uC790\n"
-        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
         _dialogueText: "\u3145\u3142......\u3148\uB410\uB2E4......."
-        _characterName: 
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
         _dialogueText: "\uC544\uB098....10\uBD84 \uB354 \uC798\uB77C\uB2E4\uAC00....\uC774\uC528...."
-        _characterName: 
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
         _dialogueText: '!!!!!!!!!'
-        _characterName: 
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0

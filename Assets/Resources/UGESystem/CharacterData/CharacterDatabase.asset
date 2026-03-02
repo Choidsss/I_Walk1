@@ -13,73 +13,135 @@ MonoBehaviour:
   m_Name: CharacterDatabase
   m_EditorClassIdentifier: Assembly-CSharp::UGESystem.CharacterDatabase
   _characters:
-  - <CharacterID>k__BackingField: 4efbc079-6e06-4590-a7a5-b6c65990b5da
-    <Name>k__BackingField: Player
+  - <CharacterID>k__BackingField: e7cbf9bb-40af-4380-86c8-549267f4942f
+    <Name>k__BackingField: Player2D
     <Is3D>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 8814941506187807103, guid: 43d79c169018b15489d018572a07e458, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+    - <ExpressionName>k__BackingField: Happy
+      <AnimationStateName>k__BackingField: Happy
+    - <ExpressionName>k__BackingField: Sad
+      <AnimationStateName>k__BackingField: Sad
+    <SourceTemplateID>k__BackingField: 
+  - <CharacterID>k__BackingField: 2b262eca-84b5-4c36-95fa-c42df63faa26
+    <Name>k__BackingField: NPC2D
+    <Is3D>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 5889619025958826295, guid: 2c3543235f3b255489d1188058ead623, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+    - <ExpressionName>k__BackingField: Happy
+      <AnimationStateName>k__BackingField: Happy
+    - <ExpressionName>k__BackingField: Sad
+      <AnimationStateName>k__BackingField: Sad
+    <SourceTemplateID>k__BackingField: 
+  - <CharacterID>k__BackingField: 990a2693-b415-48b4-bcf7-b0a6830925b2
+    <Name>k__BackingField: Player3D
+    <Is3D>k__BackingField: 1
+    <Prefab>k__BackingField: {fileID: 6595445706843268288, guid: b26cc465f280fb64692b4b496518e8fe, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+    - <ExpressionName>k__BackingField: Happy
+      <AnimationStateName>k__BackingField: Happy
+    - <ExpressionName>k__BackingField: Sad
+      <AnimationStateName>k__BackingField: Sad
+    - <ExpressionName>k__BackingField: Angry
+      <AnimationStateName>k__BackingField: Angry
+    <SourceTemplateID>k__BackingField: 
+  - <CharacterID>k__BackingField: 21b606b7-98ec-494c-8cc0-7c0d82c0a51b
+    <Name>k__BackingField: NPC3D
+    <Is3D>k__BackingField: 1
+    <Prefab>k__BackingField: {fileID: 8423538104949330201, guid: d0f308a4b357a494896b30a7299ab056, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+    - <ExpressionName>k__BackingField: Happy
+      <AnimationStateName>k__BackingField: Happy
+    - <ExpressionName>k__BackingField: Sad
+      <AnimationStateName>k__BackingField: Sad
+    - <ExpressionName>k__BackingField: Angry
+      <AnimationStateName>k__BackingField: Angry
+    <SourceTemplateID>k__BackingField: 
+  - <CharacterID>k__BackingField: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
+    <Name>k__BackingField: Player
+    <Is3D>k__BackingField: 1
     <Prefab>k__BackingField: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
     <Expressions>k__BackingField:
     - <ExpressionName>k__BackingField: Default
       <AnimationStateName>k__BackingField: Default
-  - <CharacterID>k__BackingField: 12955645-38ea-4994-8271-ab2c8fd54b34
+    <SourceTemplateID>k__BackingField: 
+  - <CharacterID>k__BackingField: a593ee84-ad99-49a8-b175-875aff2415db
     <Name>k__BackingField: NPC_Teacher
-    <Is3D>k__BackingField: 0
+    <Is3D>k__BackingField: 1
     <Prefab>k__BackingField: {fileID: 4398088035677913499, guid: 307b749c476f63c468c566a63b269fd9, type: 3}
     <Expressions>k__BackingField:
     - <ExpressionName>k__BackingField: Default
       <AnimationStateName>k__BackingField: Default
-  - <CharacterID>k__BackingField: ecc68017-1e67-4701-8e8f-e96ebd68000c
-    <Name>k__BackingField: NPC_InterviewPanel
-    <Is3D>k__BackingField: 0
+    <SourceTemplateID>k__BackingField: 
+  - <CharacterID>k__BackingField: 05cbbc24-840c-4f5e-bc90-30ac3c5270f0
+    <Name>k__BackingField: NPC_IntervirePanel
+    <Is3D>k__BackingField: 1
     <Prefab>k__BackingField: {fileID: 8887721094376060984, guid: 8f4d47d2d4c11ee4eae566bfc1222d42, type: 3}
     <Expressions>k__BackingField:
     - <ExpressionName>k__BackingField: Default
       <AnimationStateName>k__BackingField: Default
-  - <CharacterID>k__BackingField: fb8b895a-caa6-40a1-9a7b-1b50b7e72cf3
-    <Name>k__BackingField: NPC_RooMmate1
-    <Is3D>k__BackingField: 0
-    <Prefab>k__BackingField: {fileID: 6574769759565292371, guid: a870f6cfcb42987469990d5b51e9c904, type: 3}
-    <Expressions>k__BackingField:
-    - <ExpressionName>k__BackingField: Default
-      <AnimationStateName>k__BackingField: Default
-  - <CharacterID>k__BackingField: ad71761b-c31e-445c-9060-7be3d7334a7d
-    <Name>k__BackingField: NPC_RoomMate2
-    <Is3D>k__BackingField: 0
-    <Prefab>k__BackingField: {fileID: 8294109395822940102, guid: 33597b2e372d8d94f8fa39d077add9bd, type: 3}
-    <Expressions>k__BackingField:
-    - <ExpressionName>k__BackingField: Default
-      <AnimationStateName>k__BackingField: Default
-  - <CharacterID>k__BackingField: 3bb6100e-435d-49cb-a527-74435f0ae1f6
-    <Name>k__BackingField: NPC_AssemblySupervisor
-    <Is3D>k__BackingField: 0
-    <Prefab>k__BackingField: {fileID: 4564802698652820844, guid: 35e7baaef1b49c04dbd94f88f097b067, type: 3}
-    <Expressions>k__BackingField:
-    - <ExpressionName>k__BackingField: Default
-      <AnimationStateName>k__BackingField: Default
-  - <CharacterID>k__BackingField: 17cd9bd1-314c-4836-8414-e4e58efcb71c
-    <Name>k__BackingField: NPC_Executive
-    <Is3D>k__BackingField: 0
-    <Prefab>k__BackingField: {fileID: 6379393437632401504, guid: 1c9e243aa60a0774dbe8e248f2afb5d4, type: 3}
-    <Expressions>k__BackingField:
-    - <ExpressionName>k__BackingField: Default
-      <AnimationStateName>k__BackingField: Default
-  - <CharacterID>k__BackingField: 0eb6fe9c-413b-447a-9774-7f1f45701363
-    <Name>k__BackingField: NPC_Friend1
-    <Is3D>k__BackingField: 0
-    <Prefab>k__BackingField: {fileID: 1870329947790349537, guid: ccd61b20b129ed2488b23e125c4e1dad, type: 3}
-    <Expressions>k__BackingField:
-    - <ExpressionName>k__BackingField: Default
-      <AnimationStateName>k__BackingField: Default
-  - <CharacterID>k__BackingField: bfcb1cbc-80e6-4b70-99e9-79396e3ebecf
+    <SourceTemplateID>k__BackingField: 
+  - <CharacterID>k__BackingField: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
     <Name>k__BackingField: NPC_ComManager2
-    <Is3D>k__BackingField: 0
+    <Is3D>k__BackingField: 1
     <Prefab>k__BackingField: {fileID: 2052806698560310391, guid: 17536fda628a8504b9bec8f02bcbf309, type: 3}
     <Expressions>k__BackingField:
     - <ExpressionName>k__BackingField: Default
       <AnimationStateName>k__BackingField: Default
-  - <CharacterID>k__BackingField: 917441cc-07ba-4059-8afc-2190ece7ecac
-    <Name>k__BackingField: NPC_Friend2
-    <Is3D>k__BackingField: 0
+    <SourceTemplateID>k__BackingField: 
+  - <CharacterID>k__BackingField: 85d6a16e-2312-4c82-9519-79e25dc7501c
+    <Name>k__BackingField: NPC_RoomMate1
+    <Is3D>k__BackingField: 1
+    <Prefab>k__BackingField: {fileID: 6574769759565292371, guid: a870f6cfcb42987469990d5b51e9c904, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+    <SourceTemplateID>k__BackingField: 
+  - <CharacterID>k__BackingField: f51f416e-92a1-4750-99de-a194cd4f819a
+    <Name>k__BackingField: NPC_RoomMate2
+    <Is3D>k__BackingField: 1
+    <Prefab>k__BackingField: {fileID: 8294109395822940102, guid: 33597b2e372d8d94f8fa39d077add9bd, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+    <SourceTemplateID>k__BackingField: 
+  - <CharacterID>k__BackingField: 969e1818-5435-4247-ad6b-30f508f38255
+    <Name>k__BackingField: NPC_SuperVisor
+    <Is3D>k__BackingField: 1
+    <Prefab>k__BackingField: {fileID: 4564802698652820844, guid: 35e7baaef1b49c04dbd94f88f097b067, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+    <SourceTemplateID>k__BackingField: 
+  - <CharacterID>k__BackingField: ca3887ce-7a93-44ff-899c-d15c5080aedc
+    <Name>k__BackingField: NPC_Executive
+    <Is3D>k__BackingField: 1
+    <Prefab>k__BackingField: {fileID: 6379393437632401504, guid: 1c9e243aa60a0774dbe8e248f2afb5d4, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+    <SourceTemplateID>k__BackingField: 
+  - <CharacterID>k__BackingField: cf7908e8-b42d-4fe8-974b-a8ddbef09f74
+    <Name>k__BackingField: NPC_Friend
+    <Is3D>k__BackingField: 1
+    <Prefab>k__BackingField: {fileID: 1870329947790349537, guid: ccd61b20b129ed2488b23e125c4e1dad, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+    <SourceTemplateID>k__BackingField: 
+  - <CharacterID>k__BackingField: 2eb8aa95-cbf0-49bf-9fa4-4f943bfe0aed
+    <Name>k__BackingField: NPC_NoName
+    <Is3D>k__BackingField: 1
     <Prefab>k__BackingField: {fileID: 4326243496361589951, guid: 76cbd43d2ce63bf4bb557f59fcddff0c, type: 3}
     <Expressions>k__BackingField:
     - <ExpressionName>k__BackingField: Default
       <AnimationStateName>k__BackingField: Default
+    <SourceTemplateID>k__BackingField: 

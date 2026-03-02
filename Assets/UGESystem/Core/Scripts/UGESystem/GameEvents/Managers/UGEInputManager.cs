@@ -1,97 +1,112 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace UGESystem
 {
     /// <summary>
-    /// Centralized manager for event-related input, handling <see cref="ContinueDialogue"/> and <see cref="SkipCinematic"/> actions from Unity's Input System.
+    /// Centralized manager for event-related input.
+    /// It uses InputActionReferences to allow project-specific binding without code modification.
     /// <br/>
-    /// 이벤트 관련 입력을 위한 중앙 관리자로, Unity의 입력 시스템에서 <see cref="OnContinueDialogue"/> 및 <see cref="OnSkipCinematic"/> 액션을 처리합니다.
+    /// 이벤트 관련 입력을 위한 중앙 관리자입니다.
+    /// 코드 수정 없이 프로젝트별 바인딩이 가능하도록 InputActionReference를 사용합니다.
     /// </summary>
     public class UGEInputManager : MonoBehaviour
     {
+        [Header("Dialogue Actions")]
+        [Tooltip("Assign the action used to continue dialogue (e.g., Space, Mouse Left Click).")]
+        [SerializeField] private InputActionReference _continueDialogueAction;
+        
+        [Tooltip("Assign the action used to skip cinematic sequences (e.g., ESC, Tab).")]
+        [SerializeField] private InputActionReference _skipCinematicAction;
+
+        [Header("Player Actions (Example)")]
+        [Tooltip("Assign the action used for player interaction (e.g., F key, E key).")]
+        [SerializeField] private InputActionReference _interactAction;
+
         /// <summary>
-        /// Event triggered when the "Continue Dialogue" input action is performed.
-        /// "대화 계속" 입력 액션이 수행될 때 발생하는 이벤트입니다.
+        /// Triggered when the continue dialogue action is performed.
         /// </summary>
         public event Action OnContinueDialogue;
         /// <summary>
-        /// Event triggered when the "Skip Cinematic" input action is performed.
-        /// "시네마틱 스킵" 입력 액션이 수행될 때 발생하는 이벤트입니다.
+        /// Triggered when the skip cinematic action is performed.
         /// </summary>
         public event Action OnSkipCinematic;
-
-        private InputSystem_Actions _actions;
+        /// <summary>
+        /// Triggered when the interact action is performed.
+        /// </summary>
+        public event Action OnInteract;
 
         private bool _isContinueListenerActive = false;
         private bool _isSkipListenerActive = false;
 
-        private void Awake()
-        {
-            _actions = new InputSystem_Actions();
-        }
-
         private void OnEnable()
         {
-            _actions.UI_Event.Enable();
-            _actions.UI_Event.ContinueDialogue.performed += HandleContinueDialogue;
-            _actions.UI_Event.SkipCinematic.performed += HandleSkipCinematic;
+            if (_continueDialogueAction != null)
+            {
+                _continueDialogueAction.action.Enable();
+                _continueDialogueAction.action.performed += HandleContinueDialogue;
+            }
+
+            if (_skipCinematicAction != null)
+            {
+                _skipCinematicAction.action.Enable();
+                _skipCinematicAction.action.performed += HandleSkipCinematic;
+            }
+
+            if (_interactAction != null)
+            {
+                _interactAction.action.Enable();
+                _interactAction.action.started += HandleInteract;
+            }
         }
 
         private void OnDisable()
         {
-            _actions.UI_Event.Disable();
-            _actions.UI_Event.ContinueDialogue.performed -= HandleContinueDialogue;
-            _actions.UI_Event.SkipCinematic.performed -= HandleSkipCinematic;
+            if (_continueDialogueAction != null)
+            {
+                _continueDialogueAction.action.performed -= HandleContinueDialogue;
+            }
+
+            if (_skipCinematicAction != null)
+            {
+                _skipCinematicAction.action.performed -= HandleSkipCinematic;
+            }
+
+            if (_interactAction != null)
+            {
+                _interactAction.action.started -= HandleInteract;
+            }
         }
 
-        /// <summary>
-        /// Enables or disables the listener for the "Continue Dialogue" input action.
-        /// "대화 계속" 입력 액션에 대한 리스너를 활성화하거나 비활성화합니다.
-        /// </summary>
-        /// <param name="enable">True to enable the listener, false to disable.</param>
-        public void EnableDialogueContinueListener(bool enable)
-        {
-            _isContinueListenerActive = enable;
-        }
+        public void EnableDialogueContinueListener(bool enable) => _isContinueListenerActive = enable;
+        public void EnableCinematicSkipListener(bool enable) => _isSkipListenerActive = enable;
 
-        /// <summary>
-        /// Enables or disables the listener for the "Skip Cinematic" input action.
-        /// "시네마틱 스킵" 입력 액션에 대한 리스너를 활성화하거나 비활성화합니다.
-        /// </summary>
-        /// <param name="enable">True to enable the listener, false to disable.</param>
-        public void EnableCinematicSkipListener(bool enable)
-        {
-            _isSkipListenerActive = enable;
-        }
-
-        /// <summary>
-        /// Manually triggers the OnContinueDialogue event. Can be used by UI buttons.
-        /// 수동으로 OnContinueDialogue 이벤트를 트리거합니다. UI 버튼 등에서 사용할 수 있습니다.
-        /// </summary>
         public void TriggerContinueDialogue()
         {
-            // We check the active flag here as well to ensure UI buttons don't bypass the control.
-            // UI 버튼이 제어를 우회하지 않도록 여기서도 활성화 플래그를 확인합니다.
-            if (_isContinueListenerActive)
-            {
-                OnContinueDialogue?.Invoke();
-            }
+            if (_isContinueListenerActive) OnContinueDialogue?.Invoke();
         }
 
-        private void HandleContinueDialogue(UnityEngine.InputSystem.InputAction.CallbackContext context)
+        public void TriggerSkipCinematic()
         {
-            if (_isContinueListenerActive)
-            {
-                OnContinueDialogue?.Invoke();
-            }
+            if (_isSkipListenerActive) OnSkipCinematic?.Invoke();
         }
 
-        private void HandleSkipCinematic(UnityEngine.InputSystem.InputAction.CallbackContext context)
+        private void HandleContinueDialogue(InputAction.CallbackContext context)
         {
-            if (_isSkipListenerActive)
+            if (_isContinueListenerActive) OnContinueDialogue?.Invoke();
+        }
+
+        private void HandleSkipCinematic(InputAction.CallbackContext context)
+        {
+            if (_isSkipListenerActive) OnSkipCinematic?.Invoke();
+        }
+
+        private void HandleInteract(InputAction.CallbackContext context)
+        {
+            if (!UGESystemController.Instance.IsInteracting)
             {
-                OnSkipCinematic?.Invoke();
+                OnInteract?.Invoke();
             }
         }
     }

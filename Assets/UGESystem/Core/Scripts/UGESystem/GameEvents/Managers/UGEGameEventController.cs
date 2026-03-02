@@ -30,7 +30,7 @@ namespace UGESystem
         /// </summary>
         public UGECameraManager CameraManager { get; set; }
         /// <summary>
-        /// Reference to the Sound Manager for playing BGM and SFX.
+        /// Reference to the Sound Manager for handling BGM and SFX.
         /// </summary>
         public UGESoundManager SoundManager { get; set; }
         /// <summary>
@@ -57,12 +57,19 @@ namespace UGESystem
 
         private int _commandIndex;
         private GameEventType _currentEventType;
+        /// <summary>
+        /// Gets the type of the event currently being executed.
+        /// </summary>
+        public GameEventType CurrentEventType => _currentEventType;
                 
         /// <summary>
         /// Gets or sets a value indicating whether the controller is waiting for user input (e.g., for dialogue continuation or a choice).
         /// </summary>
         public bool IsWaitingForChoice { get; set; } = false;
-                
+        
+        // Track the running coroutine to allow proper stopping if needed.
+        private Coroutine _eventProcessCoroutine;
+
         private Dictionary<string, int> _labelMap;
         private Dictionary<GameEventType, Dictionary<Type, ICommandHandler>> _commandHandlers;
         private float _lastContinueTime = 0f;
@@ -75,7 +82,6 @@ namespace UGESystem
         private void InitializeCommandHandlers()
         {
             // 모든 핸들러 인스턴스를 단 한 번만 생성하여 재사용합니다.
-            // Create all handler instances only once for reuse.
             var backgroundHandler = new DialogueNode_BackgroundCommandHandler();
             var characterHandler = new DialogueNode_CharacterCommandHandler();
             var choiceHandler = new DialogueNode_ChoiceCommandHandler();
@@ -88,6 +94,8 @@ namespace UGESystem
             var playSoundHandler = new PlaySoundCommandHandler();
             var triggerEventHandler = new TriggerEventCommandHandler();
             var rewardHandler = new RewardCommandHandler();
+            var characterUpdateHandler = new CharacterUpdateCommandHandler();
+            var bubbleChatHandler = new BubbleChatCommandHandler();
             
             // 시네마틱 전용 다이얼로그 핸들러
             var cinematicDialogueHandler = new CinematicNode_DialogueCommandHandler();
@@ -110,6 +118,8 @@ namespace UGESystem
                         { typeof(PlaySoundCommand), playSoundHandler },
                         { typeof(TriggerEventCommand), triggerEventHandler },
                         { typeof(RewardCommand), rewardHandler },
+                        { typeof(CharacterUpdateCommand), characterUpdateHandler },
+                        { typeof(BubbleChatCommand), bubbleChatHandler },
                     }
                 },
                 {
@@ -117,13 +127,15 @@ namespace UGESystem
                     {
                         { typeof(BackgroundCommand), backgroundHandler },
                         { typeof(CharacterCommand), characterHandler },
-                        { typeof(DialogueCommand), cinematicDialogueHandler }, // 시네마틱 전용 핸들러 사용
+                        { typeof(DialogueCommand), cinematicDialogueHandler },
                         { typeof(EndCommand), endHandler },
                         { typeof(UGECameraCommand), cameraHandler },
                         { typeof(ScreenEffectCommand), screenEffectHandler },
                         { typeof(PlaySoundCommand), playSoundHandler },
                         { typeof(TriggerEventCommand), triggerEventHandler },
                         { typeof(RewardCommand), rewardHandler },
+                        { typeof(CharacterUpdateCommand), characterUpdateHandler },
+                        { typeof(BubbleChatCommand), bubbleChatHandler },
                     }
                 },
             };
@@ -132,38 +144,49 @@ namespace UGESystem
         /// <summary>
         /// Starts processing a given GameEvent.
         /// </summary>
-        /// <param name="gameEvent">The GameEvent asset to execute.</param>
-        /// <param name="eventType">The context in which the event is running (e.g., Dialogue, CinematicText).</param>
-        /// <param name="storyboard">The parent storyboard this event belongs to.</param>
         public void StartEvent(GameEvent gameEvent, GameEventType eventType, Storyboard storyboard)
         {
-            StartCoroutine(ProcessEventCoroutine(gameEvent, eventType, storyboard));
+            // 1. Synchronous State Locking: Prevent re-entry immediately.
+            if (IsEventRunning) return;
+            
+            // 2. Validation: Check if event is valid to run.
+            if (gameEvent == null || gameEvent.Commands.Count == 0) return;
+
+            // Lock the state immediately to block race conditions.
+            IsEventRunning = true;
+            _currentEvent = gameEvent;
+            _currentStoryboard = storyboard;
+
+            // --- Camera State Management ---
+            // Capture initial camera state before any commands execute.
+            if (CameraManager != null)
+            {
+                CameraManager.PrepareForEvent();
+            }
+
+            _eventProcessCoroutine = StartCoroutine(ProcessEventCoroutine(gameEvent, eventType, storyboard));
         }
         
         private IEnumerator ProcessEventCoroutine(GameEvent gameEvent, GameEventType eventType, Storyboard storyboard)
         {
-            if (gameEvent == null || gameEvent.Commands.Count == 0)
-            {
-                yield break;
-            }
-        
-            if (IsEventRunning)
-            {
-                yield break;
-            }
-        
+            // Wait one frame to ensure initialization of managers or UI stability.
+            // This yield is intentional to prevent input double-firing from previous nodes.
             yield return null;
         
-            IsEventRunning = true;
-            _currentEvent = gameEvent;
-            _currentStoryboard = storyboard;
+            // Double-check validation (though StartEvent handles most).
+            // If something went wrong during the yield, we must clean up.
+            if (gameEvent == null) 
+            {
+                EndEvent(new EndCommand()); // Safety exit
+                yield break;
+            }
+
+            // _currentEvent and _currentStoryboard are already set in StartEvent to maintain state locking.
             _currentEventType = eventType;
             _commandIndex = 0;
             IsWaitingForChoice = false;
-            _isSkipActive = false; // 이벤트 시작 시 스킵 플래그 초기화
+            _isSkipActive = false;
         
-            // 시네마틱 스킵 리스너 구독
-            // Subscribe to cinematic skip listener
             if (_currentEventType == GameEventType.CinematicText)
             {
                 InputManager.OnSkipCinematic += SkipCinematicEvent;
@@ -174,29 +197,19 @@ namespace UGESystem
         
             while (_commandIndex < _currentEvent.Commands.Count)
             {
-                if (!IsEventRunning)
-                {
-                    yield break;
-                }
+                // External cancellation check: if IsEventRunning becomes false via external EndEvent, exit loop.
+                if (!IsEventRunning) yield break;
         
                 IGameEventCommand command = _currentEvent.Commands[_commandIndex];
-        
                 if (command == null)
                 {
-#if UNITY_EDITOR
-                    Debug.LogWarning($"Null command found at index {_commandIndex} in GameEvent '{_currentEvent.name}'. Skipping.");
-#endif
                     _commandIndex++;
                     continue;
                 }
         
                 Type commandType = command.GetType();
-        
                 if (!_commandHandlers.TryGetValue(_currentEventType, out var handlers))
                 {
-#if UNITY_EDITOR
-                    Debug.LogError($"[GameEventController] No handler dictionary found for GameEventType '{_currentEventType}'. Please register it in InitializeCommandHandlers.");
-#endif
                     _commandIndex++;
                     continue;
                 }
@@ -204,26 +217,19 @@ namespace UGESystem
                 if (handlers.TryGetValue(commandType, out var handler))
                 {
                     yield return handler.Execute(command, this);
-                    if (!IsEventRunning)
-                    {
-                        yield break;
-                    }
-                }
-                else
-                {
-#if UNITY_EDITOR
-                    Debug.LogWarning($"No handler found for command '{commandType.Name}' in context '{_currentEventType}'. Skipping command.");
-#endif
+                    // Check again after handler execution to see if we were stopped.
+                    if (!IsEventRunning) yield break;
                 }
         
                 if (IsWaitingForChoice)
                 {
-                    // The UIManager is now responsible for handling the continue input,
-                    // so this controller no longer needs to subscribe to the InputManager directly.
-                    // 이제 UIManager가 계속 입력을 처리하므로, 이 컨트롤러는 더 이상 InputManager를 직접 구독할 필요가 없습니다.
                     InputManager.EnableDialogueContinueListener(true);
                     yield return new WaitUntil(() => !IsWaitingForChoice);
                     InputManager.EnableDialogueContinueListener(false);
+                    
+                    // Add a small delay after waiting to prevent the same click from triggering the next command immediately.
+                    // 대기 종료 후 짧은 지연을 추가하여 동일한 클릭이 다음 커맨드를 즉시 트리거하는 것을 방지합니다.
+                    yield return null;
                 }
         
                 _commandIndex++;
@@ -232,52 +238,27 @@ namespace UGESystem
             EndEvent(new EndCommand());
         }
         
-        /// <summary>
-        /// Signals the controller to stop waiting and proceed to the next command.
-        /// Typically called by user input.
-        /// </summary>
         public void ContinueEvent()
         {
-            // Prevent input flooding and double skipping (0.2s cooldown)
-            // 입력 플러딩 및 이중 스킵 방지 (0.2초 쿨다운)
             if (Time.time < _lastContinueTime + 0.2f) return;
             _lastContinueTime = Time.time;
-
             IsWaitingForChoice = false;
         }
         
-        /// <summary>
-        /// Handles the selection of a choice, jumping to the corresponding label in the event.
-        /// </summary>
-        /// <param name="choiceIndex">The index of the selected choice.</param>
         public void OnChoiceSelected(int choiceIndex)
         {
             var choiceCommand = _currentEvent.Commands[_commandIndex] as ChoiceCommand;
             if (choiceCommand == null) return;
         
             string targetLabel = choiceCommand.Choices[choiceIndex].TargetLabel;
-        
             JumpToLabel(targetLabel);
             ContinueEvent();
         }
         
-        /// <summary>
-        /// Jumps the command execution to the index of a specified label.
-        /// </summary>
-        /// <param name="label">The target label name to jump to.</param>
         public void JumpToLabel(string label)
         {
-            if (_labelMap.TryGetValue(label, out int targetIndex))
-            {
-                _commandIndex = targetIndex;
-            }
-            else
-            {
-#if UNITY_EDITOR
-                Debug.LogWarning($"Label '{label}' not found. Continuing to next command.");
-#endif
-                _commandIndex++;
-            }
+            if (_labelMap.TryGetValue(label, out int targetIndex)) _commandIndex = targetIndex;
+            else _commandIndex++;
         }
         
         private void BuildLabelMap()
@@ -288,68 +269,81 @@ namespace UGESystem
                 if (_currentEvent.Commands[i] is LabelCommand labelCommand)
                 {
                     if (!string.IsNullOrEmpty(labelCommand.LabelName) && !_labelMap.ContainsKey(labelCommand.LabelName))
-                    {
                         _labelMap.Add(labelCommand.LabelName, i);
-                    }
                 }
             }
         }
         
         private void SkipCinematicEvent()
         {
-            if (_currentEventType == GameEventType.CinematicText)
-            {
-                _isSkipActive = true;
-            }
+            if (_currentEventType == GameEventType.CinematicText) _isSkipActive = true;
         }
         
         /// <summary>
-        /// Ends the current event, cleans up UI and listeners, and fires the OnEventFinished event.
+        /// Ends the current event, cleans up all system states, and kills the processing coroutine.
+        /// Can be called naturally by the end of a command list or externally to force stop.
         /// </summary>
-        /// <param name="command">The EndCommand that triggered the event termination, containing rewards and branching info.</param>
         public void EndEvent(EndCommand command)
         {
+            // 0. Double-entry guard
             if (!IsEventRunning) return;
-                        
-            // 리스너 정리
-            // Clean up listeners
+
+            // 1. Immediately stop input listening to prevent further interactions
             InputManager.EnableDialogueContinueListener(false);
             if (_currentEventType == GameEventType.CinematicText)
             {
                 InputManager.OnSkipCinematic -= SkipCinematicEvent;
                 InputManager.EnableCinematicSkipListener(false);
             }
-            _isSkipActive = false; // 스킵 플래그 초기화
+            _isSkipActive = false;
                         
+            // 2. BACKUP references before nullifying fields
             var finishedEvent = _currentEvent;
+            var finishedStoryboard = _currentStoryboard;
+            var coroutineToStop = _eventProcessCoroutine;
             
-            // 1. 이벤트 종료 알림 (항상 수행)
-            // 1. Event completion notification (Always execute)
-            // Rewards are no longer passed here; they are handled by RewardCommand.
-            OnEventFinished?.Invoke(finishedEvent);
-
-            // 2. 분기 처리 (있는 경우)
-            // 2. Branching handling (if applicable)
-            if (command.IsBranching)
-            {
-                // 상태를 초기화하기 전에 컨텍스트를 사용하여 이벤트를 발행
-                // Publish the event using the context before resetting the state
-                UGEDelayedEventBus.Publish(new JumpToNodeEvent(_currentStoryboard, command.TargetNodeID));
-            }
-                
-            // 모든 처리가 끝난 후, UI 및 상태를 정리
-            // After all processing is done, clean up UI and state
-            UIManager.HideAllUI();
-            CharacterManager.HideAllCharacters();
-            CameraManager.ResetCamera();
-            if (UGESystemController.Instance.ScreenEffectManager != null)
-            {
-                UGESystemController.Instance.ScreenEffectManager.ClearEffect();
-            }
-                        
+            // 3. CLEAN UP state immediately to allow next event to start without race
             IsEventRunning = false;
             _currentEvent = null;
-            _currentStoryboard = null; 
+            _currentStoryboard = null;
+            _eventProcessCoroutine = null;
+
+            // 4. NOTIFY listeners using backed-up references
+            OnEventFinished?.Invoke(finishedEvent);
+
+            bool isBranching = command != null && command.IsBranching;
+            if (isBranching)
+            {
+                UGEDelayedEventBus.Publish(new JumpToNodeEvent(finishedStoryboard, command.TargetNodeID));
+            }
+                
+            // 5. Reset Managers (Visual Cleanup) - Ensure we are in a clean state
+            UIManager.HideAllUI();
+            CharacterManager.HideAllCharacters();
+
+            // --- CONDITIONAL CAMERA RESET ---
+            // 분기(Branching) 중이 아닐 때만 카메라를 리셋하여 '골든 카메라'로 복구합니다.
+            // 노드 간 전환 시에는 카메라 상태를 유지합니다.
+            if (!isBranching)
+            {
+                CameraManager.ResetCamera();
+            }
+            
+            if (UGESystemController.Instance != null)
+            {
+                if (UGESystemController.Instance.ScreenEffectManager != null)
+                    UGESystemController.Instance.ScreenEffectManager.ClearEffect();
+                
+                // IMPORTANT: Reset global interaction state to prevent deadlock if interrupted during bubble chat or interaction.
+                // 중요: 버블 챗이나 상호작용 도중 중단되었을 때의 조작 불능(Deadlock)을 방지하기 위해 전역 상호작용 상태를 초기화합니다.
+                UGESystemController.Instance.IsInteracting = false;
+            }
+
+            // 6. NUCLEAR OPTION: Kill the coroutine stack immediately to prevent "ghost" logic execution.
+            if (coroutineToStop != null)
+            {
+                StopCoroutine(coroutineToStop);
+            }
         }
     }
 }

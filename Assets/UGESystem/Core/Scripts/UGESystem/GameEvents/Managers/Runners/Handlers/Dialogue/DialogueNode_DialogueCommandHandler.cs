@@ -21,10 +21,14 @@ namespace UGESystem
             {
                 DialogueCommand command = (DialogueCommand)genericCommand; // Explicit cast
     
-                // 1. 캐릭터 관련 로직을 CharacterManager의 헬퍼 메서드로 위임
+                // 1. Clean up any existing bubble chats to prevent UI overlap
+                // 버블 챗과 다이얼로그가 겹치지 않도록 기존 버블 챗들을 정리합니다.
+                controller.UIManager.ClearAllBubbleChats();
+
+                // 2. 캐릭터 관련 로직을 CharacterManager의 헬퍼 메서드로 위임
                 controller.CharacterManager.ShowCharacterForDialogue(command);
     
-                // 2. UIManager에 대사 출력을 요청
+                // 3. UIManager에 대사 출력을 요청
                 string displayName = command.CharacterName;
                 if (controller.CharacterManager.CharacterDB != null)
                 {
@@ -41,4 +45,3 @@ namespace UGESystem
             }
         }
     }
-    

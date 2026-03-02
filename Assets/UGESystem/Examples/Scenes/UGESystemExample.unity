@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UGESystem.UGECameraManager
   _brain: {fileID: 0}
+  _defaultNoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
 --- !u!114 &95184453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -572,6 +573,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18198d05ccaaae9439631a01b0d523b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UGESystem.UGEInputManager
+  _continueDialogueAction: {fileID: -5963405276089185751, guid: a6feb7aa646691e43a29f9bf7034aa26, type: 3}
+  _skipCinematicAction: {fileID: -7521796105805450029, guid: a6feb7aa646691e43a29f9bf7034aa26, type: 3}
+  _interactAction: {fileID: -4436892830892886467, guid: a6feb7aa646691e43a29f9bf7034aa26, type: 3}
 --- !u!1 &533747772
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,14 +927,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759828454}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -1259,6 +1263,7 @@ MonoBehaviour:
   _backgroundRawImage: {fileID: 612740716}
   _backgroundVideoPlayer: {fileID: 612740715}
   _videoRenderTexture: {fileID: 8400000, guid: af30d3195546f41449d7df97117eb074, type: 2}
+  _bubbleChatPrefab: {fileID: 0}
 --- !u!1001 &1839853530
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,7 +12,12 @@ namespace UGESystem
         /// Gets or sets the type of camera action to perform.
         /// </summary>
         [JsonProperty] public UGECameraActionType ActionType { get; set; }
-        // [JsonProperty] public string TargetCameraName { get; set; } // REMOVED
+        
+        /// <summary>
+        /// Gets or sets the game object name of the target virtual camera.
+        /// </summary>
+        [JsonProperty] public string TargetCameraName { get; set; }
+
         /// <summary>
         /// Gets or sets the duration of the camera action in seconds.
         /// </summary>
@@ -99,7 +104,7 @@ namespace UGESystem
         {
             CommandType = CommandType.Camera;
             ActionType = dto.ActionType;
-            // _targetCameraName = dto.TargetCameraName; // REMOVED
+            _targetCameraName = dto.TargetCameraName; 
             _duration = dto.Duration;
             _targetFOV = dto.TargetFOV;
             _shakeIntensity = dto.ShakeIntensity;
@@ -114,7 +119,7 @@ namespace UGESystem
             return new UGECameraCommandDto
             {
                 ActionType = ActionType,
-                // TargetCameraName = _targetCameraName, // REMOVED
+                TargetCameraName = _targetCameraName,
                 Duration = _duration,
                 TargetFOV = _targetFOV,
                 ShakeIntensity = _shakeIntensity

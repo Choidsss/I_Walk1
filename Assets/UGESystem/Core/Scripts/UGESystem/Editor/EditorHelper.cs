@@ -12,6 +12,21 @@ namespace UGESystem
     public static class EditorHelper
     {
         /// <summary>
+        /// Retrieves a Unity Object from its instance ID, handling API differences across Unity versions.
+        /// 인스턴스 ID로부터 유니티 객체를 가져오며, 유니티 버전별 API 차이를 처리합니다.
+        /// </summary>
+        /// <param name="instanceID">The instance ID of the object.</param>
+        /// <returns>The Unity Object if found; otherwise null.</returns>
+        public static UnityEngine.Object InstanceIDToObject(int instanceID)
+        {
+#if UNITY_6000_3_OR_NEWER
+            return EditorUtility.EntityIdToObject(instanceID);
+#else
+            return EditorUtility.InstanceIDToObject(instanceID);
+#endif
+        }
+
+        /// <summary>
         /// Builds a polymorphic list view in the Unity editor for a given <see cref="SerializedProperty"/>.
         /// It allows adding new elements of types derived from a specified base type and handles the rendering and deletion of elements.
         /// </summary>

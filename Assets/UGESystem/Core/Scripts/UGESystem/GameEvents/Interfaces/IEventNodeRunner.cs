@@ -34,5 +34,10 @@ namespace UGESystem
         /// <param name="onComplete">A callback action to be invoked upon completion, providing the <see cref="NodeRunResult"/>.</param>
         /// <returns>An <see cref="IEnumerator"/> to support coroutine execution.</returns>
         IEnumerator Run(EventNodeData node, UGEEventTaskRunner runner, System.Action<NodeRunResult> onComplete);
+
+        /// <summary>
+        /// Cleans up any resources or event subscriptions when the runner is interrupted or finished.
+        /// </summary>
+        void Cleanup();
     }
 }

@@ -1,0 +1,75 @@
+{
+    "version": 1,
+    "name": "UGEInputActions",
+    "maps": [
+        {
+            "name": "UI",
+            "id": "e017a026-4019-42ec-a263-a11cd12f6616",
+            "actions": [
+                {
+                    "name": "Continue",
+                    "type": "Button",
+                    "id": "fd62f2a3-6427-476d-bfda-23bb40187f26",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Skip",
+                    "type": "Button",
+                    "id": "3cecc3eb-e34e-4d52-a13d-d2320f099409",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "f7562cad-c9ec-4291-ac69-ce39f319f684",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "93bd28a4-cdf9-4489-af5f-b6419e0d4087",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Continue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6402a4bc-77f3-4bfb-86e2-d547ef00dcaf",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Skip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c09d2c69-a9c1-4fb7-8ca9-b1a788d6ba2b",
+                    "path": "<Keyboard>/#(F)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

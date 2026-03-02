@@ -86,6 +86,9 @@ namespace UGESystem
         public IReadOnlyDictionary<string, EventStatus> NodeStatuses => _nodeStatus; // Public accessor for editor sync
         private Dictionary<string, EventNodeData> _nodeLookup = new Dictionary<string, EventNodeData>();
         private Dictionary<GameEventType, IEventNodeRunner> _nodeRunners;
+        
+        // Track the currently active runner to ensure cleanup on disable.
+        private IEventNodeRunner _activeNodeRunner;
 
         private void Awake()
         {
@@ -112,6 +115,13 @@ namespace UGESystem
                 UGESystemController.Instance.UnregisterRunner(this);
             }
             UGEDelayedEventBus.Unsubscribe<JumpToNodeEvent>(OnJumpToNodeRequested);
+
+            // Cleanup the active node runner if it's currently waiting for events.
+            if (_activeNodeRunner != null)
+            {
+                _activeNodeRunner.Cleanup();
+                _activeNodeRunner = null;
+            }
 
             if (_storyboard == null) return;
             
@@ -268,10 +278,13 @@ namespace UGESystem
         {
             if (_nodeRunners.TryGetValue(node.Type, out IEventNodeRunner runner))
             {
+                _activeNodeRunner = runner; // Store active runner
                 NodeRunResult result = null;
                 // 'this'를 전달하여 runner가 어떤 TaskRunner에 의해 실행되었는지 알 수 있도록 함
                 // Pass 'this' so the runner knows which TaskRunner it was executed by
                 yield return runner.Run(node, this, (runResult) => { result = runResult; });
+                
+                _activeNodeRunner = null; // Clear active runner after finished
                 
                 _nodeStatus[node.NodeID] = EventStatus.Completed;
                 UGEDelayedEventBus.Publish(new NodeCompletedEvent(node.NodeID));

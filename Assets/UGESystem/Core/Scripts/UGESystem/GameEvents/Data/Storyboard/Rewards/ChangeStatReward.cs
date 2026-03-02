@@ -41,9 +41,10 @@ namespace UGESystem
         /// Applies the stat change to the player's target stat.
         /// </summary>
         /// <param name="runner">The <see cref="UGEEventTaskRunner"/> that is currently executing the event.</param>
-        public override void GrantReward(UGEEventTaskRunner runner)
+        protected override void OnGrantReward(UGEEventTaskRunner runner)
         {
             // TODO: Access PlayerStatManager or similar through the runner to actually change the stat
+            Debug.Log($"[ChangeStatReward] Stat '{TargetStat}' changed by {ChangeAmount}.");
         }
     }
 }

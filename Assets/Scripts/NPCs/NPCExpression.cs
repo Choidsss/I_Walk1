@@ -1,13 +1,13 @@
-using UGESystem;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 namespace I_Walk
 {
-    public class NPCEmotions : MonoBehaviour
+    public class NPCExpression : MonoBehaviour
     {
+        //지금이 몇신데 이제오니?
         [SerializeField] TextMeshProUGUI _tmpGUI;
-        
+
         Animator _anim;
 
         void Start()
@@ -17,7 +17,7 @@ namespace I_Walk
 
         void Update()
         {
-            if (_tmpGUI.text == "평소에는 안늦더니...어쩌다가 늦었니?")
+            if (_tmpGUI.text == "지금이 몇신데 이제오니?")
             {
                 //애니메이션이 반복재생됨 => 한번만 재생되도록 수정
                 _anim.SetTrigger("Cocky");

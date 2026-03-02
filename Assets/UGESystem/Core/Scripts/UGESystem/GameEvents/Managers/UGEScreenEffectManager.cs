@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,10 +14,10 @@ namespace UGESystem
     public class UGEScreenEffectManager : MonoBehaviour
     {
         private Image _overlayImage;
+        private Coroutine _currentEffectCoroutine;
 
         /// <summary>
         /// Gets the current color of the overlay image.
-        /// 오버레이 이미지의 현재 색상을 가져옵니다.
         /// </summary>
         public Color CurrentImageColor => _overlayImage != null ? _overlayImage.color : Color.clear;
 
@@ -27,134 +28,137 @@ namespace UGESystem
 
         private void SetupOverlayImage()
         {
-            // Canvas 생성
             GameObject canvasGO = new GameObject("UGEScreenEffectCanvas");
             Canvas canvas = canvasGO.AddComponent<Canvas>();
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-            canvas.sortingOrder = 999; // 다른 모든 UI 위에 있도록 높은 값 설정
+            canvas.sortingOrder = 999; 
 
             canvasGO.AddComponent<CanvasScaler>();
             canvasGO.AddComponent<GraphicRaycaster>();
 
-            // Image 생성
             GameObject imageGO = new GameObject("OverlayImage");
             imageGO.transform.SetParent(canvasGO.transform);
             
             _overlayImage = imageGO.AddComponent<Image>();
-            _overlayImage.color = new Color(0, 0, 0, 0); // 기본적으로 투명
+            _overlayImage.color = new Color(0, 0, 0, 0); 
             _overlayImage.raycastTarget = false;
 
-            // 화면을 꽉 채우도록 RectTransform 설정
             RectTransform rectTransform = imageGO.GetComponent<RectTransform>();
             rectTransform.anchorMin = new Vector2(0, 0);
             rectTransform.anchorMax = new Vector2(1, 1);
             rectTransform.offsetMin = Vector2.zero;
             rectTransform.offsetMax = Vector2.zero;
 
-            // 씬 전환 시 파괴되지 않도록 설정
             DontDestroyOnLoad(canvasGO);
         }
 
+        // --- Easing Utilities ---
+        private float EaseOutQuad(float t) => t * (2 - t);
+        private float EaseInQuad(float t) => t * t;
+        private float EaseInOutQuad(float t) => t < 0.5f ? 2 * t * t : -1 + (4 - 2 * t) * t;
+
         /// <summary>
-        /// Fades the screen in from a specified color to transparent over a duration.
-        /// 특정 색상에서 투명으로 화면을 페이드 인 시킵니다.
+        /// Fades the screen from the current color to transparent.
         /// </summary>
-        /// <param name="fromColor">The starting color of the fade (alpha determines initial opacity).</param>
-        /// <param name="duration">The duration of the fade in seconds.</param>
-        public IEnumerator FadeIn(Color fromColor, float duration)
+        /// <param name="onPeakReached">Optional callback executed at the START of FadeIn (when screen is obscured).</param>
+        public IEnumerator FadeIn(Color fromColor, float duration, Action onPeakReached = null)
         {
             if (_overlayImage == null) yield break;
 
-            // Instantly set the start color
-            _overlayImage.color = fromColor;
-
-            // Define the target color (transparent version of fromColor)
-            Color targetColor = new Color(fromColor.r, fromColor.g, fromColor.b, 0);
-            
-            // Use the existing Fade logic to transition
-            yield return Fade(targetColor, duration);
-        }
-
-        /// <summary>
-        /// Fades the screen to a target color over a duration.
-        /// 화면을 지정된 목표 색상으로 지정된 시간 동안 페이드합니다.
-        /// </summary>
-        /// <param name="targetColor">The target color to fade to.</param>
-        /// <param name="duration">The duration of the fade in seconds.</param>
-        public IEnumerator Fade(Color targetColor, float duration)
-        {
-            if (_overlayImage == null) yield break;
+            // FadeIn peak is the very beginning.
+            if (fromColor.a > 0) _overlayImage.color = fromColor;
+            onPeakReached?.Invoke();
 
             Color startColor = _overlayImage.color;
-            float elapsedTime = 0f;
-
-            while (elapsedTime < duration)
-            {
-                _overlayImage.color = Color.Lerp(startColor, targetColor, elapsedTime / duration);
-                elapsedTime += Time.deltaTime;
-                yield return null;
-            }
-
-            _overlayImage.color = targetColor;
+            Color targetColor = new Color(startColor.r, startColor.g, startColor.b, 0);
+            
+            yield return LerpColor(startColor, targetColor, duration, EaseOutQuad);
         }
 
         /// <summary>
-        /// Flashes the screen with a specified color, holding it for a duration, then fading out.
-        /// 지정된 색상으로 화면을 플래시하고, 일정 시간 유지한 다음 페이드 아웃합니다.
+        /// Fades the screen from the current color to a target color.
         /// </summary>
-        /// <param name="flashColor">The color to flash with.</param>
-        /// <param name="fadeInDuration">The duration of the fade-in to the flash color.</param>
-        /// <param name="holdDuration">The duration to hold the flash color.</param>
-        /// <param name="fadeOutDuration">The duration of the fade-out from the flash color.</param>
-        public IEnumerator Flash(Color flashColor, float fadeInDuration, float holdDuration, float fadeOutDuration)
+        /// <param name="onPeakReached">Optional callback executed at the END of FadeOut (when screen is obscured).</param>
+        public IEnumerator FadeOut(Color targetColor, float duration, Action onPeakReached = null)
+        {
+            if (_overlayImage == null) yield break;
+            yield return LerpColor(_overlayImage.color, targetColor, duration, EaseInQuad);
+            onPeakReached?.Invoke();
+        }
+
+        /// <summary>
+        /// Flashes the screen: Rapid attack, brief hold, then smooth decay.
+        /// </summary>
+        /// <param name="onPeakReached">Optional callback executed at the PEAK of the flash.</param>
+        public IEnumerator Flash(Color flashColor, float attackDuration, float holdDuration, float decayDuration, Action onPeakReached = null)
         {
             if (_overlayImage == null) yield break;
 
-            // Fade In
-            yield return Fade(flashColor, fadeInDuration);
+            // 1. Attack
+            yield return LerpColor(_overlayImage.color, flashColor, attackDuration, EaseInQuad);
 
-            // Hold
-            if (holdDuration > 0)
-            {
-                yield return new WaitForSeconds(holdDuration);
-            }
+            // Peak Reached
+            onPeakReached?.Invoke();
 
-            // Fade Out
-            yield return Fade(new Color(flashColor.r, flashColor.g, flashColor.b, 0), fadeOutDuration);
+            // 2. Hold
+            if (holdDuration > 0) yield return new WaitForSeconds(holdDuration);
+
+            // 3. Decay
+            Color transparent = new Color(flashColor.r, flashColor.g, flashColor.b, 0);
+            yield return LerpColor(flashColor, transparent, decayDuration, EaseOutQuad);
         }
 
         /// <summary>
-        /// Tints the screen with a specified color, holds it, and then fades back to the original color.
-        /// 지정된 색상으로 화면을 틴트하고, 유지한 다음 원래 색상으로 다시 페이드합니다.
+        /// Tints the screen: Transitions to color, holds it, then restores to original.
         /// </summary>
-        /// <param name="tintColor">The color to tint the screen with.</param>
-        /// <param name="holdDuration">The duration to hold the tint color.</param>
-        public IEnumerator Tint(Color tintColor, float holdDuration)
+        /// <param name="onPeakReached">Optional callback executed when the tint transition is complete.</param>
+        public IEnumerator Tint(Color tintColor, float transitionDuration, float holdDuration, Action onPeakReached = null)
         {
             if (_overlayImage == null) yield break;
 
             Color originalColor = _overlayImage.color;
-            float fadeDuration = 0.5f; // Hardcoded fade in/out time
 
-            // 1. Fade TO the tint color
-            yield return Fade(tintColor, fadeDuration);
+            // 1. Transition to Tint
+            yield return LerpColor(originalColor, tintColor, transitionDuration, EaseInOutQuad);
 
-            // 2. HOLD for the specified duration
-            if (holdDuration > 0)
-            {
-                yield return new WaitForSeconds(holdDuration);
-            }
+            // Peak Reached (fully tinted)
+            onPeakReached?.Invoke();
 
-            // 3. Fade BACK to the original color
-            yield return Fade(originalColor, fadeDuration);
+            // 2. Hold
+            if (holdDuration > 0) yield return new WaitForSeconds(holdDuration);
+
+            // 3. Restore
+            yield return LerpColor(tintColor, originalColor, transitionDuration, EaseInOutQuad);
         }
 
-        /// <summary>
-        /// Clears any active screen effect by setting the overlay image to transparent.
-        /// 오버레이 이미지를 투명하게 설정하여 활성 화면 효과를 지웁니다.
-        /// </summary>
+        private IEnumerator LerpColor(Color start, Color end, float duration, System.Func<float, float> easingFunc)
+        {
+            if (duration <= 0)
+            {
+                _overlayImage.color = end;
+                yield break;
+            }
+
+            float elapsedTime = 0f;
+            while (elapsedTime < duration)
+            {
+                float t = elapsedTime / duration;
+                if (easingFunc != null) t = easingFunc(t);
+                
+                _overlayImage.color = Color.Lerp(start, end, t);
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+            _overlayImage.color = end;
+        }
+
         public void ClearEffect()
         {
+            if (_currentEffectCoroutine != null)
+            {
+                StopCoroutine(_currentEffectCoroutine);
+                _currentEffectCoroutine = null;
+            }
             if (_overlayImage == null) return;
             _overlayImage.color = new Color(0, 0, 0, 0);
         }

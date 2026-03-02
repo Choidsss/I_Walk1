@@ -19,6 +19,7 @@ namespace UGESystem
         private UnityEditor.Editor _cameraManagerEditor;
         private UnityEditor.Editor _delayedEventInvokerEditor;
         private UnityEditor.Editor _soundManagerEditor;
+        private UnityEditor.Editor _inputManagerEditor;
 
         // Foldout state for each manager
         private bool _showUIMgrSettings = false;
@@ -26,6 +27,7 @@ namespace UGESystem
         private bool _showCamMgrSettings = false;
         private bool _showDelayedInvokerSettings = false;
         private bool _showSoundMgrSettings = false;
+        private bool _showInputMgrSettings = false;
 
         private void OnEnable()
         {
@@ -38,6 +40,7 @@ namespace UGESystem
             var camManager = _targetController.GetComponentInChildren<UGECameraManager>(true);
             var delayedInvoker = _targetController.GetComponentInChildren<UGEDelayedEventInvoker>(true);
             var soundManager = _targetController.GetComponentInChildren<UGESoundManager>(true);
+            var inputManager = _targetController.GetComponentInChildren<UGEInputManager>(true);
 
             // Create an editor for each manager component.
             CreateCachedEditor(uiManager, null, ref _uiManagerEditor);
@@ -46,6 +49,7 @@ namespace UGESystem
             CreateCachedEditor(camManager, null, ref _cameraManagerEditor);
             CreateCachedEditor(delayedInvoker, null, ref _delayedEventInvokerEditor);
             CreateCachedEditor(soundManager, null, ref _soundManagerEditor);
+            CreateCachedEditor(inputManager, null, ref _inputManagerEditor);
         }
 
         private void OnDisable()
@@ -57,6 +61,7 @@ namespace UGESystem
             if (_cameraManagerEditor != null) DestroyImmediate(_cameraManagerEditor);
             if (_delayedEventInvokerEditor != null) DestroyImmediate(_delayedEventInvokerEditor);
             if (_soundManagerEditor != null) DestroyImmediate(_soundManagerEditor);
+            if (_inputManagerEditor != null) DestroyImmediate(_inputManagerEditor);
         }
 
         /// <summary>
@@ -78,7 +83,7 @@ namespace UGESystem
             // Draw each manager as a Foldout.
             DrawManagerFoldout("UI Manager Settings", ref _showUIMgrSettings, _uiManagerEditor);
             DrawManagerFoldout("Character Manager Settings", ref _showCharMgrSettings, _characterManagerEditor);
-            // UGEGameEventController has no fields to expose in the inspector, so it is not drawn.
+            DrawManagerFoldout("Input Manager Settings", ref _showInputMgrSettings, _inputManagerEditor);
             DrawManagerFoldout("Camera Manager Settings", ref _showCamMgrSettings, _cameraManagerEditor);
             DrawManagerFoldout("Sound Manager Settings", ref _showSoundMgrSettings, _soundManagerEditor);
             DrawManagerFoldout("Delayed Event Invoker Settings", ref _showDelayedInvokerSettings, _delayedEventInvokerEditor);

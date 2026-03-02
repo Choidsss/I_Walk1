@@ -6,50 +6,50 @@ namespace UGESystem
 {
     /// <summary>
     /// Temporary character controller script providing basic third-person movement based on camera direction for testing purposes.
+    /// This version uses InputActionReferences to avoid conflicts with project-specific input settings.
+    /// <br/>
     /// 테스트 목적으로 카메라 방향에 기반한 기본적인 3인칭 이동을 제공하는 임시 캐릭터 컨트롤러 스크립트입니다.
+    /// 이 버전은 프로젝트 고유의 입력 설정과의 충돌을 방지하기 위해 InputActionReference를 사용합니다.
     /// </summary>
     public class PlayerMove : MonoBehaviour
     {
-        /// <summary>
-        /// The camera transform used for determining movement direction.
-        /// 움직임 방향 결정에 사용되는 카메라 트랜스폼입니다.
-        /// </summary>
+        [Header("Movement Settings")]
         public Transform cam;
-        /// <summary>
-        /// The current movement speed of the character.
-        /// 캐릭터의 현재 이동 속도입니다.
-        /// </summary>
         public float _speed;
-        /// <summary>
-        /// The time taken to smooth the character's rotation when changing direction.
-        /// 방향 전환 시 캐릭터의 회전을 부드럽게 만드는 데 걸리는 시간입니다.
-        /// </summary>
         public float _turnSmoothTime = 0.3f;
+
+        [Header("Input References")]
+        [SerializeField] private InputActionReference _moveAction;
 
         const float MAXSPEED = 10.0f;
         float _turnSmoothVelocity;
         float _velocityY = 0f;
 
-        private InputSystem_Actions _playerInputActions;
         private Vector2 _moveInput;
-
         Rigidbody _rigidbody;
         Vector3 _move;
         Vector3 _lookDirection = new(0, 0, 0);
 
-        // Start is called before the first frame update
         void Start()
         {
             _rigidbody = GetComponent<Rigidbody>();
-            _playerInputActions = new @InputSystem_Actions();
-            _playerInputActions.Player.Enable();
-
-            _playerInputActions.Player.Move.performed += OnMovePerformed;
-            _playerInputActions.Player.Move.canceled += OnMoveCanceled;
+            
+            if (_moveAction != null)
+            {
+                _moveAction.action.Enable();
+                _moveAction.action.performed += OnMovePerformed;
+                _moveAction.action.canceled += OnMoveCanceled;
+            }
         }
 
         private void OnMovePerformed(InputAction.CallbackContext context)
         {
+            // Block input if interacting
+            if (UGESystemController.Instance.IsInteracting)
+            {
+                _moveInput = Vector2.zero;
+                return;
+            }
             _moveInput = context.ReadValue<Vector2>();
         }
 
@@ -58,28 +58,25 @@ namespace UGESystem
             _moveInput = Vector2.zero;
         }
 
-        private void OnEnable()
-        {
-            if (_playerInputActions != null)
-            {
-                _playerInputActions.Player.Enable();
-            }
-        }
-
         private void OnDisable()
         {
-            if (_playerInputActions != null)
+            if (_moveAction != null)
             {
-                _playerInputActions.Player.Move.performed -= OnMovePerformed;
-                _playerInputActions.Player.Move.canceled -= OnMoveCanceled;
-                _playerInputActions.Player.Disable();
+                _moveAction.action.performed -= OnMovePerformed;
+                _moveAction.action.canceled -= OnMoveCanceled;
             }
         }
 
         void FixedUpdate()
         {
-            _move = new(_moveInput.x, _velocityY, _moveInput.y);
+            // Reset input if interaction starts mid-move
+            if (UGESystemController.Instance.IsInteracting)
+            {
+                _moveInput = Vector2.zero;
+                _speed = 0.0f;
+            }
 
+            _move = new(_moveInput.x, _velocityY, _moveInput.y);
             _lookDirection = _move.normalized;
 
             if (_lookDirection.magnitude >= 0.1f)
@@ -93,8 +90,6 @@ namespace UGESystem
             }
         }
 
-
-
         private void Move()
         {
             float targetAngle = Mathf.Atan2(_lookDirection.x, _lookDirection.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
@@ -106,4 +101,3 @@ namespace UGESystem
         }
     }
 }
-

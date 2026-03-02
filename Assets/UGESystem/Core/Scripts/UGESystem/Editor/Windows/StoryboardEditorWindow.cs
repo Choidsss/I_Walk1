@@ -46,11 +46,14 @@ namespace UGESystem
         [OnOpenAsset]
         public static bool OnOpenStoryboard(int instanceID, int line)
         {
-            var asset = EditorUtility.InstanceIDToObject(instanceID) as Storyboard;
-            if (asset != null)
+            // Use the utility method in EditorHelper to handle version-specific API differences.
+            // 버전별 API 차이를 처리하기 위해 EditorHelper의 유틸리티 메서드를 사용합니다.
+            Object obj = EditorHelper.InstanceIDToObject(instanceID);
+            
+            if (obj is Storyboard storyboard)
             {
                 StoryboardEditorWindow window = GetWindow<StoryboardEditorWindow>("Storyboard Editor");
-                window.SetStoryboard(asset);
+                window.SetStoryboard(storyboard);
                 return true;
             }
             return false;

@@ -11,6 +11,8 @@ namespace UGESystem
     /// </summary>
     public class GameEventNodeRunner : IEventNodeRunner
     {
+        private Action<GameEvent> _onFinishHandler;
+
         /// <summary>
         /// Runs the game event associated with the given node.
         /// It starts the <see cref="GameEvent"/> using the <see cref="UGEGameEventController"/>
@@ -36,22 +38,33 @@ namespace UGESystem
             bool isEventDone = false;
             NodeRunResult result = new NodeRunResult();
 
-            Action<GameEvent> onFinish = null;
-            onFinish = (finishedEvent) =>
+            // Store the handler in a member field so it can be unsubscribed in Cleanup
+            _onFinishHandler = (finishedEvent) =>
             {
                 if (finishedEvent == node.GameEventAsset)
                 {
-                    // Rewards are now granted directly by RewardCommand, so we don't need to collect them here.
-                    // result.Rewards = new List<AbstractEventReward>(); // Optional explicit empty list
                     isEventDone = true;
                 }
             };
             
-            UGEGameEventController.OnEventFinished += onFinish;
+            UGEGameEventController.OnEventFinished += _onFinishHandler;
             yield return new WaitUntil(() => isEventDone);
-            UGEGameEventController.OnEventFinished -= onFinish;
+            
+            Cleanup();
 
             onComplete(result);
+        }
+
+        /// <summary>
+        /// Unsubscribes from the static finished event to prevent memory leaks if the coroutine is interrupted.
+        /// </summary>
+        public void Cleanup()
+        {
+            if (_onFinishHandler != null)
+            {
+                UGEGameEventController.OnEventFinished -= _onFinishHandler;
+                _onFinishHandler = null;
+            }
         }
     }
 }
