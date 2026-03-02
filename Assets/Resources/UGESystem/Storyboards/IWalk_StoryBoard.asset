@@ -20,15 +20,43 @@ MonoBehaviour:
   - rid: 7554042379971330202
   - rid: 7554042402533539946
   - rid: 7554042424944754688
-  - rid: 7554042424944754773
   - rid: 7554042424944754790
   - rid: 7554042424944754796
   - rid: 7554042424944754799
   - rid: 7554042424944754837
   - rid: 7554042424944754839
+  - rid: 5100603707024736407
   references:
     version: 2
     RefIds:
+    - rid: 5100603707024736407
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: a5af4c76-66c9-4293-8a01-b72bd4408cae
+        _name: LunchTimeBeforeNaration
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 1165, y: 8}
+        _startConditions:
+        - rid: 5100603707024736408
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: db4495d6721d70a44af0b7a4e33a263c, type: 2}
+    - rid: 5100603707024736408
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: SchoolNarate2
+    - rid: 5100603707024736412
+      type: {class: InteractionTriggeredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player interacts with a specific object.
+        <TargetInteractionID>k__BackingField: "\uB6F0\uC5B4\uB77C"
+    - rid: 5100603707024736417
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: LunchTimeAfterRunning
     - rid: 7554041859222536280
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:
@@ -87,14 +115,9 @@ MonoBehaviour:
         _isRepeatable: 0
         _position: {x: 1578, y: 7}
         _startConditions:
-        - rid: 7554042379971330203
+        - rid: 5100603707024736412
         _nextNodeIDs: []
         GameEventAsset: {fileID: 11400000, guid: 07ad3ec3be90d7c41807c9481763dd6c, type: 2}
-    - rid: 7554042379971330203
-      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <Description>k__BackingField: Player enters a specific area.
-        <TargetTriggerID>k__BackingField: LunchTimeRunning
     - rid: 7554042402533539946
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:
@@ -105,14 +128,9 @@ MonoBehaviour:
         _isRepeatable: 0
         _position: {x: 1995, y: 8}
         _startConditions:
-        - rid: 7554042402533539947
+        - rid: 5100603707024736417
         _nextNodeIDs: []
         GameEventAsset: {fileID: 11400000, guid: 2ed33609a87180f4a849ef59769b109f, type: 2}
-    - rid: 7554042402533539947
-      type: {class: InteractionTriggeredCondition, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <Description>k__BackingField: Player interacts with a specific object.
-        <TargetInteractionID>k__BackingField: "\uB3C4\uCC29"
     - rid: 7554042424944754688
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:
@@ -131,24 +149,6 @@ MonoBehaviour:
       data:
         <Description>k__BackingField: Player enters a specific area.
         <TargetTriggerID>k__BackingField: EnteredUnivercity
-    - rid: 7554042424944754773
-      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        _nodeID: 2e17518a-66c4-4437-bad0-2031979c6e1f
-        _name: JustBeforeLunchtime
-        _type: 0
-        IsStartNode: 0
-        _isRepeatable: 0
-        _position: {x: 1157, y: 4}
-        _startConditions:
-        - rid: 7554042424944754774
-        _nextNodeIDs: []
-        GameEventAsset: {fileID: 11400000, guid: db4495d6721d70a44af0b7a4e33a263c, type: 2}
-    - rid: 7554042424944754774
-      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <Description>k__BackingField: Player enters a specific area.
-        <TargetTriggerID>k__BackingField: SchoolNarate2
     - rid: 7554042424944754790
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:
@@ -229,7 +229,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
-        _position: {x: 0, y: 0}
+        _position: {x: 4640, y: 21}
         _startConditions:
         - rid: 7554042424944754840
         _nextNodeIDs: []

@@ -1,4 +1,6 @@
 using UnityEngine;
+using TMPro;
+using UGESystem;
 
 namespace I_Walk
 {
@@ -12,13 +14,13 @@ namespace I_Walk
         [Header("QuestionMark")]
         [SerializeField] GameObject _QMark;
 
-        [Header("Interaction Settings")]
-        [Tooltip("Maximum distance at which interaction will be detected")]
-        [SerializeField] private float _interactionDistance = 3f;
+        [Header("TextContent")]
+        [SerializeField] private TextMeshProUGUI _text;
 
-        [Header("HitLayer")]
         [SerializeField] private LayerMask _layer;
 
+        [SerializeField] private float _interactionRange = 5f;
+        
         float _defaultY;
         bool _isPlayer = false;
         Vector3 _localPos;
@@ -50,18 +52,10 @@ namespace I_Walk
 
         void CheckShowBangMark()
         {
-            RaycastHit hit;
-
-            Vector3 RayOrigin = transform.position;
-            Vector3 RayDirection = transform.forward;
-
-            if (Physics.Raycast(RayOrigin, RayDirection, _interactionDistance, _layer))
+            Ray ray = new Ray(transform.position, transform.forward);
+            if (Physics.SphereCast(ray , _interactionRange) && Input.GetKey(KeyCode.F))
             {
                 _isPlayer = true;
-            }
-            else
-            {
-                _isPlayer = false;
             }
             BangMarkAnimation();
         }
