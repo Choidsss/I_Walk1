@@ -14,9 +14,6 @@ namespace I_Walk
         [Header("QuestionMark")]
         [SerializeField] GameObject _QMark;
 
-        [Header("TextContent")]
-        [SerializeField] private TextMeshProUGUI _text;
-
         [SerializeField] private LayerMask _layer;
 
         [SerializeField] private float _interactionRange = 5f;

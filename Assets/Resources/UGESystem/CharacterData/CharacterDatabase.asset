@@ -145,3 +145,11 @@ MonoBehaviour:
     - <ExpressionName>k__BackingField: Default
       <AnimationStateName>k__BackingField: Default
     <SourceTemplateID>k__BackingField: 
+  - <CharacterID>k__BackingField: 173ac859-e589-4a38-82fb-047eba100505
+    <Name>k__BackingField: Narator
+    <Is3D>k__BackingField: 1
+    <Prefab>k__BackingField: {fileID: 2271526710747132739, guid: 6c588beeffcf8b8429d04687ad7aef22, type: 3}
+    <Expressions>k__BackingField:
+    - <ExpressionName>k__BackingField: Default
+      <AnimationStateName>k__BackingField: Default
+    <SourceTemplateID>k__BackingField: 

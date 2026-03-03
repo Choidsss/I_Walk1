@@ -22,9 +22,39 @@ MonoBehaviour:
   - rid: 7554042424944754787
   - rid: 7554042424944754788
   - rid: 7554042424944754789
+  - rid: 5100603730130108416
+  - rid: 5100603730130108417
+  - rid: 5100603730130108418
   references:
     version: 2
     RefIds:
+    - rid: 5100603730130108416
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 13
+        _isNodeExpanded: 1
+        _targetCharacterId: 
+        _text: 
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100603730130108417
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 13
+        _isNodeExpanded: 1
+        _targetCharacterId: 
+        _text: 
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100603730130108418
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 13
+        _isNodeExpanded: 1
+        _targetCharacterId: 
+        _text: 
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
     - rid: 7554042424944754783
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
@@ -32,7 +62,7 @@ MonoBehaviour:
         _isNodeExpanded: 0
         _dialogueText: "\uB098\uC5D0\uAC8C\uB294 \uB300\uD559 \uC0DD\uD65C\uC5D0
           \uB300\uD55C \uB0AD\uB9CC\uC774 \uC788\uAE34 \uD588\uC5C8\uC9C0\uB9CC"
-        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
+        _characterName: 85d6a16e-2312-4c82-9519-79e25dc7501c
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
