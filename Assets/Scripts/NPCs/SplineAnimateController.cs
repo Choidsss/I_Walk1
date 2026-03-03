@@ -29,8 +29,12 @@ namespace I_Walk
             {
                 SplineAnimationPlayOn();
             }
+            else
+            {
+                return;
+            }
 
-            if(_splineAnimate.NormalizedTime >= 1f)
+            if (_splineAnimate.NormalizedTime >= 1f)
             {
                 SplineAnimationEnded();
             }

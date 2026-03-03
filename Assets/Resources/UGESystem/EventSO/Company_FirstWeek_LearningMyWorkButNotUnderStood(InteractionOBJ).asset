@@ -15,94 +15,113 @@ MonoBehaviour:
   <Guid>k__BackingField: e9d28b80-cf1e-4f06-a088-a54298453e5c
   _archetype: 0
   _commands:
-  - rid: 7554042085952979028
-  - rid: 7554042379971330048
-  - rid: 7554042379971330050
-  - rid: 7554042379971330049
-  - rid: 7554042379971330051
+  - rid: 5100603731238977536
+  - rid: 5100603731238977537
+  - rid: 5100603731238977538
+  - rid: 5100603731238977539
+  - rid: 5100603731238977540
   - rid: 7554042424944754804
-  - rid: 7554042424944754805
+  - rid: 5100603731238977541
   - rid: 7554042424944754806
-  - rid: 7554042424944754807
+  - rid: 5100603731238977542
   - rid: 7554042424944754808
-  - rid: 7554042424944754809
-  - rid: 7554042424944754810
+  - rid: 5100603731238977543
+  - rid: 5100603731238977544
   - rid: 7554042424944754802
   references:
     version: 2
     RefIds:
-    - rid: 7554042085952979028
-      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+    - rid: 5100603731238977536
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
-        <CommandType>k__BackingField: 0
+        <CommandType>k__BackingField: 13
         _isNodeExpanded: 0
-        _dialogueText: "\uC9C0\uAE08\uBD80\uD130 \uBCF8\uC778\uC774 \uC774\uC81C\uBD80\uD130
+        _targetCharacterId: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
+        _text: "\uC9C0\uAE08\uBD80\uD130 \uBCF8\uC778\uC774 \uC774\uC81C\uBD80\uD130
           \uD574\uC57C\uB418\uB294 \uC77C\uB4E4\uC744 \uC54C\uB824\uB4DC\uB9B4\uAC8C\uC694."
-        _characterName: bfcb1cbc-80e6-4b70-99e9-79396e3ebecf
-        _expression: 
-        _characterPosition: 0
-        _clearAllCharacters: 0
-        _showCharacter: 0
-        _cinematicAnimDuration: 1
-        _cinematicDisplayDuration: 3
-    - rid: 7554042379971330048
-      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100603731238977537
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
-        <CommandType>k__BackingField: 0
+        <CommandType>k__BackingField: 13
         _isNodeExpanded: 0
-        _dialogueText: "\uCC38\uACE0\uB85C \uC800\uB3C4 \uC2DC\uAC04\uC774 \uB9CE\uC740\uAC74
+        _targetCharacterId: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
+        _text: "\uCC38\uACE0\uB85C \uC800\uB3C4 \uC2DC\uAC04\uC774 \uB9CE\uC740\uAC74
           \uC544\uB2C8\uB77C\uC11C, \uC774\uBC88\uC5D0 \uD655\uC2E4\uD558\uAC8C \uC774\uD574\uD558\uACE0
           \uB118\uC5B4\uAC00\uC154\uC57C \uB420\uAC70\uC5D0\uC694."
-        _characterName: bfcb1cbc-80e6-4b70-99e9-79396e3ebecf
-        _expression: 
-        _characterPosition: 0
-        _clearAllCharacters: 0
-        _showCharacter: 0
-        _cinematicAnimDuration: 1
-        _cinematicDisplayDuration: 3
-    - rid: 7554042379971330049
-      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100603731238977538
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
-        <CommandType>k__BackingField: 0
+        <CommandType>k__BackingField: 13
         _isNodeExpanded: 0
-        _dialogueText: "\uADF8\uB9AC\uACE0 \uC5EC\uAE30 \uD300\uC7A5\uB2D8\uC774
-          \uC77C\uC744 \uC798 \uC548\uD558\uC2DC\uB294 \uD3B8\uC774\uAC70\uB4E0\uC694."
-        _characterName: bfcb1cbc-80e6-4b70-99e9-79396e3ebecf
-        _expression: 
-        _characterPosition: 0
-        _clearAllCharacters: 0
-        _showCharacter: 0
-        _cinematicAnimDuration: 1
-        _cinematicDisplayDuration: 3
-    - rid: 7554042379971330050
-      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+        _targetCharacterId: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
+        _text: "\uC77C\uB2E8\uC740 \uC9C0\uAE08 \uC774 \uC77C\uC744 \uD560 \uC904
+          \uC544\uB294 \uC0AC\uB78C\uC774 \uC800 \uBC16\uC5D0 \uC5C6\uC5B4\uC694"
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100603731238977539
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
-        <CommandType>k__BackingField: 0
+        <CommandType>k__BackingField: 13
         _isNodeExpanded: 0
-        _dialogueText: "\uC77C\uB2E8 \uC774 \uC77C\uC744 \uD560 \uC904 \uC544\uB294
-          \uC0AC\uB78C\uC774 \uC800 \uBC16\uC5D0 \uC5C6\uAE30\uB3C4 \uD558\uACE0"
-        _characterName: bfcb1cbc-80e6-4b70-99e9-79396e3ebecf
-        _expression: 
-        _characterPosition: 0
-        _clearAllCharacters: 0
-        _showCharacter: 0
-        _cinematicAnimDuration: 1
-        _cinematicDisplayDuration: 3
-    - rid: 7554042379971330051
-      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+        _targetCharacterId: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
+        _text: "\uADF8\uB9AC\uACE0 \uC5EC\uAE30 \uD300\uC7A5\uB2D8\uC774 \uC77C\uC744
+          \uC798 \uC548\uD558\uC2DC\uB294 \uD3B8\uC774\uAC70\uB4E0\uC694."
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100603731238977540
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
-        <CommandType>k__BackingField: 0
+        <CommandType>k__BackingField: 13
         _isNodeExpanded: 0
-        _dialogueText: "\uADF8\uB7EC\uB2C8\uAE4C \uB9CC\uC57D \uBAA8\uB974\uACA0\uB2E4
-          \uD558\uC2DC\uBA74\uC740 \uBAA8\uB978\uB2E4\uACE0 \uB9D0\uD574\uC8FC\uC2DC\uACE0,
-          \uD655\uC2E4\uD558\uAC8C \uB9D0\uD574\uC8FC\uC138\uC694. \uC544\uC168\uC8E0?"
-        _characterName: bfcb1cbc-80e6-4b70-99e9-79396e3ebecf
-        _expression: 
-        _characterPosition: 0
-        _clearAllCharacters: 0
-        _showCharacter: 0
-        _cinematicAnimDuration: 1
-        _cinematicDisplayDuration: 3
+        _targetCharacterId: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
+        _text: "\uADF8\uB7EC\uB2C8\uAE4C \uB9CC\uC57D \uBAA8\uB974\uACA0\uB2E4 \uD558\uC2DC\uBA74\uC740
+          \uBAA8\uB978\uB2E4\uACE0 \uB9D0\uD574\uC8FC\uC2DC\uACE0, \uD655\uC2E4\uD558\uAC8C
+          \uB9D0\uD574\uC8FC\uC138\uC694. \uC544\uC168\uC8E0?"
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100603731238977541
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 13
+        _isNodeExpanded: 0
+        _targetCharacterId: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
+        _text: "\uC778\uD134\uC73C\uB85C \uC5EC\uAE30\uB85C \uB4E4\uC5B4\uC624\uC2E0
+          \uAC70\uC5D0\uC694?"
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100603731238977542
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 13
+        _isNodeExpanded: 0
+        _targetCharacterId: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
+        _text: "\uC81C\uAC00 \uBCFC\uB54C\uB294.....\uAE38\uC5B4\uC57C \uD55C\uB2EC\uC77C\uAC70\uC5D0\uC694"
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100603731238977543
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 13
+        _isNodeExpanded: 0
+        _targetCharacterId: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
+        _text: "\uC544\uB1E8. \uAE38\uBA74 \uD55C\uB2EC\uC548\uC5D0 \uADF8\uB9CC\uB450\uC2E4\uAC70
+          \uAC19\uB2E4\uB294 \uC598\uAE30\uC785\uB2C8\uB2E4."
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100603731238977544
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 13
+        _isNodeExpanded: 0
+        _targetCharacterId: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
+        _text: "\uB2E4\uB2C8\uC2DC\uB2E4 \uBCF4\uBA74 \uB290\uB07C\uC2E4\uAC70\uC5D0\uC694,
+          \uC81C\uAC00 \uBB34\uC2A8 \uB9D0 \uD558\uB294\uC9C0."
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
     - rid: 7554042424944754802
       type: {class: EndCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
@@ -118,21 +137,7 @@ MonoBehaviour:
         _isNodeExpanded: 0
         _dialogueText: "\uADF8\uB807\uAC8C \uC778\uC218\uC778\uACC4\uB97C \uD574\uC8FC\uC2DC\uB2E4\uAC00
           \uB098\uC5D0\uAC8C \uC9C8\uBB38\uC744 \uD558\uB098 \uD558\uC168\uB2E4."
-        _characterName: 
-        _expression: 
-        _characterPosition: 0
-        _clearAllCharacters: 0
-        _showCharacter: 0
-        _cinematicAnimDuration: 1
-        _cinematicDisplayDuration: 3
-    - rid: 7554042424944754805
-      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 0
-        _isNodeExpanded: 0
-        _dialogueText: "\uC778\uD134\uC73C\uB85C \uC5EC\uAE30\uB85C \uB4E4\uC5B4\uC624\uC2E0
-          \uAC70\uC5D0\uC694?"
-        _characterName: bfcb1cbc-80e6-4b70-99e9-79396e3ebecf
+        _characterName: 173ac859-e589-4a38-82fb-047eba100505
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -145,20 +150,7 @@ MonoBehaviour:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
         _dialogueText: "\uB135, \uADF8\uB807\uC2B5\uB2C8\uB2E4."
-        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
-        _expression: 
-        _characterPosition: 0
-        _clearAllCharacters: 0
-        _showCharacter: 0
-        _cinematicAnimDuration: 1
-        _cinematicDisplayDuration: 3
-    - rid: 7554042424944754807
-      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 0
-        _isNodeExpanded: 0
-        _dialogueText: "\uC81C\uAC00 \uBCFC\uB54C\uB294.....\uAE38\uC5B4\uC57C \uD55C\uB2EC\uC77C\uAC70\uC5D0\uC694"
-        _characterName: bfcb1cbc-80e6-4b70-99e9-79396e3ebecf
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -174,34 +166,6 @@ MonoBehaviour:
           \uC815\uB3C4 \uAC78\uB9B4\uAC70\uB77C\uACE0 \uC598\uAE30 \uD574\uC8FC\uC2DC\uB294
           \uAC70\uC8E0?"
         _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
-        _expression: 
-        _characterPosition: 0
-        _clearAllCharacters: 0
-        _showCharacter: 0
-        _cinematicAnimDuration: 1
-        _cinematicDisplayDuration: 3
-    - rid: 7554042424944754809
-      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 0
-        _isNodeExpanded: 0
-        _dialogueText: "\uC544\uB1E8. \uAE38\uBA74 \uD55C\uB2EC\uC548\uC5D0 \uADF8\uB9CC\uB450\uC2E4\uAC70
-          \uAC19\uB2E4\uB294 \uC598\uAE30\uC785\uB2C8\uB2E4."
-        _characterName: bfcb1cbc-80e6-4b70-99e9-79396e3ebecf
-        _expression: 
-        _characterPosition: 0
-        _clearAllCharacters: 0
-        _showCharacter: 0
-        _cinematicAnimDuration: 1
-        _cinematicDisplayDuration: 3
-    - rid: 7554042424944754810
-      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 0
-        _isNodeExpanded: 0
-        _dialogueText: "\uB2E4\uB2C8\uC2DC\uB2E4 \uBCF4\uBA74 \uB290\uB07C\uC2E4\uAC70\uC5D0\uC694,
-          \uC81C\uAC00 \uBB34\uC2A8 \uB9D0 \uD558\uB294\uC9C0."
-        _characterName: bfcb1cbc-80e6-4b70-99e9-79396e3ebecf
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
