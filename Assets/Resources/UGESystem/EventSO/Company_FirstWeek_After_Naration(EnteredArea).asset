@@ -40,8 +40,8 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uBB54\uAC00 \uC548\uC88B\uC740 \uB290\uB08C\uC774 \uB4E4\uAE30
-          \uC2DC\uC791\uD588\uB2E4."
+        _dialogueText: "\uBB54\uAC00 \uC0C1\uB2F9\uD788 \uC548\uC88B\uC740 \uB290\uB08C\uC774
+          \uB4E4\uAE30 \uC2DC\uC791\uD588\uB2E4."
         _characterName: 
         _expression: 
         _characterPosition: 0
@@ -62,8 +62,9 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uADF8\uB807\uAC8C \uB098\uB294 \uC81C\uB300\uB85C \uC774\uD574\uD558\uC9C0
-          \uBABB\uD55C\uCC44\uB85C \uC778\uC218\uC778\uACC4\uAC00 \uB05D\uB0AC\uB2E4"
+        _dialogueText: "\uADF8\uB807\uAC8C \uB098\uB294 \uC77C\uC744 \uC81C\uB300\uB85C
+          \uC774\uD574\uD558\uC9C0 \uBABB\uD55C\uCC44\uB85C \uC778\uC218\uC778\uACC4\uAC00
+          \uB05D\uB0AC\uB2E4"
         _characterName: 
         _expression: 
         _characterPosition: 0

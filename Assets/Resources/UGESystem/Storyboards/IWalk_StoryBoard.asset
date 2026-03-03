@@ -26,6 +26,8 @@ MonoBehaviour:
   - rid: 7554042424944754837
   - rid: 7554042424944754839
   - rid: 5100603707024736407
+  - rid: 5100603731807043681
+  - rid: 5100603731807043683
   references:
     version: 2
     RefIds:
@@ -62,6 +64,42 @@ MonoBehaviour:
       data:
         <Description>k__BackingField: Player interacts with a specific object.
         <TargetInteractionID>k__BackingField: interview
+    - rid: 5100603731807043681
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: 814ee2b4-07b8-4954-9c3b-088f8503b454
+        _name: Supervisor_Talk
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 0, y: 0}
+        _startConditions:
+        - rid: 5100603731807043682
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: e085ad69e12df9644b176edb11298b53, type: 2}
+    - rid: 5100603731807043682
+      type: {class: InteractionTriggeredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player interacts with a specific object.
+        <TargetInteractionID>k__BackingField: Shit
+    - rid: 5100603731807043683
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: dcff95d3-eb78-43ce-8c49-f59a68ea1b82
+        _name: Su[ervisorTalk_after
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 0, y: 0}
+        _startConditions:
+        - rid: 5100603731807043684
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: e2849d219127efd4f884136932cb560b, type: 2}
+    - rid: 5100603731807043684
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: supervisorafter
     - rid: 7554041859222536280
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:
@@ -207,7 +245,7 @@ MonoBehaviour:
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:
         _nodeID: 098d980c-a301-44d3-a245-bb1dcd7f2ec2
-        _name: LearningWork
+        _name: Learning
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
