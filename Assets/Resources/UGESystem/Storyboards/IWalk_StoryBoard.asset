@@ -30,6 +30,8 @@ MonoBehaviour:
   - rid: 5100603731807043683
   - rid: 5100603731807043694
   - rid: 5100603752686288983
+  - rid: 5100603752686288994
+  - rid: 5100603752686288996
   references:
     version: 2
     RefIds:
@@ -138,6 +140,42 @@ MonoBehaviour:
       data:
         <Description>k__BackingField: Player interacts with a specific object.
         <TargetInteractionID>k__BackingField: RoomMateTalk
+    - rid: 5100603752686288994
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: 8ef437b0-a0ec-4481-b251-005d936a24e0
+        _name: LastDay
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 0, y: 0}
+        _startConditions:
+        - rid: 5100603752686288995
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: 4cb2f8def56e8624facbe9d726d9343e, type: 2}
+    - rid: 5100603752686288995
+      type: {class: InteractionTriggeredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player interacts with a specific object.
+        <TargetInteractionID>k__BackingField: Lastday
+    - rid: 5100603752686288996
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: c20ad012-224e-4dcf-a0c6-a9ace6e1693f
+        _name: Ending
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 0, y: 0}
+        _startConditions:
+        - rid: 5100603752686288997
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: af751c15d68d0a04a9ceaf6ee3d1f329, type: 2}
+    - rid: 5100603752686288997
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: Ending
     - rid: 7554041859222536280
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:
