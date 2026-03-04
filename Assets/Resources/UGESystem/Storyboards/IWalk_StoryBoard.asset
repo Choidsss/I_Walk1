@@ -29,6 +29,7 @@ MonoBehaviour:
   - rid: 5100603731807043681
   - rid: 5100603731807043683
   - rid: 5100603731807043694
+  - rid: 5100603752686288983
   references:
     version: 2
     RefIds:
@@ -119,6 +120,24 @@ MonoBehaviour:
       data:
         <Description>k__BackingField: Player enters a specific area.
         <TargetTriggerID>k__BackingField: RoomMatefter
+    - rid: 5100603752686288983
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: 9a010511-ff69-4676-a1bf-00a5b7d127a4
+        _name: RoomMateTalk
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 0, y: 0}
+        _startConditions:
+        - rid: 5100603752686288984
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: 8585638e046963647966c0d50055a816, type: 2}
+    - rid: 5100603752686288984
+      type: {class: InteractionTriggeredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player interacts with a specific object.
+        <TargetInteractionID>k__BackingField: RoomMateTalk
     - rid: 7554041859222536280
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:

@@ -128,7 +128,6 @@ MonoBehaviour:
   _hopSpeed: 1
   _hopAmound: 1
   _QMark: {fileID: 5941751403365318063}
-  _text: {fileID: 0}
   _layer:
     serializedVersion: 2
     m_Bits: 512
@@ -1118,7 +1117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 557635980234616918, guid: 59b488694524bb54ab8073b74d919c94, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9
+      value: 2.802
       objectReference: {fileID: 0}
     - target: {fileID: 557635980234616918, guid: 59b488694524bb54ab8073b74d919c94, type: 3}
       propertyPath: m_LocalPosition.z
