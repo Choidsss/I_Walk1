@@ -23,6 +23,7 @@ namespace I_Walk
         {
             TextMeshProUGUI TmpPro = GetComponentInChildren<TextMeshProUGUI>();
 
+            
             if (TmpPro != null && TmpPro.text == "장난하니?")
             {
                 //애니메이션이 반복재생됨 => 한번만 재생되도록 수정
