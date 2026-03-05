@@ -16,14 +16,16 @@ MonoBehaviour:
   _archetype: 0
   _commands:
   - rid: 5100603731807043668
-  - rid: 5100603731807043669
+  - rid: 5100603776950599786
   - rid: 5100603731807043670
-  - rid: 5100603731807043671
+  - rid: 5100603776950599781
+  - rid: 5100603776950599782
+  - rid: 5100603776950599790
   - rid: 5100603775633850466
   - rid: 5100603775633850467
   - rid: 5100603775633850468
   - rid: 5100603731807043672
-  - rid: 5100603731807043673
+  - rid: 5100603776950599789
   - rid: 5100603731807043674
   - rid: 7554042424944754811
   - rid: 5100603731807043675
@@ -44,15 +46,6 @@ MonoBehaviour:
         _text: "\uB0B4\uAC00 \uD558\uB77C\uB294\uAC74 \uB2E4\uD588\uC5B4?"
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
-    - rid: 5100603731807043669
-      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 13
-        _isNodeExpanded: 0
-        _targetCharacterId: 969e1818-5435-4247-ad6b-30f508f38255
-        _text: "\uC544\uB2C8\uC694..\uC544\uC9C1 \uB2E4 \uBABB\uD588\uC2B5\uB2C8\uB2E4..."
-        _waitUntilInput: 1
-        _offset: {x: 0, y: 0, z: 0}
     - rid: 5100603731807043670
       type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
@@ -63,15 +56,6 @@ MonoBehaviour:
           \uC544\uC9C1\uB3C4 \uD558\uB294\uC911\uC778\uAC70\uC57C?"
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
-    - rid: 5100603731807043671
-      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 13
-        _isNodeExpanded: 0
-        _targetCharacterId: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
-        _text: "\uB124..\uC544\uC9C1 \uB2E4 \uC774\uD574\uB97C \uBABB\uD574\uC11C...."
-        _waitUntilInput: 1
-        _offset: {x: 0, y: 0, z: 0}
     - rid: 5100603731807043672
       type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
@@ -80,15 +64,6 @@ MonoBehaviour:
         _targetCharacterId: 969e1818-5435-4247-ad6b-30f508f38255
         _text: "\uADF8\uB9AC\uACE0 \uC528 \uC77C\uC8FC\uC77C\uB4A4\uC5D0 \uADF8\uAC70\uAC00\uC9C0\uACE0
           \uC2E4\uC801\uBC1C\uD45C \uD574\uC57C\uB418\uB294\uB370 \uC7A5\uB09C\uCE58\uB0D0?"
-        _waitUntilInput: 1
-        _offset: {x: 0, y: 0, z: 0}
-    - rid: 5100603731807043673
-      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 13
-        _isNodeExpanded: 0
-        _targetCharacterId: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
-        _text: "\uCD5C\uB300\uD55C \uBE68\uB9AC \uD574\uBCF4\uACA0\uC2B5\uB2C8\uB2E4"
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
     - rid: 5100603731807043674
@@ -182,13 +157,66 @@ MonoBehaviour:
         _text: "\uADF8\uB534\uC2DD\uC73C\uB85C \uD560\uB798?"
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100603776950599781
+      type: {class: ChoiceCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 3
+        _isNodeExpanded: 0
+        _choices:
+        - _text: "\uB124..\uC544\uC9C1 \uB2E4 \uC774\uD574\uB97C \uBABB\uD574\uC11C...."
+          _targetLabel: "\uC774\uD574"
+    - rid: 5100603776950599782
+      type: {class: LabelCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 4
+        _isNodeExpanded: 0
+        _labelName: "\uC774\uD574"
+    - rid: 5100603776950599786
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 0
+        _dialogueText: "\uC544\uB2C8\uC694..\uC544\uC9C1 \uB2E4 \uBABB\uD588\uC2B5\uB2C8\uB2E4..."
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
+        _expression: 
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 0
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
+    - rid: 5100603776950599789
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 0
+        _dialogueText: "\uCD5C\uB300\uD55C \uBE68\uB9AC \uD574\uBCF4\uACA0\uC2B5\uB2C8\uB2E4"
+        _characterName: 
+        _expression: 
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 1
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
+    - rid: 5100603776950599790
+      type: {class: ScreenEffectCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 9
+        _isNodeExpanded: 0
+        _effectType: 0
+        _duration: 1
+        _targetColor: {r: 0, g: 0, b: 0, a: 1}
+        _flashHoldDuration: 0.1
+        _hideAll: 1
+        _hideUI: 0
+        _hideCharacters: 0
+        _hideBackground: 0
     - rid: 7554042424944754811
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
         _dialogueText: "\uC5B4........\uC5B4....."
-        _characterName: 4efbc079-6e06-4590-a7a5-b6c65990b5da
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0

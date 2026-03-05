@@ -101,7 +101,7 @@ MonoBehaviour:
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
-        _isNodeExpanded: 1
+        _isNodeExpanded: 0
         _dialogueText: "\uBE68\uB9AC \uC77C\uC5B4\uB098\uC790\n"
         _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
