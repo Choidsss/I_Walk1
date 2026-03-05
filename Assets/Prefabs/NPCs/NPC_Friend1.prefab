@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 656526330162374830}
   - component: {fileID: 5839663910701103019}
   - component: {fileID: 3252516235277443141}
-  - component: {fileID: 2072276770296205387}
+  - component: {fileID: 2080418187761735581}
   m_Layer: 0
   m_Name: NPC_Friend1
   m_TagString: Untagged
@@ -105,7 +105,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: ce3f4e84cad061b479dada6d3e870c8b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -130,10 +130,9 @@ MonoBehaviour:
   _hopSpeed: 1
   _hopAmound: 1
   _QMark: {fileID: 8834069079478500054}
-  _text: {fileID: 0}
   _layer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   _interactionRange: 5
 --- !u!114 &656526330162374830
 MonoBehaviour:
@@ -147,13 +146,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88f6af3fdb7e17d4ca567e75471ed3b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionID: "\uB3C4\uCC29"
-  _characterID: 
-  _interactionRange: 2
-  _useProximityInteraction: 0
-  _lookAtPlayerInRange: 0
+  _interactionID: "\uB6F0\uC5B4\uB77C"
+  _characterID: cf7908e8-b42d-4fe8-974b-a8ddbef09f74
+  _interactionRange: 5
+  _useProximityInteraction: 1
+  _lookAtPlayerInRange: 1
   _rotationSpeed: 5
-  _bubbleAnchor: {fileID: 0}
+  _bubbleAnchor: {fileID: 1180483538521964842}
 --- !u!114 &5839663910701103019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,9 +188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e1fdfb210d90946a9a7c3a863faf7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tmpUGUI: {fileID: 0}
   _playKeyward: "\uB6F0\uC5B4!"
---- !u!114 &2072276770296205387
+--- !u!114 &2080418187761735581
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,7 +198,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1870329947790349537}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06efe1ecf4821bb459d03c7a9044d507, type: 3}
+  m_Script: {fileID: 11500000, guid: 754dc86d9d9f14c4cadeb9f3db7c51e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1719519079985852796

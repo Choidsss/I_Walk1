@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5774913016684529845}
   - component: {fileID: 3641145948513078767}
   - component: {fileID: 3385897344304925275}
-  - component: {fileID: 1192960246234502461}
+  - component: {fileID: 7878239057634929001}
   m_Layer: 11
   m_Name: NPC3_ComManager2
   m_TagString: NPCs
@@ -50,7 +50,7 @@ Animator:
   m_GameObject: {fileID: 2052806698560310391}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ac7fbe4d69a6ad94485f10daa85dd05f, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 97f8b9e82abdbd04ab0cab1940e77fe8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -128,7 +128,6 @@ MonoBehaviour:
   _hopSpeed: 1
   _hopAmound: 1
   _QMark: {fileID: 2236110467001626482}
-  _text: {fileID: 0}
   _layer:
     serializedVersion: 2
     m_Bits: 512
@@ -152,7 +151,7 @@ MonoBehaviour:
   _lookAtPlayerInRange: 1
   _rotationSpeed: 5
   _bubbleAnchor: {fileID: 8533528332456634625}
---- !u!114 &1192960246234502461
+--- !u!114 &7878239057634929001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,9 +160,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2052806698560310391}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06efe1ecf4821bb459d03c7a9044d507, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca031e9d1eadda46a3ca71da398c996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _emotionAnim: 
 --- !u!1001 &1998764918544483293
 PrefabInstance:
   m_ObjectHideFlags: 0

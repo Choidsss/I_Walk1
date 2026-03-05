@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7376724970749286470}
   - component: {fileID: 5944346139014564889}
   - component: {fileID: 4822148134179383378}
-  - component: {fileID: 3234372119985567539}
+  - component: {fileID: 6903619458726821514}
   m_Layer: 11
   m_Name: NPC2_InterviewPanel
   m_TagString: NPCs
@@ -128,10 +128,9 @@ MonoBehaviour:
   _hopSpeed: 1
   _hopAmound: 1
   _QMark: {fileID: 1905700667366119132}
-  _text: {fileID: 0}
   _layer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   _interactionRange: 5
 --- !u!114 &4822148134179383378
 MonoBehaviour:
@@ -146,13 +145,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionID: interview
-  _characterID: 
-  _interactionRange: 2
-  _useProximityInteraction: 0
-  _lookAtPlayerInRange: 0
+  _characterID: 05cbbc24-840c-4f5e-bc90-30ac3c5270f0
+  _interactionRange: 5
+  _useProximityInteraction: 1
+  _lookAtPlayerInRange: 1
   _rotationSpeed: 5
-  _bubbleAnchor: {fileID: 0}
---- !u!114 &3234372119985567539
+  _bubbleAnchor: {fileID: 5794451487964028586}
+--- !u!114 &6903619458726821514
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,9 +160,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8887721094376060984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06efe1ecf4821bb459d03c7a9044d507, type: 3}
+  m_Script: {fileID: 11500000, guid: f91e24545c887b343abf573f7e8a8a4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _emotionAnim: 
 --- !u!1001 &3568646896120843038
 PrefabInstance:
   m_ObjectHideFlags: 0

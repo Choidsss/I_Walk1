@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1938821980740203181}
   - component: {fileID: 4163810639185758115}
   - component: {fileID: 8365704378401823402}
-  - component: {fileID: 5612844092168889557}
+  - component: {fileID: 6639074726830253714}
   m_Layer: 0
   m_Name: NPC_AssemblySupervisor
   m_TagString: Untagged
@@ -50,10 +50,10 @@ Animator:
   m_GameObject: {fileID: 4564802698652820844}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ac7fbe4d69a6ad94485f10daa85dd05f, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d3a803e65505c147aba9528fa3635fa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -144,14 +144,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88f6af3fdb7e17d4ca567e75471ed3b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionID: 
+  _interactionID: Shit
   _characterID: 969e1818-5435-4247-ad6b-30f508f38255
   _interactionRange: 5
   _useProximityInteraction: 1
   _lookAtPlayerInRange: 1
   _rotationSpeed: 5
   _bubbleAnchor: {fileID: 7825376482436988569}
---- !u!114 &5612844092168889557
+--- !u!114 &6639074726830253714
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,9 +160,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4564802698652820844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06efe1ecf4821bb459d03c7a9044d507, type: 3}
+  m_Script: {fileID: 11500000, guid: 3bc448c55b262e140be2143fd96c5e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _emotionAnim: 
 --- !u!1001 &603200598256182823
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2813913217293230834}
   - component: {fileID: 7120850680629722682}
   - component: {fileID: 6346572262018427661}
-  - component: {fileID: 9060770632748160622}
+  - component: {fileID: 4079035549190466990}
   m_Layer: 11
   m_Name: NPC4_RoomMate1
   m_TagString: NPCs
@@ -50,7 +50,7 @@ Animator:
   m_GameObject: {fileID: 6574769759565292371}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ac7fbe4d69a6ad94485f10daa85dd05f, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 29d596c4f61cfc04aa2cfd11112f6766, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -128,10 +128,9 @@ MonoBehaviour:
   _hopSpeed: 1
   _hopAmound: 1
   _QMark: {fileID: 5427140624074583310}
-  _text: {fileID: 0}
   _layer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   _interactionRange: 5
 --- !u!114 &6346572262018427661
 MonoBehaviour:
@@ -145,14 +144,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88f6af3fdb7e17d4ca567e75471ed3b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionID: 
-  _characterID: 
-  _interactionRange: 2
-  _useProximityInteraction: 0
-  _lookAtPlayerInRange: 0
+  _interactionID: RoomMateTalk
+  _characterID: 85d6a16e-2312-4c82-9519-79e25dc7501c
+  _interactionRange: 5
+  _useProximityInteraction: 1
+  _lookAtPlayerInRange: 1
   _rotationSpeed: 5
-  _bubbleAnchor: {fileID: 0}
---- !u!114 &9060770632748160622
+  _bubbleAnchor: {fileID: 6663348345895194538}
+--- !u!114 &4079035549190466990
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,9 +160,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6574769759565292371}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06efe1ecf4821bb459d03c7a9044d507, type: 3}
+  m_Script: {fileID: 11500000, guid: bf2b33ccb382a644a83a68276a52c0bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _emotionAnim: 
 --- !u!1001 &6612945599750307836
 PrefabInstance:
   m_ObjectHideFlags: 0

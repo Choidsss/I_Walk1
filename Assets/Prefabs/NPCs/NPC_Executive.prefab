@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7778212521187271428}
   - component: {fileID: 6887043573727405176}
   - component: {fileID: 4729926012522925398}
-  - component: {fileID: 6220577914615040017}
   - component: {fileID: 638504094738261670}
+  - component: {fileID: 5697589981336523589}
   m_Layer: 11
   m_Name: NPC_Executive
   m_TagString: NPCs
@@ -131,18 +131,6 @@ MonoBehaviour:
   _lookAtPlayerInRange: 1
   _rotationSpeed: 5
   _bubbleAnchor: {fileID: 3430114150322920045}
---- !u!114 &6220577914615040017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6379393437632401504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06efe1ecf4821bb459d03c7a9044d507, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &638504094738261670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,11 +147,23 @@ MonoBehaviour:
   _hopSpeed: 1
   _hopAmound: 1
   _QMark: {fileID: 7940603236542255423}
-  _text: {fileID: 0}
   _layer:
     serializedVersion: 2
     m_Bits: 0
   _interactionRange: 5
+--- !u!114 &5697589981336523589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6379393437632401504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d152323da4576748b5099c5e537ac3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _emotionAnim: 
 --- !u!1001 &2448919956274103586
 PrefabInstance:
   m_ObjectHideFlags: 0

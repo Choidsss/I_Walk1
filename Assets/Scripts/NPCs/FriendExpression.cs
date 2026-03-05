@@ -3,37 +3,23 @@ using UnityEngine;
 
 namespace I_Walk
 {
-    public class NPCExpression : MonoBehaviour
+    public class FriendExpression : BaseNPC
     {
         Animator _anim;
 
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
             _anim = GetComponent<Animator>();
         }
 
+        // Update is called once per frame
         void Update()
         {
-            TeacherTalkExpression();
-            FriendExpression();
+            ExpressEmotions();
         }
 
-        public void TeacherTalkExpression()
-        {
-            TextMeshProUGUI TmpPro = GetComponentInChildren<TextMeshProUGUI>();
-
-            if (TmpPro != null && TmpPro.text == "지금이 몇신데 이제오니?")
-            {
-                //애니메이션이 반복재생됨 => 한번만 재생되도록 수정
-                _anim.SetTrigger("Cocky");
-            }
-            else
-            {
-                return;
-            }
-        }
-
-        public void FriendExpression()
+        public override void ExpressEmotions()
         {
             TextMeshProUGUI TmpPro = GetComponentInChildren<TextMeshProUGUI>();
 
