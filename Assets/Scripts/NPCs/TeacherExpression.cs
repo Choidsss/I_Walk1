@@ -5,6 +5,8 @@ namespace I_Walk
 {
     public class TeacherExpression : BaseNPC
     {
+        [SerializeField] private string _emotionAnim;
+
         Animator _anim;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -32,6 +34,15 @@ namespace I_Walk
             {
                 return;
             }
+
+            //switch (_emotionAnim)
+            //{
+            //    case "지금이 몇신데 이제오니?":
+            //        _anim.SetTrigger("Cocky");
+            //        break;
+            //    default:
+            //        return;
+            //}
         }
     }
 }

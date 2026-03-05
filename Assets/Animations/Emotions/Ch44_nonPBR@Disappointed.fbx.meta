@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cace9f27651db7f4aa5475b79275a3fc
+guid: 36cae3bd13ae07a43a699e6243e46d39
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,11 +31,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Knowledge
+      name: Disappointed
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 58
+      lastFrame: 251
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

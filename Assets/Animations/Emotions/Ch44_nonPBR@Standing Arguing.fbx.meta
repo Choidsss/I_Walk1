@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89a6d11386cb77243b3b493a860fd7a6
+guid: a6c48eb29b2f0c044b6a25266592f4c7
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,11 +31,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Head Nod Yes
+      name: Standing Arguing
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 78
+      lastFrame: 1247
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
