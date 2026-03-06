@@ -23,10 +23,15 @@ namespace I_Walk
         {
             TextMeshProUGUI TmpPro = GetComponentInChildren<TextMeshProUGUI>();
 
-            if (TmpPro != null && TmpPro.text == "aaaaa")
+            if (TmpPro != null && TmpPro.text == "에휴...됐다....됐어...ㅅㅂ 말하면 뭐하냐")
             {
                 //애니메이션이 반복재생됨 => 한번만 재생되도록 수정
-                _anim.SetTrigger("Hard");
+                _anim.SetTrigger("PointForward");
+            }
+            if (TmpPro != null && TmpPro.text == "넌 뭐 우리가 부담스럽냐?")
+            {
+                //애니메이션이 반복재생됨 => 한번만 재생되도록 수정
+                _anim.SetTrigger("Talking");
             }
             else
             {

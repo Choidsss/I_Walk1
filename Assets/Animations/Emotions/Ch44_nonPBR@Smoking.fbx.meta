@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dbb0dfb5e5dda694a9bbe61981384dbc
+guid: 95ef339bcbf80c14484f922d951f982a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,11 +31,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Sarcastic Head Nod
+      name: Smoking
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 70
+      lastFrame: 1074
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

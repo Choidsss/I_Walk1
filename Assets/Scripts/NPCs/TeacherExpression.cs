@@ -5,8 +5,6 @@ namespace I_Walk
 {
     public class TeacherExpression : BaseNPC
     {
-        [SerializeField] private string _emotionAnim;
-
         Animator _anim;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,6 +27,11 @@ namespace I_Walk
             {
                 //애니메이션이 반복재생됨 => 한번만 재생되도록 수정
                 _anim.SetTrigger("Cocky");
+            }
+            else if (TMPro != null && TMPro.text == "그래, 얼른 들어가라")
+            {
+                //Dissmiss 제스처 => 절레절레하는 애니메이션으로 바꾸기
+                _anim.SetTrigger("Dissmiss");
             }
             else
             {

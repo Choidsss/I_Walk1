@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7c8609c89cd7d5949ab8eed193cd88ec
+guid: d2bfd89cac768e14e8166255f459776b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,11 +31,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Angry Gesture
+      name: Head Nod Yes
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 66
+      lastFrame: 155
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

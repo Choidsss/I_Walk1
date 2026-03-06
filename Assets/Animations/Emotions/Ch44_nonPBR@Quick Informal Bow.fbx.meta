@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c3592ba1c32e491479a4579857d29497
+guid: 738ae94effc29d7489c8fcbf62569a21
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,11 +31,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Weight Shift
+      name: Quick Informal Bow
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 283
+      lastFrame: 164
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

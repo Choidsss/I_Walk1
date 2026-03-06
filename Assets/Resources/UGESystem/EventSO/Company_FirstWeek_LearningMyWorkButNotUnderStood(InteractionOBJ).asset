@@ -38,7 +38,7 @@ MonoBehaviour:
       type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 13
-        _isNodeExpanded: 0
+        _isNodeExpanded: 1
         _targetCharacterId: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
         _text: "\uC9C0\uAE08\uBD80\uD130 \uBCF8\uC778\uC774 \uC774\uC81C\uBD80\uD130
           \uD574\uC57C\uB418\uB294 \uC77C\uB4E4\uC744 \uC54C\uB824\uB4DC\uB9B4\uAC8C\uC694."
@@ -69,7 +69,7 @@ MonoBehaviour:
       type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 13
-        _isNodeExpanded: 0
+        _isNodeExpanded: 1
         _targetCharacterId: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
         _text: "\uADF8\uB9AC\uACE0 \uC5EC\uAE30 \uD300\uC7A5\uB2D8\uC774 \uC77C\uC744
           \uC798 \uC548\uD558\uC2DC\uB294 \uD3B8\uC774\uAC70\uB4E0\uC694."
@@ -119,7 +119,7 @@ MonoBehaviour:
       type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 13
-        _isNodeExpanded: 0
+        _isNodeExpanded: 1
         _targetCharacterId: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
         _text: "\uB2E4\uB2C8\uC2DC\uB2E4 \uBCF4\uBA74 \uB290\uB07C\uC2E4\uAC70\uC5D0\uC694,
           \uC81C\uAC00 \uBB34\uC2A8 \uB9D0 \uD558\uB294\uC9C0."

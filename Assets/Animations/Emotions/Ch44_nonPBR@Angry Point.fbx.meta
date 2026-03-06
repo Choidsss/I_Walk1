@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 51dfbf9eda645db4ebbcb7298f3ba279
+guid: 1021bdf8c376c7244b58a38895d62bfc
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,11 +31,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Happy Hand Gesture
+      name: Angry Point
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 88
+      lastFrame: 145
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

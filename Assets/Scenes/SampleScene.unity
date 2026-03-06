@@ -13219,7 +13219,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.16857791, y: 0.00000002937581, z: -0.0000000050240145, w: 0.9856884}
-  m_LocalPosition: {x: 760.33, y: 105.86, z: 758.16}
+  m_LocalPosition: {x: 306.9, y: 2.5, z: 106.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27255,29 +27255,21 @@ PrefabInstance:
       propertyPath: m_camTransform
       value: 
       objectReference: {fileID: 330585546}
-    - target: {fileID: 3126290721040579497, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: _interactionDistance
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3126290721040579497, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: _interactionOffset.y
-      value: 1.7
-      objectReference: {fileID: 0}
     - target: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6344404696354205859, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 760.33
+      value: 306.9
       objectReference: {fileID: 0}
     - target: {fileID: 6344404696354205859, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 103.36
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6344404696354205859, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 762.16
+      value: 110.5
       objectReference: {fileID: 0}
     - target: {fileID: 6344404696354205859, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -27306,10 +27298,6 @@ PrefabInstance:
     - target: {fileID: 6344404696354205859, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7361496761867551906, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: _interactionRange
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -63351,7 +63339,7 @@ Transform:
   m_GameObject: {fileID: 1668578861}
   serializedVersion: 2
   m_LocalRotation: {x: 0.16857786, y: 0.000000029375807, z: -0.0000000050240128, w: 0.9856884}
-  m_LocalPosition: {x: 760.33, y: 105.86, z: 758.16}
+  m_LocalPosition: {x: 306.9, y: 2.5, z: 106.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74587,6 +74575,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6148013568885183854, guid: 8f4d47d2d4c11ee4eae566bfc1222d42, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4dd4a1cfd84eecc41ab7d0b3f9ef967e, type: 2}
     - target: {fileID: 8887721094376060984, guid: 8f4d47d2d4c11ee4eae566bfc1222d42, type: 3}
       propertyPath: m_Name
       value: NPC2_Panel

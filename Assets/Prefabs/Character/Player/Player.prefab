@@ -309,7 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactionID: 
   _characterID: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
-  _interactionRange: 2
+  _interactionRange: 5
   _useProximityInteraction: 0
   _lookAtPlayerInRange: 0
   _rotationSpeed: 5
