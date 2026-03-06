@@ -27252,9 +27252,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 780720116998529268, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: m_dirBias
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 780720116998529268, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: m_posBias
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 780720116998529268, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: m_maxSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 780720116998529268, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_camTransform
       value: 
       objectReference: {fileID: 330585546}
+    - target: {fileID: 780720116998529268, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: m_mxmInputProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: a3faa37cf4880594e9cb4d6c929570d1, type: 2}
     - target: {fileID: 780720116998529268, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_simulationSpeedScale
       value: 5
@@ -27262,6 +27278,14 @@ PrefabInstance:
     - target: {fileID: 4193123990707326441, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203410133962413261, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: _runSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203410133962413261, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
+      propertyPath: _walkSpeed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6344404696354205859, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalPosition.x

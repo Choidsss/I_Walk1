@@ -420,8 +420,9 @@ MonoBehaviour:
   CompositeName: 
   PrimaryClip: {fileID: -203655887218126122, guid: 625c770d0baec3c448952d5cda63efaf, type: 3}
   BeforeClips: []
-  AfterClips: []
-  Looping: 1
+  AfterClips:
+  - {fileID: -203655887218126122, guid: 07230b939d9da7f4b956613b70599b71, type: 3}
+  Looping: 0
   IgnoreEdges: 0
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
