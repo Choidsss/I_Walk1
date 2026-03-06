@@ -43,6 +43,15 @@ namespace I_Walk
             }
 
             _mxm_T_Generator.MaxSpeed = Mathf.Lerp(_mxm_T_Generator.MaxSpeed, _targetSpeed, Time.deltaTime * 5f);
+
+            if (_mxm_T_Generator.MaxSpeed >= 17)
+            {
+                _mxmAnimator.SetFavourTag("Sprint", 10);
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }
