@@ -16,12 +16,18 @@ MonoBehaviour:
   _archetype: 0
   _commands:
   - rid: 5100603865430753500
+  - rid: 5100603865430753511
   - rid: 5100603865430753499
   - rid: 5100603865430753501
   - rid: 5100603865430753502
-  - rid: 5100603865430753503
+  - rid: 5100603865430753514
+  - rid: 5100603865430753515
+  - rid: 5100603865430753513
+  - rid: 5100603865430753516
+  - rid: 5100603865430753517
   - rid: 5100603865430753504
   - rid: 5100603865430753505
+  - rid: 5100603865430753520
   references:
     version: 2
     RefIds:
@@ -30,7 +36,7 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 13
         _isNodeExpanded: 0
-        _targetCharacterId: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
+        _targetCharacterId: ca3887ce-7a93-44ff-899c-d15c5080aedc
         _text: "\uBB50\uC9C0?"
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
@@ -40,11 +46,11 @@ MonoBehaviour:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
         _dialogueText: "\uBB50\uC57C?"
-        _characterName: 
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
-        _showCharacter: 1
+        _showCharacter: 0
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3
     - rid: 5100603865430753501
@@ -52,8 +58,8 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 13
         _isNodeExpanded: 0
-        _targetCharacterId: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
-        _text: "\uC65C \uAC11\uC790\uAE30 \uBD88\uC774 \uB354 \uAEBC\uC838?"
+        _targetCharacterId: ca3887ce-7a93-44ff-899c-d15c5080aedc
+        _text: "\uC65C \uAC11\uC790\uAE30 \uBD88\uC774 \uB2E4 \uAEBC\uC838?"
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
     - rid: 5100603865430753502
@@ -61,17 +67,8 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 13
         _isNodeExpanded: 0
-        _targetCharacterId: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
+        _targetCharacterId: ca3887ce-7a93-44ff-899c-d15c5080aedc
         _text: "\uC815\uC804\uC774\uC57C \uC124\uB9C8?"
-        _waitUntilInput: 1
-        _offset: {x: 0, y: 0, z: 0}
-    - rid: 5100603865430753503
-      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 13
-        _isNodeExpanded: 0
-        _targetCharacterId: a593ee84-ad99-49a8-b175-875aff2415db
-        _text: "\uADF8\uB7F0\uAC70 \uAC19\uC740\uB370\uC694?"
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
     - rid: 5100603865430753504
@@ -79,7 +76,7 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 13
         _isNodeExpanded: 0
-        _targetCharacterId: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
+        _targetCharacterId: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
         _text: "\uC544\uC774\uC528, \uC800\uC7A5 \uC548\uD588\uB294\uB370"
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
@@ -88,7 +85,73 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 13
         _isNodeExpanded: 0
-        _targetCharacterId: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
+        _targetCharacterId: ca3887ce-7a93-44ff-899c-d15c5080aedc
         _text: "\uC544 \uBB50\uC57C!!!!!!!!!"
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100603865430753511
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 0
+        _dialogueText: "\uCEF4\uD4E8\uD130\uAC00 \uAC11\uC790\uAE30 \uC65C \uAEBC\uC838?"
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
+        _expression: 
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 0
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
+    - rid: 5100603865430753513
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 0
+        _dialogueText: "\uADF8\uB7F0\uAC70...\uAC19\uC740\uB370\uC694....?"
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
+        _expression: 
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 0
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
+    - rid: 5100603865430753514
+      type: {class: ChoiceCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 3
+        _isNodeExpanded: 0
+        _choices:
+        - _text: "\uADF8\uB7F0\uAC70 \uAC19\uC740\uB370\uC694"
+          _targetLabel: "\uB9DE\uB2E4"
+    - rid: 5100603865430753515
+      type: {class: LabelCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 4
+        _isNodeExpanded: 0
+        _labelName: "\uB9DE\uB2E4"
+    - rid: 5100603865430753516
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 13
+        _isNodeExpanded: 0
+        _targetCharacterId: ca3887ce-7a93-44ff-899c-d15c5080aedc
+        _text: "\uC544~~~~\uC528\uBC1C \uC9C4\uC9DC"
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100603865430753517
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 13
+        _isNodeExpanded: 0
+        _targetCharacterId: ca3887ce-7a93-44ff-899c-d15c5080aedc
+        _text: "\uC544~~~~~~~~~~~~"
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100603865430753520
+      type: {class: EndCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 7
+        _isNodeExpanded: 0
+        _rewards: []
+        _isBranching: 0
+        _targetNodeID: 

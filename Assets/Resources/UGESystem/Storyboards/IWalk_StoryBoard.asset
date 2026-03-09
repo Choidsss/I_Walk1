@@ -32,6 +32,8 @@ MonoBehaviour:
   - rid: 5100603752686288983
   - rid: 5100603752686288994
   - rid: 5100603752686288996
+  - rid: 5100603865430753518
+  - rid: 5100603865430753525
   references:
     version: 2
     RefIds:
@@ -76,7 +78,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
-        _position: {x: 0, y: 0}
+        _position: {x: 34, y: 736}
         _startConditions:
         - rid: 5100603731807043682
         _nextNodeIDs: []
@@ -94,7 +96,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
-        _position: {x: 0, y: 0}
+        _position: {x: 513, y: 732}
         _startConditions:
         - rid: 5100603731807043684
         _nextNodeIDs: []
@@ -112,7 +114,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
-        _position: {x: 0, y: 0}
+        _position: {x: 1012, y: 422}
         _startConditions:
         - rid: 5100603731807043695
         _nextNodeIDs: []
@@ -130,7 +132,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
-        _position: {x: 0, y: 0}
+        _position: {x: -286, y: 436}
         _startConditions:
         - rid: 5100603752686288984
         _nextNodeIDs: []
@@ -148,7 +150,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
-        _position: {x: 0, y: 0}
+        _position: {x: 195, y: 469}
         _startConditions:
         - rid: 5100603752686288995
         _nextNodeIDs: []
@@ -166,7 +168,7 @@ MonoBehaviour:
         _type: 0
         IsStartNode: 0
         _isRepeatable: 0
-        _position: {x: 0, y: 0}
+        _position: {x: 513, y: 422}
         _startConditions:
         - rid: 5100603752686288997
         _nextNodeIDs: []
@@ -176,6 +178,42 @@ MonoBehaviour:
       data:
         <Description>k__BackingField: Player enters a specific area.
         <TargetTriggerID>k__BackingField: Ending
+    - rid: 5100603865430753518
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: 4ab8ba14-eb2e-40a6-a7b8-d67427f18ce2
+        _name: CompanyBlackOut
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 0, y: 0}
+        _startConditions:
+        - rid: 5100603865430753519
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: 3cac01be5daba5148b4a89cd85265940, type: 2}
+    - rid: 5100603865430753519
+      type: {class: InteractionTriggeredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player interacts with a specific object.
+        <TargetInteractionID>k__BackingField: BlackOut
+    - rid: 5100603865430753525
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: 4c0e2b74-5c06-48a8-a57a-f41737070b50
+        _name: BlackOutAfter
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 0, y: 0}
+        _startConditions:
+        - rid: 5100603865430753526
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: 607d4d225d73bab479c4cb079fa6e438, type: 2}
+    - rid: 5100603865430753526
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: BlackOutAfter
     - rid: 7554041859222536280
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:
