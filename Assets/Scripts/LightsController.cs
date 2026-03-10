@@ -1,21 +1,27 @@
 using UnityEngine;
+using TMPro;
 
 namespace I_Walk
 {
     public class LightsController : MonoBehaviour
     {
+        [SerializeField] GameObject _npc;
+
         Light _light;
+
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
             _light = GetComponent<Light>();
+            
+            TurnOnTheLight();
         }
 
         // Update is called once per frame
         void Update()
         {
-            TurnOnTheLight();
+            TurnOffTheLight();
         }
 
         private void TurnOnTheLight()
@@ -25,7 +31,12 @@ namespace I_Walk
         
         private void TurnOffTheLight()
         {
-            _light.enabled = false;
+            TextMeshProUGUI text = _npc.GetComponentInChildren<TextMeshProUGUI>();
+
+            if(text.text == "¹¹¾ß?")
+            {
+                _light.enabled = false;
+            }
         }
     }
 }
