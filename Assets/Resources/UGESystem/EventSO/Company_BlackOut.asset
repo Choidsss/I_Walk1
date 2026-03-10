@@ -25,7 +25,6 @@ MonoBehaviour:
   - rid: 5100603865430753513
   - rid: 5100603865430753516
   - rid: 5100603865430753517
-  - rid: 5100603865430753504
   - rid: 5100603865430753505
   - rid: 5100603865430753520
   references:
@@ -71,15 +70,6 @@ MonoBehaviour:
         _text: "\uC815\uC804\uC774\uC57C \uC124\uB9C8?"
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
-    - rid: 5100603865430753504
-      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 13
-        _isNodeExpanded: 0
-        _targetCharacterId: 8851cfd3-1a7d-4d2c-9dc4-e0a419e2c485
-        _text: "\uC544\uC774\uC528, \uC800\uC7A5 \uC548\uD588\uB294\uB370"
-        _waitUntilInput: 1
-        _offset: {x: 0, y: 0, z: 0}
     - rid: 5100603865430753505
       type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
@@ -119,7 +109,7 @@ MonoBehaviour:
       type: {class: ChoiceCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 3
-        _isNodeExpanded: 0
+        _isNodeExpanded: 1
         _choices:
         - _text: "\uADF8\uB7F0\uAC70 \uAC19\uC740\uB370\uC694"
           _targetLabel: "\uB9DE\uB2E4"

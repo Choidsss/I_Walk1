@@ -14,21 +14,12 @@ namespace I_Walk
         [Header("QuestionMark")]
         [SerializeField] GameObject _QMark;
 
-        [SerializeField] private LayerMask _layer;
-
-        [SerializeField] private float _interactionRange = 5f;
-        
         float _defaultY;
         bool _isPlayer = false;
         Vector3 _localPos;
 
         void Start()
         {
-            if (_QMark == null)
-            {
-                Debug.Log("이모지가 존재하지 않습니다");
-            }
-
             _localPos = _QMark.transform.localPosition;
             _defaultY = _localPos.y;
 
@@ -44,15 +35,25 @@ namespace I_Walk
             {
                 _QMark.SetActive(false);
             }
+            else
+            {
+                _QMark.SetActive(true);
+            }
         }
 
 
         void CheckShowBangMark()
         {
             Ray ray = new Ray(transform.position, transform.forward);
-            if (Physics.SphereCast(ray , _interactionRange) && Input.GetKey(KeyCode.F))
+            TextMeshProUGUI IsText = GetComponentInChildren<TextMeshProUGUI>();
+
+            if (IsText.text != null)
             {
                 _isPlayer = true;
+            }
+            else
+            {
+                _isPlayer = false;
             }
             BangMarkAnimation();
         }

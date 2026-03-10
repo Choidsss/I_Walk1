@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 7701496952030876045}
   - component: {fileID: 2449647417495880557}
   - component: {fileID: 1440201415466366405}
-  - component: {fileID: 65887598978225321}
   - component: {fileID: 656526330162374830}
   - component: {fileID: 5839663910701103019}
   - component: {fileID: 3252516235277443141}
   - component: {fileID: 2080418187761735581}
+  - component: {fileID: 2657152526413211178}
   m_Layer: 0
   m_Name: NPC_Friend1
   m_TagString: Untagged
@@ -114,26 +114,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &65887598978225321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1870329947790349537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bd71d5b07d958e458e189d164494d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rotationSpeed: 1
-  _hopSpeed: 1
-  _hopAmound: 1
-  _QMark: {fileID: 8834069079478500054}
-  _layer:
-    serializedVersion: 2
-    m_Bits: 512
-  _interactionRange: 5
 --- !u!114 &656526330162374830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,6 +181,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 754dc86d9d9f14c4cadeb9f3db7c51e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2657152526413211178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870329947790349537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c613add668e10e4da2f9c17f5c099f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _qMark: {fileID: 8834069079478500054}
+  _text: 
+  _rotationSpeed: 1
+  _hopSpeed: 1
+  _hopAmound: 1
 --- !u!1001 &1719519079985852796
 PrefabInstance:
   m_ObjectHideFlags: 0

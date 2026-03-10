@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6148013568885183854}
   - component: {fileID: 7629563163415363035}
   - component: {fileID: 7376724970749286470}
-  - component: {fileID: 5944346139014564889}
   - component: {fileID: 4822148134179383378}
   - component: {fileID: 6903619458726821514}
+  - component: {fileID: 6262220485498615599}
   m_Layer: 11
   m_Name: NPC2_InterviewPanel
   m_TagString: NPCs
@@ -112,26 +112,6 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.9, z: 0}
---- !u!114 &5944346139014564889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8887721094376060984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bd71d5b07d958e458e189d164494d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rotationSpeed: 1
-  _hopSpeed: 1
-  _hopAmound: 1
-  _QMark: {fileID: 1905700667366119132}
-  _layer:
-    serializedVersion: 2
-    m_Bits: 512
-  _interactionRange: 5
 --- !u!114 &4822148134179383378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,7 +143,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f91e24545c887b343abf573f7e8a8a4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _emotionAnim: 
+--- !u!114 &6262220485498615599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8887721094376060984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e69f2a729080b14f83e1e6c1454817c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _qMark: {fileID: 1905700667366119132}
+  _text: 
+  _rotationSpeed: 1
+  _hopSpeed: 1
+  _hopAmound: 1
 --- !u!1001 &3568646896120843038
 PrefabInstance:
   m_ObjectHideFlags: 0

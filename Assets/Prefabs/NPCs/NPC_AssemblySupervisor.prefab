@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: -8679165388983444865}
   - component: {fileID: -101221754828778334}
   - component: {fileID: 1938821980740203181}
-  - component: {fileID: 4163810639185758115}
   - component: {fileID: 8365704378401823402}
   - component: {fileID: 6639074726830253714}
+  - component: {fileID: 2574510427116719006}
   m_Layer: 0
   m_Name: NPC_AssemblySupervisor
   m_TagString: Untagged
@@ -112,26 +112,6 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 1.8, z: 0}
---- !u!114 &4163810639185758115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4564802698652820844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bd71d5b07d958e458e189d164494d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rotationSpeed: 1
-  _hopSpeed: 1
-  _hopAmound: 1
-  _QMark: {fileID: 5941751403365318063}
-  _layer:
-    serializedVersion: 2
-    m_Bits: 512
-  _interactionRange: 5
 --- !u!114 &8365704378401823402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,7 +143,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bc448c55b262e140be2143fd96c5e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _emotionAnim: 
+--- !u!114 &2574510427116719006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4564802698652820844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4ecc2f095f0bc7428ac4e0f076139ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _qMark: {fileID: 5941751403365318063}
+  _text: 
+  _rotationSpeed: 1
+  _hopSpeed: 1
+  _hopAmound: 1
 --- !u!1001 &603200598256182823
 PrefabInstance:
   m_ObjectHideFlags: 0

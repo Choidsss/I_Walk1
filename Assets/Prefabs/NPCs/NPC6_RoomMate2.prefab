@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2490810086564272013}
   - component: {fileID: 3105253454617927027}
   - component: {fileID: 2819380753170934605}
-  - component: {fileID: 1900629807670978463}
   - component: {fileID: 3316779786411119258}
+  - component: {fileID: 8135162030163165510}
   m_Layer: 11
   m_Name: NPC6_RoomMate2
   m_TagString: NPCs
@@ -131,26 +131,6 @@ MonoBehaviour:
   _lookAtPlayerInRange: 1
   _rotationSpeed: 5
   _bubbleAnchor: {fileID: 1313765599377583015}
---- !u!114 &1900629807670978463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8294109395822940102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bd71d5b07d958e458e189d164494d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rotationSpeed: 1
-  _hopSpeed: 1
-  _hopAmound: 1
-  _QMark: {fileID: 160576070787510891}
-  _layer:
-    serializedVersion: 2
-    m_Bits: 0
-  _interactionRange: 5
 --- !u!114 &3316779786411119258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,7 +143,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8058fedfba74294b88ee1458759312e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _emotionAnim: 
+--- !u!114 &8135162030163165510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8294109395822940102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb3f85dc67aade47a3e486e9c749334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _qMark: {fileID: 160576070787510891}
+  _text: 
+  _rotationSpeed: 1
+  _hopSpeed: 1
+  _hopAmound: 1
 --- !u!1001 &1551050413793025009
 PrefabInstance:
   m_ObjectHideFlags: 0

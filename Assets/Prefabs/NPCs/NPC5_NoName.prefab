@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 5440725522483955394}
   - component: {fileID: 7533112935252137881}
   - component: {fileID: 3450527367875024820}
-  - component: {fileID: 913188623132990140}
   - component: {fileID: 5911845427999460921}
-  - component: {fileID: 616705248497127037}
+  - component: {fileID: 4482844230123962517}
   m_Layer: 11
   m_Name: NPC5_NoName
   m_TagString: NPCs
@@ -112,27 +111,6 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.9, z: 0}
---- !u!114 &913188623132990140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4326243496361589951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bd71d5b07d958e458e189d164494d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rotationSpeed: 1
-  _hopSpeed: 1
-  _hopAmound: 1
-  _QMark: {fileID: 8901985861058475951}
-  _text: {fileID: 0}
-  _layer:
-    serializedVersion: 2
-    m_Bits: 0
-  _interactionRange: 5
 --- !u!114 &5911845427999460921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,7 +130,7 @@ MonoBehaviour:
   _lookAtPlayerInRange: 1
   _rotationSpeed: 5
   _bubbleAnchor: {fileID: 506020201949362366}
---- !u!114 &616705248497127037
+--- !u!114 &4482844230123962517
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,9 +139,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4326243496361589951}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06efe1ecf4821bb459d03c7a9044d507, type: 3}
+  m_Script: {fileID: 11500000, guid: 0362435ff06523044a75e90618dd0a2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _qMark: {fileID: 8901985861058475951}
+  _text: 
+  _rotationSpeed: 1
+  _hopSpeed: 1
+  _hopAmound: 1
 --- !u!1001 &51967632743631080
 PrefabInstance:
   m_ObjectHideFlags: 0
