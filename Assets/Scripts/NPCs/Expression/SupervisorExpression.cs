@@ -7,6 +7,9 @@ namespace I_Walk
     {
         Animator _anim;
 
+        string _lastEmotionText = "";
+
+
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -23,11 +26,13 @@ namespace I_Walk
         {
             TextMeshProUGUI TmpPro = GetComponentInChildren<TextMeshProUGUI>();
 
-            
+            if (TmpPro.text == _lastEmotionText) return;
+
             if (TmpPro != null && TmpPro.text == "장난하니?")
             {
                 //애니메이션이 반복재생됨 => 한번만 재생되도록 수정
                 _anim.SetTrigger("Anoyed");
+                _lastEmotionText = TmpPro.text;
             }
             else
             {

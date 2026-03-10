@@ -1,4 +1,4 @@
-using TMPro;
+Ôªøusing TMPro;
 using UnityEngine;
 
 namespace I_Walk
@@ -7,6 +7,7 @@ namespace I_Walk
     {
         Animator _anim;
 
+        string _lastEmotionText = "";
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -23,10 +24,12 @@ namespace I_Walk
         {
             TextMeshProUGUI TmpPro = GetComponentInChildren<TextMeshProUGUI>();
 
-            if (TmpPro != null && TmpPro.text == "∂« ≥ª∑¡∞°?")
+            if (TmpPro == null) return;
+
+            if (TmpPro != null && TmpPro.text == "Îòê ÎÇ¥Î†§Í∞Ä?")
             {
                 _anim.SetTrigger("HeadShake");
-                _anim.speed = 2.0f;
+                _lastEmotionText = TmpPro.text;
             }
             else
             {

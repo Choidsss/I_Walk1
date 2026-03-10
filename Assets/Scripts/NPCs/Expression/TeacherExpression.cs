@@ -6,6 +6,7 @@ namespace I_Walk
     public class TeacherExpression : BaseNPC
     {
         Animator _anim;
+
         string _lastEmotionText = "";
 
         void Start()
