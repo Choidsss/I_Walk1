@@ -83,7 +83,7 @@ MonoBehaviour:
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
-        _showCharacter: 1
+        _showCharacter: 0
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3
     - rid: 5100603730130108519
@@ -97,7 +97,7 @@ MonoBehaviour:
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
-        _showCharacter: 1
+        _showCharacter: 0
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3
     - rid: 5100603730130108520

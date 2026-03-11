@@ -16,37 +16,23 @@ MonoBehaviour:
   _archetype: 0
   _commands:
   - rid: 7554042424944754822
-  - rid: 7554042062874869814
   - rid: 7554042062874869815
   - rid: 7554042424944754803
   references:
     version: 2
     RefIds:
-    - rid: 7554042062874869814
-      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 0
-        _isNodeExpanded: 0
-        _dialogueText: "\uADF8\uB807\uAC8C \uB098\uC758 \uCD9C\uADFC \uCCAB\uB0A0"
-        _characterName: 
-        _expression: 
-        _characterPosition: 0
-        _clearAllCharacters: 0
-        _showCharacter: 1
-        _cinematicAnimDuration: 1
-        _cinematicDisplayDuration: 3
     - rid: 7554042062874869815
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uBB54\uAC00 \uC0C1\uB2F9\uD788 \uC548\uC88B\uC740 \uB290\uB08C\uC774
-          \uB4E4\uAE30 \uC2DC\uC791\uD588\uB2E4."
-        _characterName: 
+        _dialogueText: ".............\uBB54\uAC00 \uC0C1\uB2F9\uD788 \uC548\uC88B\uC740
+          \uB290\uB08C\uC774 \uB4E4\uAE30 \uC2DC\uC791\uD588\uB2E4."
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
-        _showCharacter: 1
+        _showCharacter: 0
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3
     - rid: 7554042424944754803
@@ -62,13 +48,12 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uADF8\uB807\uAC8C \uB098\uB294 \uC77C\uC744 \uC81C\uB300\uB85C
-          \uC774\uD574\uD558\uC9C0 \uBABB\uD55C\uCC44\uB85C \uC778\uC218\uC778\uACC4\uAC00
-          \uB05D\uB0AC\uB2E4"
-        _characterName: 
+        _dialogueText: "\uC778\uC218\uC778\uACC4\uAC00 \uB05D\uB098\uACE0 \uB9C8\uC9C0\uB9C9\uB9D0\uC744
+          \uACC4\uC18D \uACF1\uC539\uC5B4 \uBCF4\uC558\uB2E4"
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
-        _showCharacter: 1
+        _showCharacter: 0
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3

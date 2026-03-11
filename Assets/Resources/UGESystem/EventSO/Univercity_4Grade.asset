@@ -33,7 +33,7 @@ MonoBehaviour:
         _dialogueText: "\uADF8\uB7EC\uB2E4\uAC00 \uD559\uAD50\uC5D0\uC11C \uC9C4\uD589\uD558\uB294
           \uCDE8\uC5C5\uC5F0\uACC4 \uD504\uB85C\uADF8\uB7A8\uC5D0\uC11C \uC0AC\uB78C\uC744
           \uBAA8\uC9D1\uD558\uAC8C \uB418\uB294\uB370"
-        _characterName: 
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
         _isNodeExpanded: 0
         _dialogueText: "\uADF8 \uD504\uB85C\uADF8\uB7A8\uC5D0 \uCC38\uAC00\uC9C0\uC6D0\uC11C\uB97C
           \uB123\uAC8C \uB418\uACE0"
-        _characterName: 173ac859-e589-4a38-82fb-047eba100505
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
         _isNodeExpanded: 0
         _dialogueText: "\uC5B4\uB290 \uC791\uC740 \uD788\uC0AC\uC5D0 \uBA74\uC811\uC744
           \uBCFC \uC218 \uC788\uB294 \uAE30\uD68C\uB97C \uC5BB\uAC8C \uB41C\uB2E4."
-        _characterName: 173ac859-e589-4a38-82fb-047eba100505
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
         _dialogueText: "\uC5B4\uB290\uB367 \uB300\uD559\uAD50 4\uD559\uB144,"
-        _characterName: 173ac859-e589-4a38-82fb-047eba100505
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -88,7 +88,7 @@ MonoBehaviour:
         _isNodeExpanded: 0
         _dialogueText: "\uB098\uB294 \uC544\uBB34\uAC83\uB3C4 \uC900\uBE44\uB41C\uAC8C
           \uC5C6\uC5C8\uB2E4."
-        _characterName: 173ac859-e589-4a38-82fb-047eba100505
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
         _isNodeExpanded: 0
         _dialogueText: "\uADF8\uB807\uAE30\uC5D0 \uB2F9\uC7A5 \uCDE8\uC5C5\uC740
           \uC5B4\uB5BB\uAC8C \uD558\uC9C0 \uB77C\uB294 \uACE0\uBBFC\uC774 \uB9CE\uC558\uC5C8\uB2E4."
-        _characterName: 173ac859-e589-4a38-82fb-047eba100505
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0

@@ -28,7 +28,7 @@ MonoBehaviour:
         _isNodeExpanded: 0
         _dialogueText: "\uADF8\uB807\uAC8C...\uD559\uAD50\uC5D0 \uB3C4\uCC29\uD558\uACE0
           \uB09C \uB4A4\uC758 \uC2DC\uAC04\uC740...."
-        _characterName: 
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
@@ -39,10 +39,10 @@ MonoBehaviour:
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
-        _isNodeExpanded: 1
+        _isNodeExpanded: 0
         _dialogueText: "\uBB34\uB824 1\uAD50\uC2DC\uAC00 \uAC70\uC758 \uB2E4 \uC9C0\uB09C
           \uC2DC\uC810\uC774\uC5C8\uB2E4..."
-        _characterName: 
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0

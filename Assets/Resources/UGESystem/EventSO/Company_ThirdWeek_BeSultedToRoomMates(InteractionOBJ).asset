@@ -119,13 +119,13 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uB124, \uB0B4\uB824\uAE30\uC11C \uC880 \uC26C\uB2E4\uAC00
+        _dialogueText: "\uB124, \uB0B4\uB824\uAC00\uC11C \uC880 \uC26C\uB2E4\uAC00
           \uC62C \uC608\uC815\uC785\uB2C8\uB2E4"
-        _characterName: 
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
-        _showCharacter: 1
+        _showCharacter: 0
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3
     - rid: 5100603776950599794

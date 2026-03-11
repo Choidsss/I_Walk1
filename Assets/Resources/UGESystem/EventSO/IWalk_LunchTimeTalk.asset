@@ -48,7 +48,7 @@ MonoBehaviour:
       type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 13
-        _isNodeExpanded: 1
+        _isNodeExpanded: 0
         _targetCharacterId: cf7908e8-b42d-4fe8-974b-a8ddbef09f74
         _text: "\uC900\uBE44 \uB410\uC9C0?"
         _waitUntilInput: 1
