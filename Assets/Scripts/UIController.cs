@@ -1,21 +1,31 @@
 using UnityEngine;
+using UGESystem;
+using UnityEngine.UI;
+using DG.Tweening;
+using TMPro;
 
 namespace I_Walk
 {
     public class UIController : MonoBehaviour
     {
-        [SerializeField] Canvas _ui;
+        [SerializeField] TextMeshProUGUI _text;
 
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+
+        private void Start()
         {
-        
+            
         }
 
-        // Update is called once per frame
-        void Update()
+
+        private void OnTriggerEnter(Collider other)
         {
-        
+            FirstScreenEffect();
+        }
+
+        // ToDo : 중간에 암전이 되도록 함
+        private void FirstScreenEffect()
+        {
+                
         }
     }
 }

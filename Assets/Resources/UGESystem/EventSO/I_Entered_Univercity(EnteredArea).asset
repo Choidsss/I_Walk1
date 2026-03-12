@@ -15,6 +15,7 @@ MonoBehaviour:
   <Guid>k__BackingField: c7b99610-8ba5-4b4a-b84e-c4bb06c734c3
   _archetype: 0
   _commands:
+  - rid: 5100603933714546793
   - rid: 7554042062874869760
   - rid: 7554042379971330200
   - rid: 7554042379971330199
@@ -22,12 +23,25 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 5100603933714546793
+      type: {class: ScreenEffectCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 9
+        _isNodeExpanded: 1
+        _effectType: 3
+        _duration: 0.8
+        _targetColor: {r: 0, g: 0, b: 0, a: 0.4}
+        _flashHoldDuration: 1.5
+        _hideAll: 0
+        _hideUI: 0
+        _hideCharacters: 0
+        _hideBackground: 0
     - rid: 7554042062874869760
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uC2DC\uAC04\uC774 \uD55C\uCC38 \uD750\uB974\uACE0"
+        _dialogueText: "\uACE0\uB4F1\uD559\uAD50\uB97C \uC878\uC5C5 \uD55C \uD6C4"
         _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
@@ -40,9 +54,7 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uAE30\uC220\uC744 \uBC30\uC6B0\uC790\uB77C\uB294 \uC0DD\uAC01\uACFC
-          \uC131\uC801\uC5D0 \uB9DE\uCDB0\uC11C \uC9C0\uBC29\uC5D0 \uC788\uB294 \uD55C
-          \uB300\uD559\uAD50\uC5D0 \uB4E4\uC5B4\uAC04\uB2E4."
+        _dialogueText: "\uD558\uC9C0\uB9CC"
         _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
@@ -55,8 +67,8 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uACE0\uB4F1\uD559\uAD50\uB97C \uC878\uC5C5\uD558\uAC8C \uB41C
-          \uB098\uB294"
+        _dialogueText: "\uC131\uC801\uC5D0 \uB9DE\uCDB0 \uB300\uCDA9 \uB300\uD559\uAD50\uC5D0
+          \uC785\uD559\uC744 \uD558\uAC8C  \uB41C\uB2E4."
         _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
