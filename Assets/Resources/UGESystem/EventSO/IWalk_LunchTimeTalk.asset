@@ -80,9 +80,9 @@ MonoBehaviour:
       type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 8
-        _isNodeExpanded: 0
-        <ActionType>k__BackingField: 0
-        _targetCameraName: FriendCamera
+        _isNodeExpanded: 1
+        <ActionType>k__BackingField: 1
+        _targetCameraName: FreeLook Camera
         _duration: 1
         _targetFOV: 40
         _shakeIntensity: 1

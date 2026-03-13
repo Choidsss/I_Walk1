@@ -15,6 +15,7 @@ MonoBehaviour:
   <Guid>k__BackingField: 9fd3ddc6-b6d0-42a5-8fd7-bafc1d61cd19
   _archetype: 0
   _commands:
+  - rid: 5100603956127858799
   - rid: 5100603730130108416
   - rid: 5100603730130108417
   - rid: 5100603730130108418
@@ -29,7 +30,7 @@ MonoBehaviour:
       type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 13
-        _isNodeExpanded: 1
+        _isNodeExpanded: 0
         _targetCharacterId: 173ac859-e589-4a38-82fb-047eba100505
         _text: "\uB098\uC5D0\uAC8C\uB294 \uB300\uD559 \uC0DD\uD65C\uC5D0 \uB300\uD55C
           \uB0AD\uB9CC\uC774 \uC788\uAE34 \uD588\uC5C8\uC9C0\uB9CC"
@@ -86,6 +87,16 @@ MonoBehaviour:
           \uCE5C\uAD6C\uB3C4 \uC5C6\uC5C8\uB2E4."
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100603956127858799
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 1
+        _targetCameraName: FreeLook Camera
+        _duration: 2
+        _targetFOV: 20
+        _shakeIntensity: 1
     - rid: 7554042424944754789
       type: {class: EndCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:

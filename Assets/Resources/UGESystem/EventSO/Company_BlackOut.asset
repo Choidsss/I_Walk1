@@ -15,6 +15,7 @@ MonoBehaviour:
   <Guid>k__BackingField: bfa6284d-3da5-4fa7-8858-6f60dd4b24c0
   _archetype: 0
   _commands:
+  - rid: 5100603956127858802
   - rid: 5100603865430753500
   - rid: 5100603865430753511
   - rid: 5100603865430753499
@@ -23,6 +24,7 @@ MonoBehaviour:
   - rid: 5100603865430753514
   - rid: 5100603865430753515
   - rid: 5100603865430753513
+  - rid: 5100603956127858803
   - rid: 5100603865430753516
   - rid: 5100603865430753517
   - rid: 5100603865430753505
@@ -109,7 +111,7 @@ MonoBehaviour:
       type: {class: ChoiceCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 3
-        _isNodeExpanded: 1
+        _isNodeExpanded: 0
         _choices:
         - _text: "\uADF8\uB7F0\uAC70 \uAC19\uC740\uB370\uC694"
           _targetLabel: "\uB9DE\uB2E4"
@@ -145,3 +147,26 @@ MonoBehaviour:
         _rewards: []
         _isBranching: 0
         _targetNodeID: 
+    - rid: 5100603956127858802
+      type: {class: ScreenEffectCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 9
+        _isNodeExpanded: 0
+        _effectType: 0
+        _duration: 2
+        _targetColor: {r: 0, g: 0, b: 0, a: 1}
+        _flashHoldDuration: 1
+        _hideAll: 1
+        _hideUI: 0
+        _hideCharacters: 0
+        _hideBackground: 0
+    - rid: 5100603956127858803
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 2
+        _targetCameraName: FreeLook Camera
+        _duration: 2
+        _targetFOV: 40
+        _shakeIntensity: 100

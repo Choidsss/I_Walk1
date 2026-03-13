@@ -15,6 +15,7 @@ MonoBehaviour:
   <Guid>k__BackingField: cd9e3ff0-7c3b-4e41-b543-fcc2ca41e4e1
   _archetype: 0
   _commands:
+  - rid: 5100603956127858804
   - rid: 5100603865430753521
   - rid: 5100603865430753522
   - rid: 5100603865430753523
@@ -72,3 +73,16 @@ MonoBehaviour:
         _rewards: []
         _isBranching: 0
         _targetNodeID: 
+    - rid: 5100603956127858804
+      type: {class: ScreenEffectCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 9
+        _isNodeExpanded: 0
+        _effectType: 3
+        _duration: 1
+        _targetColor: {r: 0, g: 0, b: 0, a: 0.4}
+        _flashHoldDuration: 2
+        _hideAll: 1
+        _hideUI: 0
+        _hideCharacters: 0
+        _hideBackground: 0
