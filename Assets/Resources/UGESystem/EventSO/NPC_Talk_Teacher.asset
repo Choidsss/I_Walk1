@@ -15,6 +15,7 @@ MonoBehaviour:
   <Guid>k__BackingField: 1cb31fe0-bf6c-49ac-b191-871e94bb565e
   _archetype: 1
   _commands:
+  - rid: 5100603956127858786
   - rid: 5100603707024736367
   - rid: 5100603707024736373
   - rid: 5100603707024736375
@@ -124,6 +125,16 @@ MonoBehaviour:
         _hideUI: 0
         _hideCharacters: 0
         _hideBackground: 0
+    - rid: 5100603956127858786
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 2
+        _targetCameraName: FreeLook Camera
+        _duration: 2
+        _targetFOV: 40
+        _shakeIntensity: 1
     - rid: 7554041859222536285
       type: {class: EndCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:

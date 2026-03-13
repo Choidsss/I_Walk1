@@ -8,7 +8,6 @@ namespace I_Walk
 {
     public class UIController : MonoBehaviour
     {
-        [SerializeField] TextMeshProUGUI _text;
 
 
         private void Start()

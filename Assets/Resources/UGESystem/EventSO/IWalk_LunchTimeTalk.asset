@@ -15,6 +15,7 @@ MonoBehaviour:
   <Guid>k__BackingField: 80caa8eb-ace1-49c6-af19-a116f37f642b
   _archetype: 0
   _commands:
+  - rid: 5100603956127858778
   - rid: 5100603707024736384
   - rid: 5100603707024736385
   - rid: 5100603707024736386
@@ -75,6 +76,16 @@ MonoBehaviour:
         _hideUI: 0
         _hideCharacters: 0
         _hideBackground: 0
+    - rid: 5100603956127858778
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: FriendCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
     - rid: 7554042016868860001
       type: {class: EndCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:

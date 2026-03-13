@@ -15,6 +15,7 @@ MonoBehaviour:
   <Guid>k__BackingField: 099b1f2a-b8b6-4180-ad73-4f77d3248be9
   _archetype: 1
   _commands:
+  - rid: 5100603956127858779
   - rid: 7554042040016961537
   - rid: 5100603730130108513
   - rid: 5100603730130108515
@@ -145,6 +146,16 @@ MonoBehaviour:
         _hideUI: 0
         _hideCharacters: 0
         _hideBackground: 0
+    - rid: 5100603956127858779
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: InterviewerCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
     - rid: 7554042040016961537
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:

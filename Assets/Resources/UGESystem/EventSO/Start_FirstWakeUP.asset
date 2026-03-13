@@ -16,6 +16,7 @@ MonoBehaviour:
   _archetype: 0
   _commands:
   - rid: 5100603933714546794
+  - rid: 5100603956127858773
   - rid: 7554042379971330141
   - rid: 7554042379971330144
   - rid: 7554042379971330145
@@ -43,6 +44,16 @@ MonoBehaviour:
         _hideUI: 0
         _hideCharacters: 0
         _hideBackground: 0
+    - rid: 5100603956127858773
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 1
+        <ActionType>k__BackingField: 0
+        _targetCameraName: ClockCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
     - rid: 7554042379971330141
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:

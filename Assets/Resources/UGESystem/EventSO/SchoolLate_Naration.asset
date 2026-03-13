@@ -15,12 +15,23 @@ MonoBehaviour:
   <Guid>k__BackingField: 2b1d685a-e569-498b-a261-b47b613e67af
   _archetype: 0
   _commands:
+  - rid: 5100603956127858781
   - rid: 7554042379971330184
   - rid: 7554042379971330185
   - rid: 7554042379971330186
   references:
     version: 2
     RefIds:
+    - rid: 5100603956127858781
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: SchoolClockCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
     - rid: 7554042379971330184
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
