@@ -59,8 +59,8 @@ MonoBehaviour:
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
-        _isNodeExpanded: 0
-        _dialogueText: "\uC5B4\uB290 \uC791\uC740 \uD788\uC0AC\uC5D0 \uBA74\uC811\uC744
+        _isNodeExpanded: 1
+        _dialogueText: "\uC5B4\uB290 \uC791\uC740 \uD68C\n\uC0AC\uC5D0 \uBA74\uC811\uC744
           \uBCFC \uC218 \uC788\uB294 \uAE30\uD68C\uB97C \uC5BB\uAC8C \uB41C\uB2E4."
         _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
