@@ -19,6 +19,7 @@ MonoBehaviour:
   - rid: 7554042424944754792
   - rid: 7554042424944754793
   - rid: 7554042424944754794
+  - rid: 5100604024376524903
   - rid: 5100603730130108508
   - rid: 5100603730130108509
   - rid: 5100603730130108511
@@ -33,7 +34,7 @@ MonoBehaviour:
         _isNodeExpanded: 0
         _dialogueText: "\uADF8\uB7EC\uB2E4\uAC00 \uD559\uAD50\uC5D0\uC11C \uC9C4\uD589\uD558\uB294
           \uCDE8\uC5C5\uC5F0\uACC4 \uD504\uB85C\uADF8\uB7A8\uC5D0\uC11C \uC0AC\uB78C\uC744
-          \uBAA8\uC9D1\uD558\uAC8C \uB418\uB294\uB370"
+          \uBAA8\uC9D1\uD558\uAC8C \uB418\uACE0"
         _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
@@ -46,8 +47,9 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uADF8 \uD504\uB85C\uADF8\uB7A8\uC5D0 \uCC38\uAC00\uC9C0\uC6D0\uC11C\uB97C
-          \uB123\uAC8C \uB418\uACE0"
+        _dialogueText: "\uBB50\uB77C\uB3C4 \uD574\uBCF4\uC790\uB77C\uB294 \uB9C8\uC74C\uC73C\uB85C
+          \uADF8 \uD504\uB85C\uADF8\uB7A8\uC5D0 \uCC38\uAC00\uC9C0\uC6D0\uC11C\uB97C
+          \uB123\uC5B4\uBCF4\uAC8C \uB418\uB294\uB370"
         _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
@@ -59,9 +61,10 @@ MonoBehaviour:
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
-        _isNodeExpanded: 1
-        _dialogueText: "\uC5B4\uB290 \uC791\uC740 \uD68C\n\uC0AC\uC5D0 \uBA74\uC811\uC744
-          \uBCFC \uC218 \uC788\uB294 \uAE30\uD68C\uB97C \uC5BB\uAC8C \uB41C\uB2E4."
+        _isNodeExpanded: 0
+        _dialogueText: "\uADF8\uB807\uAC8C \uC5B4\uB290 \uC791\uC740 \uD68C\uC0AC\uC5D0
+          \uBA74\uC811\uC744 \uBCFC \uC218 \uC788\uB294 \uAE30\uD68C\uB97C \uC5BB\uAC8C
+          \uB41C\uB2E4."
         _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
@@ -82,6 +85,16 @@ MonoBehaviour:
         _hideUI: 0
         _hideCharacters: 0
         _hideBackground: 0
+    - rid: 5100604024376524903
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: 4GradeCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
     - rid: 7554042424944754792
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
