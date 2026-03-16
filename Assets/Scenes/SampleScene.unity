@@ -30297,8 +30297,8 @@ Transform:
   m_GameObject: {fileID: 434372829}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 427.045, y: 5.1114, z: -953.26514}
-  m_LocalScale: {x: 219.38953, y: 13.519563, z: 48.25289}
+  m_LocalPosition: {x: 481.8709, y: 5.1114, z: -953.26514}
+  m_LocalScale: {x: 208.42004, y: 13.519563, z: 48.25289}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 260396849}
@@ -34863,7 +34863,7 @@ GameObject:
   - component: {fileID: 517775997}
   - component: {fileID: 517775996}
   - component: {fileID: 517775995}
-  - component: {fileID: 517775994}
+  - component: {fileID: 517775998}
   m_Layer: 0
   m_Name: EndingDollyCamera
   m_TagString: Untagged
@@ -34871,35 +34871,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &517775994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517775993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f38bda98361e1de48a4ca2bd86ea3c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Composition:
-    ScreenPosition: {x: 0, y: 0}
-    DeadZone:
-      Enabled: 0
-      Size: {x: 0.2, y: 0.2}
-    HardLimits:
-      Enabled: 0
-      Size: {x: 0.8, y: 0.8}
-      Offset: {x: 0, y: 0}
-  CenterOnActivate: 1
-  TargetOffset: {x: 0, y: 0, z: 0}
-  Damping: {x: 0.5, y: 0.5}
-  Lookahead:
-    Enabled: 0
-    Time: 0
-    Smoothing: 0
-    IgnoreY: 0
 --- !u!114 &517775995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34913,7 +34884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SplineSettings:
-    Spline: {fileID: 1533237571}
+    Spline: {fileID: 1048031930}
     Position: 0
     Units: 1
   SplineOffset: {x: 0, y: 0, z: 0}
@@ -34985,13 +34956,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 517775993}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0006247459, y: 0.9945252, z: 0.0059556444, w: -0.10432549}
-  m_LocalPosition: {x: 429.14658, y: 155.28, z: 563.4598}
+  m_LocalRotation: {x: -0.034021616, y: 0.9419726, z: -0.10063998, w: -0.3184364}
+  m_LocalPosition: {x: 429.48337, y: 152.99393, z: 562.6373}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -0.686, y: -168.023, z: -0.023}
+--- !u!114 &517775998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517775993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e2023ac4c6b204e9bad440d2cea142, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Targets:
+    m_IndexUnit: 2
+    m_DefaultValue:
+      LookAt: {fileID: 0}
+      Offset: {x: 0, y: 0, z: 0}
+      Easing: 1
+    m_DataPoints: []
 --- !u!1001 &518576563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95334,132 +95324,6 @@ Transform:
   - {fileID: 1169667522}
   m_Father: {fileID: 957303006}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1533237569
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1533237572}
-  - component: {fileID: 1533237571}
-  - component: {fileID: 1533237570}
-  m_Layer: 0
-  m_Name: EndingDolly Spline
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1533237570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533237569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5342500578afb24a9b83d6343d32a0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AutoSmooth: 1
---- !u!114 &1533237571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533237569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Spline:
-    m_EditModeType: 1
-    m_Knots: []
-    m_MetaData: []
-    m_Closed: 0
-    m_IntData:
-      m_Data: []
-    m_FloatData:
-      m_Data: []
-    m_Float4Data:
-      m_Data: []
-    m_ObjectData:
-      m_Data: []
-  m_Splines:
-  - m_EditModeType: 1
-    m_Knots:
-    - Position:
-        x: 0
-        y: 0
-        z: 0
-      TangentIn:
-        x: 0
-        y: 0
-        z: 0
-      TangentOut:
-        x: 0
-        y: 0
-        z: 0
-      Rotation:
-        value:
-          x: 0
-          y: 0
-          z: 0
-          w: 1
-    - Position:
-        x: 1
-        y: 0
-        z: 0
-      TangentIn:
-        x: 0
-        y: 0
-        z: 0
-      TangentOut:
-        x: 0
-        y: 0
-        z: 0
-      Rotation:
-        value:
-          x: 0
-          y: 0
-          z: 0
-          w: 1
-    m_MetaData:
-    - Mode: 4
-      Tension: 0.5
-    - Mode: 4
-      Tension: 0.5
-    m_Closed: 0
-    m_IntData:
-      m_Data: []
-    m_FloatData:
-      m_Data: []
-    m_Float4Data:
-      m_Data: []
-    m_ObjectData:
-      m_Data: []
-  m_Knots:
-    m_KnotsLink: []
---- !u!4 &1533237572
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533237569}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.05281508, z: -0, w: 0.9986043}
-  m_LocalPosition: {x: 429.14658, y: 155.28, z: 563.4598}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 6.055, z: 0}
 --- !u!1 &1536230767
 GameObject:
   m_ObjectHideFlags: 0
@@ -127505,7 +127369,6 @@ SceneRoots:
   - {fileID: 566687211}
   - {fileID: 1048031931}
   - {fileID: 517775997}
-  - {fileID: 1533237572}
   - {fileID: 1552105470}
   - {fileID: 1526776371}
   - {fileID: 1697601893}

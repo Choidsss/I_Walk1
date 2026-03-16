@@ -34,6 +34,7 @@ MonoBehaviour:
   - rid: 5100603752686288996
   - rid: 5100603865430753518
   - rid: 5100603865430753525
+  - rid: 5100604024376524963
   references:
     version: 2
     RefIds:
@@ -214,6 +215,24 @@ MonoBehaviour:
       data:
         <Description>k__BackingField: Player enters a specific area.
         <TargetTriggerID>k__BackingField: BlackOutAfter
+    - rid: 5100604024376524963
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: 52ae6299-2847-4286-9584-fde908a1bf34
+        _name: Stress
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 0, y: 0}
+        _startConditions:
+        - rid: 5100604024376524964
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: ba50357b53628584b90b522f8801188f, type: 2}
+    - rid: 5100604024376524964
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: Stress
     - rid: 7554041859222536280
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:
