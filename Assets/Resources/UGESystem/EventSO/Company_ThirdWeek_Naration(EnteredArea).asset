@@ -15,16 +15,70 @@ MonoBehaviour:
   <Guid>k__BackingField: 2ce35e77-44fc-4944-b22c-b008ba076785
   _archetype: 0
   _commands:
+  - rid: 5100604024376524948
+  - rid: 5100604024376524949
   - rid: 7554042424944754829
   - rid: 7554042424944754830
   - rid: 7554042424944754831
   - rid: 7554042424944754832
   - rid: 7554042424944754833
   - rid: 7554042424944754834
+  - rid: 5100604024376524950
+  - rid: 5100604024376524951
   - rid: 7554042424944754836
   references:
     version: 2
     RefIds:
+    - rid: 5100604024376524948
+      type: {class: ScreenEffectCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 9
+        _isNodeExpanded: 0
+        _effectType: 0
+        _duration: 1
+        _targetColor: {r: 0, g: 0, b: 0, a: 1}
+        _flashHoldDuration: 0.1
+        _hideAll: 1
+        _hideUI: 0
+        _hideCharacters: 0
+        _hideBackground: 0
+    - rid: 5100604024376524949
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: DormitryCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524950
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 0
+        _dialogueText: "\uADF8\uB798\uC11C \uC774\uB54C, \uC815\uB9D0 \uC2A4\uD2B8\uB808\uC2A4\uB97C
+          \uB9CE\uC774 \uBC1B\uC558\uB358\uAC70 \uAC19\uB2E4"
+        _characterName: 
+        _expression: 
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 1
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
+    - rid: 5100604024376524951
+      type: {class: ScreenEffectCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 9
+        _isNodeExpanded: 0
+        _effectType: 1
+        _duration: 1
+        _targetColor: {r: 0, g: 0, b: 0, a: 1}
+        _flashHoldDuration: 0
+        _hideAll: 0
+        _hideUI: 0
+        _hideCharacters: 0
+        _hideBackground: 0
     - rid: 7554042424944754829
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:

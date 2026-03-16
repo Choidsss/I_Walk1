@@ -15,17 +15,27 @@ MonoBehaviour:
   <Guid>k__BackingField: 7dbeac63-c677-41dc-9a6d-0831124607a5
   _archetype: 0
   _commands:
+  - rid: 5100604024376524946
+  - rid: 5100604024376524938
   - rid: 5100603731807043685
+  - rid: 5100604024376524940
   - rid: 5100603776950599793
   - rid: 5100603731807043686
   - rid: 5100603731807043687
+  - rid: 5100604024376524941
   - rid: 5100603776950599794
+  - rid: 5100604024376524939
   - rid: 5100603776950599795
+  - rid: 5100604024376524942
+  - rid: 5100604024376524943
+  - rid: 5100604024376524944
+  - rid: 5100604024376524945
   - rid: 5100603731807043688
   - rid: 5100603731807043689
   - rid: 5100603731807043690
   - rid: 5100603731807043691
   - rid: 5100603731807043692
+  - rid: 5100604024376524947
   - rid: 5100603731807043693
   references:
     version: 2
@@ -45,7 +55,7 @@ MonoBehaviour:
         <CommandType>k__BackingField: 13
         _isNodeExpanded: 0
         _targetCharacterId: f51f416e-92a1-4750-99de-a194cd4f819a
-        _text: "\uB610 \uB0B4\uB824\uAC00?"
+        _text: "\uB610 \uB0B4\uB824\uAC00\u314B\u314B?"
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
     - rid: 5100603731807043687
@@ -84,7 +94,7 @@ MonoBehaviour:
         <CommandType>k__BackingField: 13
         _isNodeExpanded: 0
         _targetCharacterId: 85d6a16e-2312-4c82-9519-79e25dc7501c
-        _text: "\uACF5\uB3D9\uCCB4 \uC0DD\uD65C \uC774\uB77C\uB294\uAC8C \uADF8\uB7F0\uAC70\uC9C0"
+        _text: "\uADF8\uAC8C \uACF5\uB3D9\uCCB4 \uC0DD\uD65C\uC774\uACE0, \uAE30\uC219\uC0AC\uC9C0"
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
     - rid: 5100603731807043691
@@ -147,6 +157,115 @@ MonoBehaviour:
         <CommandType>k__BackingField: 13
         _isNodeExpanded: 0
         _targetCharacterId: 85d6a16e-2312-4c82-9519-79e25dc7501c
-        _text: "\uC544\uB2C8\uBA74 \uBB50\uB0D0? \uADF8\uB0E5 "
+        _text: "\uC544\uB2C8\uBA74 \uBB50\uB0D0? \uADF8\uB0E5?"
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100604024376524938
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: RoomMatesCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524939
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 1
+        _targetCameraName: RoomMatesCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524940
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: PlayerBubbleChatCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524941
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: PlayerBubbleChatCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524942
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: PlayerBubbleChatCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524943
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 0
+        _dialogueText: "\uCD5C\uADFC\uC5D0 \uC880 \uB9CE\uC774 \uD798\uB4E4\uC5B4\uC11C
+          \uC7A0\uAE50 \uC26C\uB2E4\uAC00 \uC624\uB824\uACE0 \uD569\uB2C8\uB2E4"
+        _characterName: 
+        _expression: 
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 1
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
+    - rid: 5100604024376524944
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: RoomMatesCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524945
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 13
+        _isNodeExpanded: 0
+        _targetCharacterId: f51f416e-92a1-4750-99de-a194cd4f819a
+        _text: "\uC6B0\uB9AC\uB294 \uBB50 \uC695 \uC548\uBA39\uC740 \uC904 \uC544\uB0D0?"
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100604024376524946
+      type: {class: ScreenEffectCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 9
+        _isNodeExpanded: 0
+        _effectType: 0
+        _duration: 1
+        _targetColor: {r: 0, g: 0, b: 0, a: 1}
+        _flashHoldDuration: 0.1
+        _hideAll: 1
+        _hideUI: 0
+        _hideCharacters: 0
+        _hideBackground: 0
+    - rid: 5100604024376524947
+      type: {class: ScreenEffectCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 9
+        _isNodeExpanded: 0
+        _effectType: 0
+        _duration: 1
+        _targetColor: {r: 0, g: 0, b: 0, a: 1}
+        _flashHoldDuration: 0.1
+        _hideAll: 1
+        _hideUI: 0
+        _hideCharacters: 0
+        _hideBackground: 0

@@ -15,19 +15,28 @@ MonoBehaviour:
   <Guid>k__BackingField: bdc42c36-6f13-4a98-a068-c79b5e428f8e
   _archetype: 0
   _commands:
+  - rid: 5100604024376524925
   - rid: 5100603731807043668
+  - rid: 5100604024376524926
   - rid: 5100603776950599786
+  - rid: 5100604024376524927
   - rid: 5100603731807043670
   - rid: 5100603776950599781
   - rid: 5100603776950599782
+  - rid: 5100604024376524928
   - rid: 5100603776950599790
+  - rid: 5100604024376524929
+  - rid: 5100604024376524930
   - rid: 5100603775633850466
   - rid: 5100603775633850467
   - rid: 5100603775633850468
   - rid: 5100603731807043672
-  - rid: 5100603776950599789
-  - rid: 5100603731807043674
+  - rid: 5100604024376524931
   - rid: 7554042424944754811
+  - rid: 5100603776950599789
+  - rid: 5100604024376524932
+  - rid: 5100603731807043674
+  - rid: 5100604024376524934
   - rid: 5100603731807043675
   - rid: 5100603731807043676
   - rid: 5100603731807043677
@@ -81,7 +90,7 @@ MonoBehaviour:
         <CommandType>k__BackingField: 13
         _isNodeExpanded: 0
         _targetCharacterId: 969e1818-5435-4247-ad6b-30f508f38255
-        _text: "\uC77C\uC8FC\uC77C \uB0A8\uC558\uC73C\uB2C8\uAE4C 5\uC77C \uC548\uC73C\uB85C
+        _text: "\uADF8\uB0E5 \uC77C\uC8FC\uC77C \uB0A8\uC558\uC73C\uB2C8\uAE4C \uC624\uB298\uAE4C\uC9C0
           \uD574\uC11C \uB098\uD55C\uD14C \uBA54\uC77C\uB85C \uBCF4\uB0B4, \uC54C\uACA0\uC9C0?"
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
@@ -190,11 +199,11 @@ MonoBehaviour:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
         _dialogueText: "\uCD5C\uB300\uD55C \uBE68\uB9AC \uD574\uBCF4\uACA0\uC2B5\uB2C8\uB2E4"
-        _characterName: 
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
-        _showCharacter: 1
+        _showCharacter: 0
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3
     - rid: 5100603776950599790
@@ -210,6 +219,98 @@ MonoBehaviour:
         _hideUI: 0
         _hideCharacters: 0
         _hideBackground: 0
+    - rid: 5100604024376524925
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: SupervisorCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524926
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: PlayerBubbleChatCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524927
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: SupervisorCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524928
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: PlayerBubbleChatCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524929
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 0
+        _dialogueText: "\uB124..\uC544\uC9C1 \uB2E4 \uC774\uD574\uB97C \uBABB\uD574\uC11C...."
+        _characterName: 
+        _expression: 
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 1
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
+    - rid: 5100604024376524930
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: SupervisorCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524931
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: PlayerBubbleChatCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524932
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: SupervisorCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524934
+      type: {class: BubbleChatCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 13
+        _isNodeExpanded: 0
+        _targetCharacterId: 969e1818-5435-4247-ad6b-30f508f38255
+        _text: "\uC544\uB2C8\uB2E4"
+        _waitUntilInput: 1
+        _offset: {x: 0, y: 0, z: 0}
     - rid: 7554042424944754811
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
