@@ -16,13 +16,16 @@ MonoBehaviour:
   _archetype: 0
   _commands:
   - rid: 5100603956127858802
+  - rid: 5100604024376524921
   - rid: 5100603865430753500
   - rid: 5100603865430753511
+  - rid: 5100604024376524922
   - rid: 5100603865430753499
   - rid: 5100603865430753501
   - rid: 5100603865430753502
   - rid: 5100603865430753514
   - rid: 5100603865430753515
+  - rid: 5100604024376524923
   - rid: 5100603865430753513
   - rid: 5100603956127858803
   - rid: 5100603865430753516
@@ -155,7 +158,7 @@ MonoBehaviour:
         _effectType: 0
         _duration: 2
         _targetColor: {r: 0, g: 0, b: 0, a: 1}
-        _flashHoldDuration: 1
+        _flashHoldDuration: 0.1
         _hideAll: 1
         _hideUI: 0
         _hideCharacters: 0
@@ -170,3 +173,33 @@ MonoBehaviour:
         _duration: 2
         _targetFOV: 40
         _shakeIntensity: 100
+    - rid: 5100604024376524921
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: LightCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524922
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: ExecutiveCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524923
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: PlayerBubbleChatCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1

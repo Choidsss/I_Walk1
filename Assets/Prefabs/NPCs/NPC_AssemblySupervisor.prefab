@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8365704378401823402}
   - component: {fileID: 6639074726830253714}
   - component: {fileID: 2574510427116719006}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: NPC_AssemblySupervisor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 1d3a803e65505c147aba9528fa3635fa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _qMark: {fileID: 5941751403365318063}
-  _text: 
+  _text: "\uB0B4\uAC00 \uD558\uB77C\uB294\uAC74 \uB2E4\uD588\uC5B4?"
   _rotationSpeed: 1
   _hopSpeed: 1
   _hopAmound: 1

@@ -49,7 +49,7 @@ Animator:
   m_GameObject: {fileID: 4326243496361589951}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ac7fbe4d69a6ad94485f10daa85dd05f, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f90c1bb7933918439bb1260234caa04, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -126,8 +126,8 @@ MonoBehaviour:
   _interactionID: 
   _characterID: 2eb8aa95-cbf0-49bf-9fa4-4f943bfe0aed
   _interactionRange: 5
-  _useProximityInteraction: 1
-  _lookAtPlayerInRange: 1
+  _useProximityInteraction: 0
+  _lookAtPlayerInRange: 0
   _rotationSpeed: 5
   _bubbleAnchor: {fileID: 506020201949362366}
 --- !u!114 &4482844230123962517
@@ -198,6 +198,10 @@ PrefabInstance:
     - target: {fileID: 4660861430361660782, guid: 59b488694524bb54ab8073b74d919c94, type: 3}
       propertyPath: m_Name
       value: BubbleAnchor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660861430361660782, guid: 59b488694524bb54ab8073b74d919c94, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1026,6 +1030,10 @@ PrefabInstance:
     - target: {fileID: 3167167266408127938, guid: 665cc4af457cf3340bdc625c6b87a9a3, type: 3}
       propertyPath: m_Name
       value: Question_Up
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167167266408127938, guid: 665cc4af457cf3340bdc625c6b87a9a3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

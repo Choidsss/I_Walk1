@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _qMark: {fileID: 3610583180255109434}
-  _text: 
+  _text: "\uC9C0\uAE08\uC774 \uBA87\uC2E0\uB370 \uC774\uC81C\uC624\uB2C8?"
   _rotationSpeed: 1
   _hopSpeed: 1
   _hopAmound: 1

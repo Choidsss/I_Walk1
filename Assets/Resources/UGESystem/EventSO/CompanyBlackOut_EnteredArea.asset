@@ -16,6 +16,7 @@ MonoBehaviour:
   _archetype: 0
   _commands:
   - rid: 5100603956127858804
+  - rid: 5100604024376524924
   - rid: 5100603865430753521
   - rid: 5100603865430753522
   - rid: 5100603865430753523
@@ -56,8 +57,8 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uBB34\uC5C7\uC778\uAC00 \uB290\uB08C\uC774 \uC548\uC878\uAC8C
-          \uB4E4\uAE30 \uC2DC\uC791\uD588\uB2E4."
+        _dialogueText: "\uC11C\uC11C\uD788 \uC548\uC88B\uC740 \uB290\uB08C\uC774
+          \uAC15\uD558\uAC8C \uB4E4\uAE30 \uC2DC\uC791\uD588\uB2E4."
         _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
@@ -86,3 +87,13 @@ MonoBehaviour:
         _hideUI: 0
         _hideCharacters: 0
         _hideBackground: 0
+    - rid: 5100604024376524924
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: BlackOutOfficeCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
