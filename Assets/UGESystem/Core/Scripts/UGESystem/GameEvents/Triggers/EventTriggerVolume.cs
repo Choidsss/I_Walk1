@@ -1,3 +1,4 @@
+using I_Walk;
 using UnityEngine;
 
 namespace UGESystem
@@ -35,6 +36,8 @@ namespace UGESystem
 
         private void OnTriggerEnter(Collider other)
         {
+            PlayerRespawnPosition player = GetComponent<PlayerRespawnPosition>();
+
             if (_triggerOnce && _hasBeenTriggered)
             {
                 return;
@@ -54,6 +57,11 @@ namespace UGESystem
 
                 UGEDelayedEventBus.Publish(new AreaEnteredEvent(_triggerID));
                 _hasBeenTriggered = true;
+
+                if (_triggerID == "EnteredUnivercity")
+                {
+                    player.StartRespawnSequence();
+                }
             }
         }
     }

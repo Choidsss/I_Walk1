@@ -15,33 +15,60 @@ MonoBehaviour:
   <Guid>k__BackingField: c7b99610-8ba5-4b4a-b84e-c4bb06c734c3
   _archetype: 0
   _commands:
-  - rid: 5100603933714546793
+  - rid: 5100604024376524888
+  - rid: 5100604024376524884
   - rid: 7554042062874869760
   - rid: 7554042379971330200
   - rid: 7554042379971330199
+  - rid: 5100604024376524891
   - rid: 7554042379971330201
   references:
     version: 2
     RefIds:
-    - rid: 5100603933714546793
+    - rid: 5100604024376524884
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: SideCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604024376524888
       type: {class: ScreenEffectCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 9
-        _isNodeExpanded: 0
+        _isNodeExpanded: 1
         _effectType: 3
-        _duration: 0.8
-        _targetColor: {r: 0, g: 0, b: 0, a: 0.4}
-        _flashHoldDuration: 1.5
+        _duration: 0.1
+        _targetColor: {r: 0, g: 0, b: 0, a: 1}
+        _flashHoldDuration: 5
         _hideAll: 0
         _hideUI: 0
         _hideCharacters: 0
-        _hideBackground: 0
+        _hideBackground: 1
+    - rid: 5100604024376524891
+      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 0
+        _isNodeExpanded: 0
+        _dialogueText: "\uAC11\uC790\uAE30 \uCF54\uB85C\uB098 \uBC14\uC774\uB7EC\uC2A4\uAC00
+          \uC138\uACC4\uB97C \uB4A4\uC9D1\uC5B4 \uB193\uAC8C \uB41C\uB2E4"
+        _characterName: 
+        _expression: 
+        _characterPosition: 0
+        _clearAllCharacters: 0
+        _showCharacter: 1
+        _cinematicAnimDuration: 1
+        _cinematicDisplayDuration: 3
     - rid: 7554042062874869760
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uACE0\uB4F1\uD559\uAD50\uB97C \uC878\uC5C5 \uD55C \uD6C4"
+        _dialogueText: "\uC5B4\uB290\uB367 \uB300\uD559\uAD50\uB97C \uB4E4\uC5B4\uAC00\uAC8C
+          \uB41C \uB098\uB294"
         _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
@@ -54,7 +81,8 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uD558\uC9C0\uB9CC"
+        _dialogueText: "\uADF8\uB9AC\uACE0 \uC785\uD559\uD558\uB294 \uB0A0\uB9CC\uC744
+          \uAE30\uB2E4\uB9AC\uB2E4\uAC00"
         _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0

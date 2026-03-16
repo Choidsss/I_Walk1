@@ -15,6 +15,7 @@ MonoBehaviour:
   <Guid>k__BackingField: e9d28b80-cf1e-4f06-a088-a54298453e5c
   _archetype: 0
   _commands:
+  - rid: 5100603956127858805
   - rid: 5100603731238977536
   - rid: 5100603731238977537
   - rid: 5100603731238977538
@@ -152,6 +153,16 @@ MonoBehaviour:
         _hideUI: 0
         _hideCharacters: 0
         _hideBackground: 0
+    - rid: 5100603956127858805
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 1
+        _targetCameraName: FreeLook Camera
+        _duration: 1
+        _targetFOV: 20
+        _shakeIntensity: 1
     - rid: 7554042424944754802
       type: {class: EndCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
@@ -167,7 +178,7 @@ MonoBehaviour:
         _isNodeExpanded: 0
         _dialogueText: "\uADF8\uB807\uAC8C \uC778\uC218\uC778\uACC4\uB97C \uD574\uC8FC\uC2DC\uB2E4\uAC00
           \uB098\uC5D0\uAC8C \uC9C8\uBB38\uC744 \uD558\uB098 \uD558\uC168\uB2E4."
-        _characterName: 173ac859-e589-4a38-82fb-047eba100505
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
