@@ -153,14 +153,9 @@ MonoBehaviour:
         _isRepeatable: 0
         _position: {x: 195, y: 469}
         _startConditions:
-        - rid: 5100603752686288995
+        - rid: 5100604024376524967
         _nextNodeIDs: []
         GameEventAsset: {fileID: 11400000, guid: 4cb2f8def56e8624facbe9d726d9343e, type: 2}
-    - rid: 5100603752686288995
-      type: {class: InteractionTriggeredCondition, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <Description>k__BackingField: Player interacts with a specific object.
-        <TargetInteractionID>k__BackingField: Lastday
     - rid: 5100603752686288996
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:
@@ -233,6 +228,11 @@ MonoBehaviour:
       data:
         <Description>k__BackingField: Player enters a specific area.
         <TargetTriggerID>k__BackingField: Stress
+    - rid: 5100604024376524967
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: Lastday
     - rid: 7554041859222536280
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:
