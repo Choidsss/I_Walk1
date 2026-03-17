@@ -16,8 +16,6 @@ MonoBehaviour:
   _archetype: 0
   _commands:
   - rid: 7554042402533539941
-  - rid: 7554042402533539942
-  - rid: 7554042402533539943
   - rid: 7554042402533539944
   - rid: 7554042402533539945
   references:
@@ -28,7 +26,7 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "2\uBE60"
+        _dialogueText: "\uB098\uB294 \uBC25\uC744 \uB2E4 \uBA39\uACE0 \uB09C \uD6C4"
         _characterName: cf7908e8-b42d-4fe8-974b-a8ddbef09f74
         _expression: 
         _characterPosition: 0
@@ -36,27 +34,13 @@ MonoBehaviour:
         _showCharacter: 0
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3
-    - rid: 7554042402533539942
-      type: {class: ChoiceCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 3
-        _isNodeExpanded: 0
-        _choices:
-        - _text: "3\uBE60"
-          _targetLabel: 33333
-    - rid: 7554042402533539943
-      type: {class: LabelCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 4
-        _isNodeExpanded: 0
-        _labelName: 33333
     - rid: 7554042402533539944
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\"\uC774\uB807\uAC8C \uC810\uC2EC\uC2DC\uAC04 \uB9C8\uB2E4
-          \uB6F0\uB294 \uC2DC\uAC04\uB3C4 \uC5BC\uB9C8 \uC548\uB0A8\uC558\uB124\""
+        _dialogueText: "\uAE09\uC2DD\uC18C \uB4A4\uCABD\uC73C\uB85C \uBAB8\uC744
+          \uC62F\uACBC\uB2E4"
         _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0

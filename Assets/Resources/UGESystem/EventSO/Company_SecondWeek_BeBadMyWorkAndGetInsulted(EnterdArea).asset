@@ -42,6 +42,7 @@ MonoBehaviour:
   - rid: 5100603731807043677
   - rid: 5100603731807043678
   - rid: 5100603731807043679
+  - rid: 5100604047061155982
   - rid: 5100603731807043680
   references:
     version: 2
@@ -311,6 +312,16 @@ MonoBehaviour:
         _text: "\uC544\uB2C8\uB2E4"
         _waitUntilInput: 1
         _offset: {x: 0, y: 0, z: 0}
+    - rid: 5100604047061155982
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: FreeLook Camera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
     - rid: 7554042424944754811
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
