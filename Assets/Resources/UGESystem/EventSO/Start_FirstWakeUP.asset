@@ -15,6 +15,8 @@ MonoBehaviour:
   <Guid>k__BackingField: fac6cd02-a0fa-4169-b5a8-de8ec89d8b83
   _archetype: 0
   _commands:
+  - rid: 5100604047061155935
+  - rid: 5100604047061155929
   - rid: 5100603933714546794
   - rid: 5100603956127858773
   - rid: 7554042379971330141
@@ -35,7 +37,7 @@ MonoBehaviour:
       type: {class: ScreenEffectCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 9
-        _isNodeExpanded: 1
+        _isNodeExpanded: 0
         _effectType: 0
         _duration: 1.5
         _targetColor: {r: 0, g: 0, b: 0, a: 1}
@@ -54,6 +56,29 @@ MonoBehaviour:
         _duration: 1
         _targetFOV: 40
         _shakeIntensity: 1
+    - rid: 5100604047061155929
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: StartCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604047061155935
+      type: {class: ScreenEffectCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 9
+        _isNodeExpanded: 0
+        _effectType: 0
+        _duration: 1
+        _targetColor: {r: 1, g: 1, b: 1, a: 0}
+        _flashHoldDuration: 0.1
+        _hideAll: 0
+        _hideUI: 0
+        _hideCharacters: 0
+        _hideBackground: 0
     - rid: 7554042379971330141
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
