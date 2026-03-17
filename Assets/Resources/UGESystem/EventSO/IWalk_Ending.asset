@@ -15,6 +15,7 @@ MonoBehaviour:
   <Guid>k__BackingField: d1414052-14ed-44ca-979d-57e0e3be3119
   _archetype: 0
   _commands:
+  - rid: 5100603933714546796
   - rid: 5100603752686288998
   - rid: 5100603752686288999
   - rid: 5100603752686289000
@@ -23,7 +24,6 @@ MonoBehaviour:
   - rid: 5100603752686289003
   - rid: 5100603752686289004
   - rid: 5100603752686289006
-  - rid: 5100603933714546796
   - rid: 5100603933714546797
   - rid: 5100603752686289005
   references:
@@ -150,9 +150,9 @@ MonoBehaviour:
       type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 8
-        _isNodeExpanded: 0
+        _isNodeExpanded: 1
         <ActionType>k__BackingField: 0
-        _targetCameraName: DollyCamera
+        _targetCameraName: CinemachineCamera
         _duration: 1
         _targetFOV: 40
         _shakeIntensity: 1

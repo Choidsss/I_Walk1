@@ -36,7 +36,8 @@ namespace UGESystem
 
         private void OnTriggerEnter(Collider other)
         {
-            PlayerRespawnPosition player = GetComponent<PlayerRespawnPosition>();
+            PlayerRespawnPosition player = other.GetComponent<PlayerRespawnPosition>();
+            Transform PlayerScale = other.GetComponent<Transform>();
 
             if (_triggerOnce && _hasBeenTriggered)
             {
@@ -60,7 +61,13 @@ namespace UGESystem
 
                 if (_triggerID == "EnteredUnivercity")
                 {
+                    PlayerScale.localScale = new Vector3(1.7f, 1.7f, 1.7f);
                     player.StartRespawnSequence();
+                }
+
+                if (_triggerID == "Ending")
+                {
+                    
                 }
             }
         }
