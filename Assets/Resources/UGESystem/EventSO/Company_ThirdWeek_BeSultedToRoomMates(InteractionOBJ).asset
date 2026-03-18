@@ -20,15 +20,18 @@ MonoBehaviour:
   - rid: 5100603731807043685
   - rid: 5100604024376524940
   - rid: 5100603776950599793
+  - rid: 5100604069443534941
   - rid: 5100603731807043686
   - rid: 5100603731807043687
   - rid: 5100604024376524941
   - rid: 5100603776950599794
+  - rid: 5100604069443534942
   - rid: 5100604024376524939
   - rid: 5100603776950599795
   - rid: 5100604024376524942
   - rid: 5100604024376524943
   - rid: 5100604024376524944
+  - rid: 5100604069443534932
   - rid: 5100604024376524945
   - rid: 5100603731807043688
   - rid: 5100603731807043689
@@ -36,6 +39,7 @@ MonoBehaviour:
   - rid: 5100603731807043691
   - rid: 5100603731807043692
   - rid: 5100604024376524947
+  - rid: 5100604069443534933
   - rid: 5100603731807043693
   references:
     version: 2
@@ -269,3 +273,43 @@ MonoBehaviour:
         _hideUI: 0
         _hideCharacters: 0
         _hideBackground: 0
+    - rid: 5100604069443534932
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 2
+        _targetCameraName: RoomMatesCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604069443534933
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: FreeLook Camera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604069443534941
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: RoomMatesCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1
+    - rid: 5100604069443534942
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 0
+        _targetCameraName: RoomMatesCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1

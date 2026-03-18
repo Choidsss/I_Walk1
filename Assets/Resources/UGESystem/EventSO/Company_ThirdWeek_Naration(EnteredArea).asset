@@ -59,11 +59,11 @@ MonoBehaviour:
         _isNodeExpanded: 0
         _dialogueText: "\uADF8\uB798\uC11C \uC774\uB54C, \uC815\uB9D0 \uC2A4\uD2B8\uB808\uC2A4\uB97C
           \uB9CE\uC774 \uBC1B\uC558\uB358\uAC70 \uAC19\uB2E4"
-        _characterName: 
+        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
         _clearAllCharacters: 0
-        _showCharacter: 1
+        _showCharacter: 0
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3
     - rid: 5100604024376524951

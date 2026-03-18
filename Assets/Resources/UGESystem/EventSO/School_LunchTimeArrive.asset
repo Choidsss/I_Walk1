@@ -26,7 +26,8 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uB098\uB294 \uBC25\uC744 \uB2E4 \uBA39\uACE0 \uB09C \uD6C4"
+        _dialogueText: "\uBCF4\uD1B5\uC740 \uAC78\uC5B4\uAC00\uB294 \uC560\uB4E4\uB3C4
+          \uC801\uC9C0 \uC54A\uC558\uC9C0\uB9CC"
         _characterName: cf7908e8-b42d-4fe8-974b-a8ddbef09f74
         _expression: 
         _characterPosition: 0
@@ -39,8 +40,8 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: "\uAE09\uC2DD\uC18C \uB4A4\uCABD\uC73C\uB85C \uBAB8\uC744
-          \uC62F\uACBC\uB2E4"
+        _dialogueText: "\uC794\uBC18\uC5C6\uB294 \uB0A0\uC5D0\uB294 \uBAA8\uB450\uAC00
+          \uB6F0\uC5B4\uAC14\uC5C8\uB2E4"
         _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
