@@ -13,6 +13,9 @@ namespace I_Walk
         [SerializeField] CinemachineCamera _startCam;
         [SerializeField] CinemachineCamera _freeLookCam;
 
+        [Header("Sounds")]
+        [SerializeField] GameSounds _audioManager;
+
         private void Awake()
         {
             _startCam.Priority = 100;
@@ -20,6 +23,8 @@ namespace I_Walk
 
             _startCam.enabled = true;
             _freeLookCam.enabled = false;
+
+            _audioManager.GameMenuUISoundStart();
         }
 
         void Start()
@@ -42,12 +47,16 @@ namespace I_Walk
 
             _uiPanel.SetActive(false);
             Time.timeScale = 1.0f;
+
+            _audioManager.GameMenuUISoundStop();
+            _audioManager.ClickSound();
         }
 
         private void ClickedEndButton()
         {
             _uiPanel.SetActive(false);
-
+            _audioManager.GameMenuUISoundStop();
+            _audioManager.ClickSound();
 
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
