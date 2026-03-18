@@ -1,2 +1,16 @@
 fileFormatVersion: 2
 guid: 173371e5752f25445ba3611f6d02dd84
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _walkSound: {fileID: 8300000, guid: 41a5f59e4a6b70446897cebee1128d63, type: 3}
+  - _failSound: {fileID: 8300000, guid: f67f5474b47d6ba4db13e164bbc52802, type: 3}
+  - _gameMenuSound: {fileID: 8300000, guid: 8fd54ebdaf8ccd644b691695272400a0, type: 3}
+  - _inGameBackgroundSound: {instanceID: 0}
+  - _clickSound: {fileID: 8300000, guid: 01e69203b54b99646bb94f3ce210be10, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
