@@ -46416,10 +46416,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5817412880815009153, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6344404696354205859, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 491.2
@@ -46460,20 +46456,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8319527884637158872, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-      propertyPath: _audioSource
-      value: 
-      objectReference: {fileID: 696023941}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
---- !u!82 &696023941 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5817412880815009153, guid: 7189ba7abc69d09448ae8c0ed083a57a, type: 3}
-  m_PrefabInstance: {fileID: 696023940}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &697168734
 PrefabInstance:
   m_ObjectHideFlags: 0
