@@ -16,11 +16,11 @@ MonoBehaviour:
   _archetype: 0
   _commands:
   - rid: 5100603933714546796
+  - rid: 5100604092153331809
   - rid: 5100603752686288998
   - rid: 5100603752686288999
   - rid: 5100603752686289000
   - rid: 5100603752686289001
-  - rid: 5100603752686289002
   - rid: 5100603752686289003
   - rid: 5100603752686289004
   - rid: 5100603752686289006
@@ -85,26 +85,13 @@ MonoBehaviour:
         _showCharacter: 0
         _cinematicAnimDuration: 1
         _cinematicDisplayDuration: 3
-    - rid: 5100603752686289002
-      type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 0
-        _isNodeExpanded: 0
-        _dialogueText: "\uADF8\uB807\uAE30\uC5D0"
-        _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
-        _expression: 
-        _characterPosition: 0
-        _clearAllCharacters: 0
-        _showCharacter: 0
-        _cinematicAnimDuration: 1
-        _cinematicDisplayDuration: 3
     - rid: 5100603752686289003
       type: {class: DialogueCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 0
         _isNodeExpanded: 0
-        _dialogueText: " \uADF8 \uBD80\uC871\uD55C \uBD80\uBD84\uB4E4\uC744 \uD558\uB098\uC529
-          \uCC44\uC6CC \uB098\uAC00\uB3C4\uB85D \uD560 \uAC83\uC774\uB2E4."
+        _dialogueText: " \uADF8\uB807\uAE30\uC5D0 \uBD80\uC871\uD55C \uBD80\uBD84\uB4E4\uC744
+          \uD558\uB098\uC529 \uCC44\uC6CC \uB098\uAC00\uB3C4\uB85D \uD560 \uAC83\uC774\uB2E4."
         _characterName: a6ae1e8b-09ea-4462-8c6c-2de4e46efba2
         _expression: 
         _characterPosition: 0
@@ -150,9 +137,9 @@ MonoBehaviour:
       type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 8
-        _isNodeExpanded: 1
+        _isNodeExpanded: 0
         <ActionType>k__BackingField: 0
-        _targetCameraName: CinemachineCamera
+        _targetCameraName: EndingSceneCamera
         _duration: 1
         _targetFOV: 40
         _shakeIntensity: 1
@@ -161,11 +148,21 @@ MonoBehaviour:
       data:
         <CommandType>k__BackingField: 9
         _isNodeExpanded: 0
-        _effectType: 0
-        _duration: 1
+        _effectType: 1
+        _duration: 7
         _targetColor: {r: 0, g: 0, b: 0, a: 1}
-        _flashHoldDuration: 0.1
+        _flashHoldDuration: 0
         _hideAll: 1
         _hideUI: 0
         _hideCharacters: 0
         _hideBackground: 0
+    - rid: 5100604092153331809
+      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <CommandType>k__BackingField: 8
+        _isNodeExpanded: 0
+        <ActionType>k__BackingField: 1
+        _targetCameraName: EndingSceneCamera
+        _duration: 1
+        _targetFOV: 40
+        _shakeIntensity: 1

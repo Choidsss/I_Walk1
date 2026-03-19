@@ -3,20 +3,27 @@ using UnityEngine;
 using UnityEngine.UI;
 using Unity.Cinemachine;
 using UnityEngine.SceneManagement;
+using UGESystem;
+using TMPro;
 
 namespace I_Walk
 {
     public class GameMenuController : MonoBehaviour
     {
+        [Header("Panels")]
         [SerializeField] GameObject _uiPanel;
         [SerializeField] GameObject _optionPanel;
         [SerializeField] GameObject _pausePanel;
+
+        [Header("Buttons")]
         [SerializeField] Button _startButton;
         [SerializeField] Button _endButton;
         [SerializeField] Button _optionButton;
         [SerializeField] Button _backButton;
         [SerializeField] Button _continueButton;
         [SerializeField] Button _mainButton;
+
+        [Header("Cams")]
         [SerializeField] CinemachineCamera _startCam;
         [SerializeField] CinemachineCamera _freeLookCam;
 
@@ -26,6 +33,13 @@ namespace I_Walk
         [Header("Sounds")]
         [SerializeField] GameSounds _audioManager;
         [SerializeField] VolumeController _volume;
+
+        [Header("EndingEvent")]
+        [SerializeField] EventTriggerVolume _event;
+        [SerializeField] TextMeshProUGUI _text;
+
+
+        private bool _isEndingStarted = false;
 
         private void Awake()
         {
@@ -62,6 +76,8 @@ namespace I_Walk
             {
                 GetButtonDownEscape();
             }
+
+            EndingSceneAfter();
         }
 
         private void GameReset()
@@ -166,8 +182,15 @@ namespace I_Walk
 
         private void EndingSceneAfter()
         {
-            //엔딩이 나오고 나면 일정시간이 지나고 메뉴창 켜기
+            if (_event.IsEnding)
+            {
+                if (_text.text == "공부부터 해야지......")
+                {
+                    _isEndingStarted = true;
 
+                    Invoke("GameReset", 4.0f);
+                }
+            }
         }
     }
 }

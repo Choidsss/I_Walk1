@@ -26,7 +26,6 @@ MonoBehaviour:
   - rid: 5100604024376524941
   - rid: 5100603776950599794
   - rid: 5100604069443534942
-  - rid: 5100604024376524939
   - rid: 5100603776950599795
   - rid: 5100604024376524942
   - rid: 5100604024376524943
@@ -170,16 +169,6 @@ MonoBehaviour:
         <CommandType>k__BackingField: 8
         _isNodeExpanded: 0
         <ActionType>k__BackingField: 0
-        _targetCameraName: RoomMatesCamera
-        _duration: 1
-        _targetFOV: 40
-        _shakeIntensity: 1
-    - rid: 5100604024376524939
-      type: {class: UGECameraCommand, ns: UGESystem, asm: Assembly-CSharp}
-      data:
-        <CommandType>k__BackingField: 8
-        _isNodeExpanded: 0
-        <ActionType>k__BackingField: 1
         _targetCameraName: RoomMatesCamera
         _duration: 1
         _targetFOV: 40

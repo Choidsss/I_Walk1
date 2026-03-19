@@ -20,6 +20,8 @@ namespace UGESystem
 
         private bool _hasBeenTriggered = false;
 
+        public bool IsEnding { get; set; } = false;
+
         private void Awake()
         {
             // 트리거가 아닌 콜라이더가 실수로 할당되는 것을 방지
@@ -67,7 +69,7 @@ namespace UGESystem
 
                 if (_triggerID == "Ending")
                 {
-                    
+                    IsEnding = true;
                 }
             }
         }
