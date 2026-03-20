@@ -35,6 +35,7 @@ MonoBehaviour:
   - rid: 5100603865430753518
   - rid: 5100603865430753525
   - rid: 5100604024376524963
+  - rid: 5100604114636374123
   references:
     version: 2
     RefIds:
@@ -233,6 +234,24 @@ MonoBehaviour:
       data:
         <Description>k__BackingField: Player enters a specific area.
         <TargetTriggerID>k__BackingField: Lastday
+    - rid: 5100604114636374123
+      type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        _nodeID: 33cf501c-f02f-480f-91ed-de8e4d6f16fe
+        _name: GameGuide
+        _type: 0
+        IsStartNode: 0
+        _isRepeatable: 0
+        _position: {x: 0, y: 0}
+        _startConditions:
+        - rid: 5100604114636374124
+        _nextNodeIDs: []
+        GameEventAsset: {fileID: 11400000, guid: 91e9efde5dc238e48b7ee277a04d8c92, type: 2}
+    - rid: 5100604114636374124
+      type: {class: AreaEnteredCondition, ns: UGESystem, asm: Assembly-CSharp}
+      data:
+        <Description>k__BackingField: Player enters a specific area.
+        <TargetTriggerID>k__BackingField: GameGuide
     - rid: 7554041859222536280
       type: {class: EventNodeData, ns: UGESystem, asm: Assembly-CSharp}
       data:
