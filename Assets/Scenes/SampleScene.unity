@@ -94115,6 +94115,10 @@ PrefabInstance:
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 53bda77f9f57b5642ab5cf006c6a35f6, type: 2}
+    - target: {fileID: 764968376268515464, guid: eb299d2487dd664448826e35fc2b7bb8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 808965135012276745, guid: eb299d2487dd664448826e35fc2b7bb8, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -94142,6 +94146,14 @@ PrefabInstance:
     - target: {fileID: 4007296843690860547, guid: eb299d2487dd664448826e35fc2b7bb8, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368328252257081936, guid: eb299d2487dd664448826e35fc2b7bb8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1431.9209
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368328252257081936, guid: eb299d2487dd664448826e35fc2b7bb8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -65.96041
       objectReference: {fileID: 0}
     - target: {fileID: 4759923198135532436, guid: eb299d2487dd664448826e35fc2b7bb8, type: 3}
       propertyPath: m_fontAsset
@@ -94255,13 +94267,21 @@ PrefabInstance:
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 53bda77f9f57b5642ab5cf006c6a35f6, type: 2}
+    - target: {fileID: 7931811678422236052, guid: eb299d2487dd664448826e35fc2b7bb8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931811678422236052, guid: eb299d2487dd664448826e35fc2b7bb8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -57.301193
+      objectReference: {fileID: 0}
     - target: {fileID: 9083644764058261233, guid: eb299d2487dd664448826e35fc2b7bb8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 113.198
+      value: -80.49939
       objectReference: {fileID: 0}
     - target: {fileID: 9083644764058261233, guid: eb299d2487dd664448826e35fc2b7bb8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -20.697388
+      value: 210
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
