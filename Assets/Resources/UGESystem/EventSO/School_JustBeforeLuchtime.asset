@@ -27,11 +27,11 @@ MonoBehaviour:
       type: {class: ScreenEffectCommand, ns: UGESystem, asm: Assembly-CSharp}
       data:
         <CommandType>k__BackingField: 9
-        _isNodeExpanded: 1
-        _effectType: 3
-        _duration: 0.8
-        _targetColor: {r: 0, g: 0, b: 0, a: 0.4}
-        _flashHoldDuration: 1.5
+        _isNodeExpanded: 0
+        _effectType: 0
+        _duration: 1
+        _targetColor: {r: 0, g: 0, b: 0, a: 1}
+        _flashHoldDuration: 0
         _hideAll: 1
         _hideUI: 0
         _hideCharacters: 0

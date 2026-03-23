@@ -9,7 +9,10 @@ namespace I_Walk
     {
         [Header("PlayKeyward")]
         [SerializeField] string _playKeyward;
-        
+
+        [SerializeField]
+        TextMeshProUGUI _dialogue;
+
         Animator _anim;
         SplineAnimate _splineAnimate;
 
@@ -23,9 +26,9 @@ namespace I_Walk
         // Update is called once per frame
         void Update()
         {
-            TextMeshProUGUI tmpUGUI = GetComponentInChildren<TextMeshProUGUI>();
+            //TextMeshProUGUI tmpUGUI = GetComponentInChildren<TextMeshProUGUI>();
 
-            if (tmpUGUI.text == _playKeyward)
+            if (_dialogue.text == _playKeyward)
             {
                 SplineAnimationPlayOn();
             }

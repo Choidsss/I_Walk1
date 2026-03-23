@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using static UnityEditorInternal.ReorderableList;
 
 namespace I_Walk
 {
